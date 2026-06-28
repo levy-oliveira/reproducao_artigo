@@ -1,0 +1,8 @@
+ollama
+google-genai
+python-dotenv
+pandas
+tqdm
+orjson
+requests
+tqdm
