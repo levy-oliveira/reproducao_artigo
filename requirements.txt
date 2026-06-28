@@ -1,5 +1,5 @@
 ollama
-google-genai
+# google-genai
 python-dotenv
 pandas
 tqdm
