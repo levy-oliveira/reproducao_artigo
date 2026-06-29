@@ -7,9 +7,9 @@ from rapidfuzz import fuzz
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 
-FILE_NAME = "predictions_returnTag_10_SR"
+FILE_NAME = "predictions_paramTag_10_SR"
 
-OUTPUT_DIR = ROOT_DIR / "outputs"
+OUTPUT_DIR = ROOT_DIR / "outputs" / "qwen3-8b"
 PATH = (
     OUTPUT_DIR
     / f"{FILE_NAME}.json"
@@ -29,7 +29,8 @@ for i, item in enumerate(data):
     pr = item["prediction"]
 
     total += 1    
-    if item['match']:       
+    #if item['match']:
+    if gt.__eq__(pr): 
         correct_prediction += 1
         non_validate_correct_prediction +=1
     else:
@@ -56,9 +57,10 @@ with open(output_file, 'a') as file:
     #     file.write(f"\n\nItem: {count}\nId:{ctv[2]}\nGround truth: {ctv[0]}\nPrediction: {ctv[1]}")
     
     # file.write(f"\n\nTotal para validar: {len(correct_to_validate)}\n\n")
+
    file.write(f"Total: {total}\n\nPredicoes corretas exatas: {correct_prediction}\n" +
     f"Acuracia das predicoes exatas: {(correct_prediction / total):.2f}\n")
    file.write(f"Numero de incorretas: {len(incorrect)}\n")
-   non_validate_correct_prediction -= 17
+   non_validate_correct_prediction -= 1
    file.write(f"Numero de semanticamente corretas: {non_validate_correct_prediction}\n" + 
                f"Acuracia: {(non_validate_correct_prediction / total):.2f}\n")
