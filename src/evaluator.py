@@ -4,10 +4,11 @@ from dataset import(
 ) 
 from pathlib import Path
 from rapidfuzz import fuzz
+import sys
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 
-FILE_NAME = "predictions_paramTag_10_SR"
+FILE_NAME = "predictions_returnTag_60_SR"
 
 OUTPUT_DIR = ROOT_DIR / "outputs" / "qwen3-8b"
 PATH = (
@@ -51,16 +52,37 @@ print("incorretas: ",incorrect , f", Length {len(incorrect)}")
 
 output_file = (ROOT_DIR / f"src/metricas/qwen/{FILE_NAME}.txt")
 count = 0
-with open(output_file, 'a') as file:
-    # for ctv in correct_to_validate:
-    #     count +=1
-    #     file.write(f"\n\nItem: {count}\nId:{ctv[2]}\nGround truth: {ctv[0]}\nPrediction: {ctv[1]}")
-    
-    # file.write(f"\n\nTotal para validar: {len(correct_to_validate)}\n\n")
+try:
+    arg = sys.argv[1] 
+except:
+    print("O primeiro Argumento deve ser 'verifica' ou 'metrica'")
+    exit(1) 
 
-   file.write(f"Total: {total}\n\nPredicoes corretas exatas: {correct_prediction}\n" +
-    f"Acuracia das predicoes exatas: {(correct_prediction / total):.2f}\n")
-   file.write(f"Numero de incorretas: {len(incorrect)}\n")
-   non_validate_correct_prediction -= 1
-   file.write(f"Numero de semanticamente corretas: {non_validate_correct_prediction}\n" + 
-               f"Acuracia: {(non_validate_correct_prediction / total):.2f}\n")
+with open(output_file, 'a+') as file:
+
+
+    if  arg is not None and arg == "verifica":
+        for ctv in correct_to_validate:
+            count +=1
+            file.write(f"\n\nItem: {count}\nId:{ctv[2]}\nGround truth: {ctv[0]}\nPrediction: {ctv[1]}")
+        
+        file.write(f"\n\nTotal para validar: {len(correct_to_validate)}\n\n")
+    elif arg is not None and arg == "metrica":
+
+        file.write(f"Total: {total}\n\nPredicoes corretas exatas: {correct_prediction}\n" +
+            f"Acuracia das predicoes exatas: {(correct_prediction / total):.2f}\n")
+        file.write(f"Numero de incorretas: {len(incorrect)}\n")
+
+        count = 0
+        file.seek(0)
+
+        for line in file.readlines():
+            if line.__contains__("nao"):
+                non_validate_correct_prediction -= 1
+                count+=1
+        file.write(f"\nNumero de verificacoes negativas: {count}\n")    
+        file.write(f"Numero de semanticamente corretas: {non_validate_correct_prediction}\n" + 
+                    f"Acuracia: {(non_validate_correct_prediction / total):.2f}\n")
+    else:
+        print("O primeiro Argumento deve ser 'verifica' ou 'metrica'")
+        exit(1)    

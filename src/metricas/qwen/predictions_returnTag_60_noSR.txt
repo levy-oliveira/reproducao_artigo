@@ -1,0 +1,408 @@
+
+
+Item: 1
+Id:4 nao
+Ground truth: string==null || string.isEmpty() ? methodResultID==true
+Prediction: string == null || string.isEmpty() ? methodResultID == true : methodResultID == false
+
+Item: 2
+Id:5 nao
+Ground truth: true?methodResultID.equals(s)
+Prediction: s != null ? methodResultID.equals(s) : methodResultID.equals("")
+
+Item: 3
+Id:9 nao
+Ground truth: true?methodResultID.equals(receiverObjectID.EMPTY_QUEUE)
+Prediction: true ? methodResultID.isEmpty()==true
+
+Item: 4
+Id:10
+Ground truth: object.isEmpty() || object==null ? methodResultID==true
+Prediction: object == null || object.isEmpty() ? methodResultID == true : methodResultID == false
+
+Item: 5
+Id:11
+Ground truth: true?methodResultID.equals(closure)
+Prediction: true ? methodResultID.equals(closure)
+
+Item: 6
+Id:12
+Ground truth: true?methodResultID==x<<y
+Prediction: methodResultID==x<<y
+
+Item: 7
+Id:14 nao
+Ground truth: count==0 ? methodResultID.equals("")
+Prediction: count == 0 ? methodResultID.equals("") : methodResultID.equals(string.repeat(count))
+
+Item: 8
+Id:15 nao
+Ground truth: true ? methodResultID==false
+Prediction: false ? methodResultID==false
+
+Item: 9
+Id:19 nao
+Ground truth: true?(methodResultID==key||methodResultID==null)
+Prediction: methodResultID == null ? methodResultID == null : methodResultID.equals(set.contains(key) ? key : null)
+
+Item: 10
+Id:20
+Ground truth: true ? methodResultID==true
+Prediction: true?methodResultID==true
+
+Item: 11
+Id:24
+Ground truth:  true ? (methodResultID==0 || methodResultID==1)
+Prediction: true ? (methodResultID==0 || methodResultID==1)
+
+Item: 12
+Id:26
+Ground truth: true ? methodResultID==true
+Prediction: true?methodResultID==true
+
+Item: 13
+Id:27 nao
+Ground truth: iterator==null || closure==null ? methodResultID==null
+Prediction: true ? methodResultID.equals(iterator.next()) : methodResultID == null
+
+Item: 14
+Id:28
+Ground truth: true?methodResultID.equals(s)
+Prediction: methodResultID.equals(s)
+
+Item: 15
+Id:29 nao
+Ground truth: receiverObjectID.getTile()!=null ? methodResultID==true
+Prediction: receiverObjectID.getTile() != null ? methodResultID==true:methodResultID==false
+
+Item: 16
+Id:30
+Ground truth: receiverObjectID.containsEdge(e) ? methodResultID==true : methodResultID==false
+Prediction: receiverObjectID.containsEdge(e) ? methodResultID==true:methodResultID==false
+
+Item: 17
+Id:33
+Ground truth:  true ? (methodResultID==0 || methodResultID==1)
+Prediction: true ? (methodResultID==0 || methodResultID==1)
+
+Item: 18
+Id:35 nao
+Ground truth: receiverObjectID.getEurope()==null ? methodResultID==null
+Prediction: receiverObjectID.getEurope() == null ? methodResultID == null : methodResultID.equals(receiverObjectID.getEurope().getNameKey())
+
+Item: 19
+Id:37 nao
+Ground truth: receiverObjectID.containsKey(key)==false ? methodResultID==null
+Prediction: receiverObjectID.get(key) == null ? methodResultID == null : methodResultID != null
+
+Item: 20
+Id:38 nao
+Ground truth: first != null ? methodResultID == first ; first == null && second != null ? methodResultID == second
+Prediction: first!=null ? methodResultID.equals(first) : second!=null ? methodResultID.equals(second) : methodResultID.equals(null)
+
+Item: 21
+Id:39 nao
+Ground truth: a.stream().allMatch(e -> e==null) ? methodResultID==true : methodResultID==false
+Prediction: java.util.Collections.singletonList(a).stream().allMatch(e -> e==null)?methodResultID==true : methodResultID==false
+
+Item: 22
+Id:42 nao
+Ground truth: true?methodResultID>=n
+Prediction: true ? methodResultID == nextPrime(n)
+
+Item: 23
+Id:44 nao
+Ground truth: object==null ? methodResultID == 0
+Prediction: object == null ? methodResultID == 0 : methodResultID == object.size()
+
+Item: 24
+Id:46
+Ground truth: coll.isEmpty() || coll==null ? methodResultID==true
+Prediction: coll == null || coll.isEmpty() ? methodResultID == true : methodResultID == false
+
+Item: 25
+Id:47 nao
+Ground truth: true ? methodResultID==false
+Prediction: false ? methodResultID==false
+
+Item: 26
+Id:50
+Ground truth: true?methodResultID.equals(receiverObjectID.EMPTY_COLLECTION)
+Prediction: true ? methodResultID.equals(receiverObjectID.EMPTY_COLLECTION)
+
+Item: 27
+Id:54 nao
+Ground truth: !receiverObjectID.isOnCarrier() ? methodResultID==null
+Prediction: receiverObjectID.carrier == null ? methodResultID == null : methodResultID.equals(receiverObjectID.carrier)
+
+Item: 28
+Id:55
+Ground truth: receiverObjectID.getCargoSpaceTaken() > 0 ? methodResultID == true : methodResultID == false
+Prediction: receiverObjectID.hasCargo()?methodResultID==true:methodResultID==false
+
+Item: 29
+Id:56 nao
+Ground truth: true ? methodResultID.equals(receiverObjectID.peek())
+Prediction: methodResultID.equals(receiverObjectID.get(receiverObjectID.size() - 1))
+
+Item: 30
+Id:59
+Ground truth: (receiverObjectID.containsVertex(v))==false ? methodResultID==true:methodResultID==false
+Prediction: receiverObjectID.containsVertex(v)==false?methodResultID==true:methodResultID==false
+
+Item: 31
+Id:60 nao
+Ground truth: turn==null ? methodResultID == true : methodResultID==false
+Prediction: turn == null || turn.isWithinTimeLimit() ? methodResultID==true : methodResultID==false
+
+Item: 32
+Id:62
+Ground truth: (receiverObjectID.canCarryGoods() || receiverObjectID.canCarryUnits()) ? methodResultID==true:methodResultID==false
+Prediction: receiverObjectID.isCarrier() ? methodResultID==true:methodResultID==false
+
+Item: 33
+Id:63
+Ground truth: receiverObjectID.equals(ownable.getOwner()) ? methodResultID==true : methodResultID==false
+Prediction: receiverObjectID.owns(ownable) ? methodResultID==true : methodResultID==false
+
+Item: 34
+Id:66 nao
+Ground truth: unit.couldMove() ? methodResultID == true : methodResultID == false
+Prediction: receiverObjectID.canObtain(unit) ? methodResultID==true : methodResultID==false
+
+Item: 35
+Id:68
+Ground truth: true ? methodResultID.equals(receiverObjectID.size)
+Prediction: true ? methodResultID == receiverObjectID.size()
+
+Item: 36
+Id:69 nao
+Ground truth: true?methodResultID==x%y
+Prediction: methodResultID == (x % y + y) % y
+
+Item: 37
+Id:70
+Ground truth: receiverObjectID.containsVertex(v) ? methodResultID==true : methodResultID==false
+Prediction: receiverObjectID.containsVertex(v) ? methodResultID==true:methodResultID==false
+
+Item: 38
+Id:73
+Ground truth: true ? methodResultID.equals(item)
+Prediction: methodResultID.equals(item)
+
+Item: 39
+Id:74 nao
+Ground truth:  true ? (methodResultID==0 || methodResultID==1)
+Prediction: methodResultID== (x & y)
+
+Item: 40
+Id:75 nao
+Ground truth: true ? (methodResultID==null)==false
+Prediction: true?methodResultID==oldValue
+
+Item: 41
+Id:77
+Ground truth: receiverObjectID.getGoodsSpaceTaken() > 0 ? methodResultID == true : methodResultID == false
+Prediction: receiverObjectID.hasCargo() ? methodResultID==true:methodResultID==false
+
+Item: 42
+Id:79
+Ground truth: true ? methodResultID==receiverObjectID.GLOBAL_ENV
+Prediction: true ? methodResultID == receiverObjectID.globalEnvironment
+
+Item: 43
+Id:82
+Ground truth: receiverObjectID.intersectionCardinality(a,b,c)>=i ? methodResultID==true
+Prediction: a.intersect(b).intersect(c).cardinality() >= i ? methodResultID==true : methodResultID==false
+
+Item: 44
+Id:85
+Ground truth: tile.isExplored() ? methodResultID==true:methodResultID==false
+Prediction: tile.isExplored() ? methodResultID==true : methodResultID==false
+
+Item: 45
+Id:86 nao
+Ground truth: string!=null ? methodResultID.equals(string) : methodResultID.equals("") 
+Prediction: string==null ? methodResultID=="" : methodResultID.equals(string)
+
+Item: 46
+Id:89 nao
+Ground truth: methodResultID.equals(Location.INSIDE) || methodResultID.equals(Location.OUTSIDE) || methodResultID.equals(Location.BOUNDARY)
+Prediction: point == Location.INSIDE ? methodResultID == Location.INSIDE : point == Location.OUTSIDE ? methodResultID == Location.OUTSIDE : methodResultID == Location.BOUNDARY
+
+Item: 47
+Id:91 nao
+Ground truth: receiverObjectID.canMoveToHighSeas() ? methodResultID==true:methodResultID==false
+Prediction: receiverObjectID.canMoveToHighSeas() || receiverObjectID.canMoveToNeighboringHighSeasTile() ? methodResultID==true
+
+Item: 48
+Id:92
+Ground truth: receiverObjectID.getEurope() != null ? methodResultID==true
+Prediction: receiverObjectID.getEurope()!=null ? methodResultID==true : methodResultID==false
+
+Item: 49
+Id:93
+Ground truth: true ? methodResultID.equals(receiverObjectID.style)
+Prediction: true?methodResultID.equals(receiverObjectID.getStyle())
+
+Item: 50
+Id:95 nao
+Ground truth: d1>d2 ? methodResultID==true:methodResultID==false
+Prediction: d1>=d2 ? methodResultID==true:methodResultID==false
+
+Item: 51
+Id:96
+Ground truth: d1!=d2 ? methodResultID==true:methodResultID==false
+Prediction: d1 != d2 ? methodResultID==true : methodResultID==false
+
+Item: 52
+Id:97
+Ground truth : true ? methodResultID.isEmpty()==true
+Prediction: true ? methodResultID.equals(receiverObjectID.EMPTY)
+
+Item: 53
+Id:99
+Ground truth: true? methodResultID==true
+Prediction: true ? methodResultID==true
+
+Item: 54
+Id:102 nao
+Ground truth: receiverObjectID.getEdgePath().contains(edge) ? methodResultID==true
+Prediction: receiverObjectID.contains(edge) ? methodResultID==true : methodResultID==false
+
+Item: 55
+Id:103
+Ground truth: java.util.Arrays.asList(array).stream().anyMatch(e -> e==null) ? methodResultID==true: methodResultID==false
+Prediction: a.stream().anyMatch(e -> e==null) ? methodResultID==true : methodResultID==false
+
+Item: 56
+Id:107 nao
+Ground truth: true ? methodResultID.equals(org.apache.commons.collections4.comparators.FixedOrderComparator.UnknownObjectBehavior)
+Prediction: true ? methodResultID==net.sf.freecol.common.model.FixedOrderComparator.UnknownObjectBehavior
+
+Item: 57
+Id:108 nao
+Ground truth: (receiverObjectID.containsEdge(sourceVertex,targetVertex))==false?methodResultID==true:methodResultID==false
+Prediction: receiverObjectID.containsEdge(e) ? methodResultID==true : methodResultID==false
+
+Item: 58
+Id:109
+Ground truth: receiverObjectID.intersectionCardinality(a,b)>=i ? methodResultID==true
+Prediction: a.bitCount() >= i ? methodResultID==true : methodResultID==false
+
+Item: 59
+Id:110
+Ground truth: true ? methodResultID==Integer.MAX_VALUE
+Prediction: true ? methodResultID == Integer.MAX_VALUE
+
+Item: 60
+Id:111
+Ground truth: methodResultID.equals(Side.PLUS) || methodResultID.equals(Side.MINUS) || methodResultID.equals(Side.BOTH) || methodResultID.equals(Side.HYPER)
+Prediction: methodResultID == Side.PLUS || methodResultID == Side.MINUS || methodResultID == Side.BOTH || methodResultID == Side.HYPER
+
+Item: 61
+Id:112 nao
+Ground truth: !receiverObjectID.hasParameter(parameter) ? methodResultID.equals("")
+Prediction: parameter==null || !receiverObjectID.hasParameter(parameter) ? methodResultID=="" : methodResultID.equals(receiverObjectID.getParameter(parameter))
+
+Item: 62
+Id:114 nao
+Ground truth: true ? methodResultID.equals(receiverObjectID.get(receiverObjectID.size() - n)-1)
+Prediction: methodResultID.equals(receiverObjectID.get(n))
+
+Item: 63
+Id:115 nao
+Ground truth: java.util.Arrays.contains(null) ? methodResultID == true : methodResultID == false
+Prediction: a.stream().anyMatch(e -> e==null) ? methodResultID==true : methodResultID==false
+
+Item: 64
+Id:117 nao
+Ground truth: a==null ? methodResultID==null : methodResultID!=null
+Prediction: methodResultID==null ? methodResultID==null : methodResultID.equals(a)
+
+Item: 65
+Id:118
+Ground truth: java.util.Arrays.asList(a).stream().allMatch(e -> e==null)?methodResultID==true : methodResultID==false
+Prediction: a.stream().allMatch(e -> e==null) ? methodResultID==true : methodResultID==false
+
+Item: 66
+Id:119
+Ground truth: receiverObjectID.getDead()?methodResultID==true:methodResultID==false
+Prediction: receiverObjectID.isDead() ? methodResultID==true : methodResultID==false
+
+Item: 67
+Id:121 nao
+Ground truth: true ? methodResultID == receiverObjectID.diagonal
+Prediction: methodResultID.equals(receiverObjectID.getDiagonal())
+
+Item: 68
+Id:122
+Ground truth:  true ? (methodResultID==0 || methodResultID==1)
+Prediction: true ? (methodResultID==0 || methodResultID==1)
+
+Item: 69
+Id:123
+Ground truth: d1<=d2 ? methodResultID==true:methodResultID==false
+Prediction: d1<=d2 ? methodResultID==true : methodResultID==false
+
+Item: 70
+Id:124 nao
+Ground truth: (receiverObjectID.isEuropean())==false?methodResultID==null
+Prediction: receiverObjectID.getEurope()==null ? methodResultID==null
+
+Item: 71
+Id:125
+Ground truth: true?methodResultID==x*y
+Prediction: true ? methodResultID==x*y
+
+Item: 72
+Id:126 nao
+Ground truth: collection==null ? methodResultID.equals(org.apache.commons.collections4.CollectionUtils.emptyCollection())
+Prediction: collection==null ? methodResultID.equals(receiverObjectID.emptyCollection()) : methodResultID.equals(collection)
+
+Item: 73
+Id:127
+Ground truth: receiverObjectID.getSpaceLeft() > 0 ? methodResultID == true : methodResultID == false
+Prediction: receiverObjectID.getSpaceLeft() > 0 ? methodResultID==true : methodResultID==false
+
+Item: 74
+Id:128
+Ground truth: true ? methodResultID.contains(singleton)==true
+Prediction: true ? methodResultID.equals(singleton)
+
+Item: 75
+Id:133 nao
+Ground truth: (targetGraph.containsEdge(edge))==false?methodResultID==true:methodResultID==false
+Prediction: receiverObjectID.containsEdge(edge) ? methodResultID==true : methodResultID==false
+
+Item: 76
+Id:135 nao
+Ground truth: receiverObjectID.getNodePath().contains(node) ? methodResultID==true
+Prediction: receiverObjectID.contains(node) ? methodResultID==true : methodResultID==false
+
+Item: 77
+Id:136 nao
+Ground truth: true ? methodResultID==receiverObjectID
+Prediction: methodResultID.equals(receiverObjectID)
+
+Item: 78
+Id:137
+Ground truth:  true ? (methodResultID==0 || methodResultID==1)
+Prediction: true ? (methodResultID==0 || methodResultID==1)
+
+Item: 79
+Id:138
+Ground truth: methodResultID.equals(Location.INSIDE) || methodResultID.equals(Location.OUTSIDE) || methodResultID.equals(Location.BOUNDARY)
+Prediction: methodResultID==Location.INSIDE || methodResultID==Location.OUTSIDE || methodResultID==Location.BOUNDARY
+
+Total para validar: 79
+
+Total: 139
+
+Predicoes corretas exatas: 42
+Acuracia das predicoes exatas: 0.30
+Numero de incorretas: 18
+
+Numero de verificacoes negativas: 39
+Numero de semanticamente corretas: 82
+Acuracia: 0.59
