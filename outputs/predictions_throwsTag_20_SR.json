@@ -6,9 +6,9 @@
         "prediction": "comparator==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 566,
+        "prompt_tokens": 786,
         "completion_tokens": 5,
-        "latency_ms": 976.875214
+        "latency_ms": 1252.847917
     },
     {
         "id": 2,
@@ -17,9 +17,9 @@
         "prediction": "starts < 1",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 607,
+        "prompt_tokens": 939,
         "completion_tokens": 5,
-        "latency_ms": 1064.83879
+        "latency_ms": 1408.879101
     },
     {
         "id": 3,
@@ -28,20 +28,20 @@
         "prediction": "predicates==null || closures==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 591,
+        "prompt_tokens": 923,
         "completion_tokens": 9,
-        "latency_ms": 1194.658633
+        "latency_ms": 1615.205796
     },
     {
         "id": 4,
         "signature": "IterativeLegendreGaussIntegrator(int n,int minimalIterationCount,int maximalIterationCount)",
         "ground_truth": "n<1",
-        "prediction": "n < 1",
-        "match": false,
+        "prediction": "n<1",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 582,
-        "completion_tokens": 5,
-        "latency_ms": 910.320557
+        "prompt_tokens": 1024,
+        "completion_tokens": 4,
+        "latency_ms": 1461.578843
     },
     {
         "id": 5,
@@ -50,9 +50,9 @@
         "prediction": "maximalOrder<2",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 590,
+        "prompt_tokens": 1010,
         "completion_tokens": 6,
-        "latency_ms": 1037.168356
+        "latency_ms": 1432.396331
     },
     {
         "id": 6,
@@ -61,9 +61,9 @@
         "prediction": "collection==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 575,
+        "prompt_tokens": 786,
         "completion_tokens": 4,
-        "latency_ms": 811.35586
+        "latency_ms": 1222.995386
     },
     {
         "id": 7,
@@ -72,9 +72,9 @@
         "prediction": "collection==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 566,
+        "prompt_tokens": 786,
         "completion_tokens": 4,
-        "latency_ms": 851.722247
+        "latency_ms": 565.836875
     },
     {
         "id": 8,
@@ -83,9 +83,9 @@
         "prediction": "expression==false",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 563,
+        "prompt_tokens": 806,
         "completion_tokens": 4,
-        "latency_ms": 847.187464
+        "latency_ms": 1236.267428
     },
     {
         "id": 9,
@@ -94,20 +94,20 @@
         "prediction": "bag==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 577,
+        "prompt_tokens": 725,
         "completion_tokens": 4,
-        "latency_ms": 867.855052
+        "latency_ms": 1145.873732
     },
     {
         "id": 10,
         "signature": "max(double[] a)",
         "ground_truth": "a.length==0",
-        "prediction": "a.length == 0",
-        "match": false,
+        "prediction": "a.length==0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 568,
-        "completion_tokens": 6,
-        "latency_ms": 955.704321
+        "prompt_tokens": 890,
+        "completion_tokens": 5,
+        "latency_ms": 1374.737912
     },
     {
         "id": 11,
@@ -116,9 +116,9 @@
         "prediction": "map==null || factory==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 577,
+        "prompt_tokens": 906,
         "completion_tokens": 8,
-        "latency_ms": 1087.285692
+        "latency_ms": 1538.128336
     },
     {
         "id": 12,
@@ -127,9 +127,9 @@
         "prediction": "pathElement==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 588,
+        "prompt_tokens": 879,
         "completion_tokens": 5,
-        "latency_ms": 957.046489
+        "latency_ms": 1386.539158
     },
     {
         "id": 13,
@@ -138,9 +138,9 @@
         "prediction": "len < 0 || len > bytes.length - start",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 579,
+        "prompt_tokens": 1174,
         "completion_tokens": 12,
-        "latency_ms": 1292.106216
+        "latency_ms": 2228.020653
     },
     {
         "id": 14,
@@ -149,9 +149,9 @@
         "prediction": "index < 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 565,
+        "prompt_tokens": 717,
         "completion_tokens": 5,
-        "latency_ms": 948.706746
+        "latency_ms": 1120.869955
     },
     {
         "id": 15,
@@ -160,31 +160,31 @@
         "prediction": "true",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 559,
+        "prompt_tokens": 809,
         "completion_tokens": 2,
-        "latency_ms": 747.153871
+        "latency_ms": 1099.037842
     },
     {
         "id": 16,
         "signature": "mutate(org.apache.commons.math3.genetics.Chromosome original)",
         "ground_truth": "(original instanceof BinaryChromosome) == false",
-        "prediction": "original instanceof BinaryChromosome == false",
+        "prediction": "original instanceof org.apache.commons.math3.genetics.BinaryChromosome == false",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 577,
-        "completion_tokens": 8,
-        "latency_ms": 1039.108893
+        "prompt_tokens": 1232,
+        "completion_tokens": 15,
+        "latency_ms": 2358.857174
     },
     {
         "id": 17,
         "signature": "length(java.lang.Object obj)",
         "ground_truth": "obj==null || ! (obj instanceof boolean[] || obj instanceof double[] || obj instanceof int[] || obj instanceof long[] || obj instanceof Object[])",
-        "prediction": "obj==null || (!(obj instanceof java.lang.String) && !(obj instanceof java.lang.Character) && !(obj instanceof java.lang.Boolean) && !(obj instanceof java.lang.Byte) && !(obj instanceof java.lang.Short) && !(obj instanceof java.lang.Integer) && !(obj instanceof java.lang.Long) && !(obj instanceof java.lang.Float) && !(obj instanceof java.lang.Double))",
+        "prediction": "obj==null || !(obj instanceof boolean[] || obj instanceof double[] || obj instanceof int[] || obj instanceof long[] || obj instanceof Object[])",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 573,
-        "completion_tokens": 76,
-        "latency_ms": 4552.215083
+        "prompt_tokens": 1147,
+        "completion_tokens": 30,
+        "latency_ms": 3109.557654
     },
     {
         "id": 18,
@@ -193,9 +193,9 @@
         "prediction": "element==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 563,
+        "prompt_tokens": 895,
         "completion_tokens": 4,
-        "latency_ms": 864.782155
+        "latency_ms": 513.683925
     },
     {
         "id": 19,
@@ -204,20 +204,20 @@
         "prediction": "collection==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 572,
+        "prompt_tokens": 792,
         "completion_tokens": 4,
-        "latency_ms": 849.794484
+        "latency_ms": 533.220893
     },
     {
         "id": 20,
         "signature": "min(float[] array)",
         "ground_truth": "array.length==0",
-        "prediction": "array.length == 0",
-        "match": false,
+        "prediction": "array.length==0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 563,
-        "completion_tokens": 6,
-        "latency_ms": 962.647353
+        "prompt_tokens": 714,
+        "completion_tokens": 5,
+        "latency_ms": 1160.426693
     },
     {
         "id": 21,
@@ -226,31 +226,31 @@
         "prediction": "endInclusive < startInclusive",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 573,
+        "prompt_tokens": 1015,
         "completion_tokens": 8,
-        "latency_ms": 1050.38701
+        "latency_ms": 702.5629
     },
     {
         "id": 22,
         "signature": "element_range(int[] a)",
         "ground_truth": "a.length==0",
-        "prediction": "a.length == 0",
-        "match": false,
+        "prediction": "a.length==0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 569,
-        "completion_tokens": 6,
-        "latency_ms": 839.212011
+        "prompt_tokens": 890,
+        "completion_tokens": 5,
+        "latency_ms": 1145.696368
     },
     {
         "id": 23,
         "signature": "KShortestPaths(org.jgrapht.Graph graph,java.lang.Object startVertex,int nPaths,int nMaxHops)",
         "ground_truth": "nPaths<0 || nPaths==0",
-        "prediction": "nPaths <= 0",
-        "match": false,
+        "prediction": "nPaths<0 || nPaths==0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 588,
-        "completion_tokens": 6,
-        "latency_ms": 1008.433631
+        "prompt_tokens": 823,
+        "completion_tokens": 10,
+        "latency_ms": 1631.441315
     },
     {
         "id": 24,
@@ -259,20 +259,20 @@
         "prediction": "closures==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 572,
+        "prompt_tokens": 904,
         "completion_tokens": 5,
-        "latency_ms": 858.124174
+        "latency_ms": 548.780441
     },
     {
         "id": 25,
         "signature": "nextPascal(int r,double p)",
         "ground_truth": "p<0||p>1",
-        "prediction": "p<0 || p>1",
-        "match": false,
+        "prediction": "p<0||p>1",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 580,
+        "prompt_tokens": 1241,
         "completion_tokens": 8,
-        "latency_ms": 1051.214081
+        "latency_ms": 2051.967325
     },
     {
         "id": 26,
@@ -281,53 +281,53 @@
         "prediction": "bag==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 570,
+        "prompt_tokens": 725,
         "completion_tokens": 4,
-        "latency_ms": 878.114949
+        "latency_ms": 1134.163455
     },
     {
         "id": 27,
         "signature": "LRUMap(int maxSize,int initialSize,float loadFactor)",
         "ground_truth": "initialSize<0 || initialSize>maxSize",
-        "prediction": "initialSize < 0 || initialSize > maxSize",
-        "match": false,
+        "prediction": "initialSize<0 || initialSize>maxSize",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 578,
+        "prompt_tokens": 1077,
         "completion_tokens": 11,
-        "latency_ms": 1242.715471
+        "latency_ms": 1904.619426
     },
     {
         "id": 28,
         "signature": "LRUMap(int maxSize,int initialSize,float loadFactor,boolean scanUntilRemovable)",
         "ground_truth": "maxSize<1",
-        "prediction": "maxSize < 1",
-        "match": false,
+        "prediction": "maxSize<1",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 580,
-        "completion_tokens": 6,
-        "latency_ms": 920.078298
+        "prompt_tokens": 1022,
+        "completion_tokens": 5,
+        "latency_ms": 629.943201
     },
     {
         "id": 29,
         "signature": "chainedClosure(org.apache.commons.collections4.Closure[] closures)",
         "ground_truth": "java.util.Arrays.stream(closures).anyMatch(e -> e==null)",
-        "prediction": "closures==null || (closures.length == 0 && closures[0]==null) == false",
-        "match": false,
+        "prediction": "java.util.Arrays.stream(closures).anyMatch(e -> e==null)",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 574,
-        "completion_tokens": 22,
-        "latency_ms": 1744.582404
+        "prompt_tokens": 1016,
+        "completion_tokens": 16,
+        "latency_ms": 1193.230199
     },
     {
         "id": 30,
         "signature": "LRUMap(int maxSize,int initialSize)",
         "ground_truth": "initialSize<0 || initialSize>maxSize",
-        "prediction": "initialSize < 0 || initialSize > maxSize",
-        "match": false,
+        "prediction": "initialSize<0 || initialSize>maxSize",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 575,
+        "prompt_tokens": 1074,
         "completion_tokens": 11,
-        "latency_ms": 1211.812695
+        "latency_ms": 1906.448241
     },
     {
         "id": 31,
@@ -336,9 +336,9 @@
         "prediction": "map==null || factory==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 578,
+        "prompt_tokens": 910,
         "completion_tokens": 8,
-        "latency_ms": 1070.47286
+        "latency_ms": 736.916056
     },
     {
         "id": 32,
@@ -347,9 +347,9 @@
         "prediction": "map==null || factory==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 584,
+        "prompt_tokens": 906,
         "completion_tokens": 8,
-        "latency_ms": 1060.678904
+        "latency_ms": 693.674592
     },
     {
         "id": 33,
@@ -358,9 +358,9 @@
         "prediction": "a==null || b==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 573,
+        "prompt_tokens": 793,
         "completion_tokens": 8,
-        "latency_ms": 1070.787114
+        "latency_ms": 730.077924
     },
     {
         "id": 34,
@@ -369,9 +369,9 @@
         "prediction": "unknownObjectBehavior==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 582,
+        "prompt_tokens": 954,
         "completion_tokens": 6,
-        "latency_ms": 854.559802
+        "latency_ms": 663.922368
     },
     {
         "id": 35,
@@ -380,9 +380,9 @@
         "prediction": "array.length == 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 563,
+        "prompt_tokens": 728,
         "completion_tokens": 6,
-        "latency_ms": 812.538376
+        "latency_ms": 1283.443559
     },
     {
         "id": 36,
@@ -391,53 +391,53 @@
         "prediction": "iterable==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 565,
+        "prompt_tokens": 785,
         "completion_tokens": 5,
-        "latency_ms": 904.68333
+        "latency_ms": 545.208586
     },
     {
         "id": 37,
         "signature": "smooth(double[] xval,double[] yval)",
         "ground_truth": "xval.length==0 || yval.length==0",
-        "prediction": "xval.length == 0 || yval.length == 0",
-        "match": false,
+        "prediction": "xval.length==0 || yval.length==0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 575,
-        "completion_tokens": 14,
-        "latency_ms": 1365.648684
+        "prompt_tokens": 882,
+        "completion_tokens": 12,
+        "latency_ms": 1785.539107
     },
     {
         "id": 38,
         "signature": "canCashInTreasureTrain(net.sf.freecol.common.model.Location loc)",
         "ground_truth": "(receiverObjectID.canCarryTreasure())==false",
-        "prediction": "this.unit.isNotATreasureTrain()",
+        "prediction": "this.unit.getType()!=net.sf.freecol.common.model.UnitType.TREASURE_TRAIN",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 578,
-        "completion_tokens": 10,
-        "latency_ms": 1167.408937
+        "prompt_tokens": 1020,
+        "completion_tokens": 18,
+        "latency_ms": 1361.705518
     },
     {
         "id": 39,
         "signature": "allPredicate(java.util.Collection predicates)",
         "ground_truth": "predicates.stream().anyMatch(e -> e==null)",
-        "prediction": "any(predicates.contains(null))",
+        "prediction": "java.util.Arrays.stream(predicates).anyMatch(e -> e==null)",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 569,
-        "completion_tokens": 7,
-        "latency_ms": 1019.16725
+        "prompt_tokens": 1011,
+        "completion_tokens": 16,
+        "latency_ms": 1192.672608
     },
     {
         "id": 40,
         "signature": "FieldRotation(org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D axis,org.apache.commons.math3.RealFieldElement angle,org.apache.commons.math3.geometry.euclidean.threed.RotationConvention convention)",
         "ground_truth": "axis.getNorm().getReal()==0",
-        "prediction": "axis.getNorm() == 0",
+        "prediction": "axis.getNorm().getReal() == 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 604,
-        "completion_tokens": 8,
-        "latency_ms": 1256.977281
+        "prompt_tokens": 1046,
+        "completion_tokens": 11,
+        "latency_ms": 935.682253
     },
     {
         "id": 41,
@@ -446,9 +446,9 @@
         "prediction": "g==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 577,
+        "prompt_tokens": 807,
         "completion_tokens": 4,
-        "latency_ms": 835.223757
+        "latency_ms": 1038.795733
     },
     {
         "id": 42,
@@ -457,9 +457,9 @@
         "prediction": "bag==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 569,
+        "prompt_tokens": 729,
         "completion_tokens": 4,
-        "latency_ms": 851.079081
+        "latency_ms": 1190.73558
     },
     {
         "id": 43,
@@ -468,9 +468,9 @@
         "prediction": "e<0",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 567,
+        "prompt_tokens": 787,
         "completion_tokens": 4,
-        "latency_ms": 889.161964
+        "latency_ms": 492.045521
     },
     {
         "id": 44,
@@ -479,20 +479,20 @@
         "prediction": "comparator.isLocked()",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 562,
+        "prompt_tokens": 894,
         "completion_tokens": 6,
-        "latency_ms": 977.002961
+        "latency_ms": 662.819875
     },
     {
         "id": 45,
         "signature": "nonePredicate(org.apache.commons.collections4.Predicate[] predicates)",
         "ground_truth": "java.util.Arrays.stream(predicates).anyMatch(e->e==null)",
-        "prediction": "any(predicates[i] == null for i in 0..predicates.length-1)",
+        "prediction": "java.util.Arrays.stream(predicates).anyMatch(e -> e==null)",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 573,
-        "completion_tokens": 20,
-        "latency_ms": 1636.290223
+        "prompt_tokens": 1015,
+        "completion_tokens": 16,
+        "latency_ms": 1231.63604
     },
     {
         "id": 46,
@@ -501,9 +501,9 @@
         "prediction": "bg==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 566,
+        "prompt_tokens": 938,
         "completion_tokens": 4,
-        "latency_ms": 746.444999
+        "latency_ms": 532.151229
     },
     {
         "id": 47,
@@ -512,20 +512,20 @@
         "prediction": "predicate==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 567,
+        "prompt_tokens": 718,
         "completion_tokens": 4,
-        "latency_ms": 825.516369
+        "latency_ms": 512.943083
     },
     {
         "id": 48,
         "signature": "create(int expectedKeys,int expectedValuesPerKey)",
         "ground_truth": "expectedKeys<0 || expectedValuesPerKey<0",
-        "prediction": "expectedKeys < 0 || expectedValuesPerKey < 0",
-        "match": false,
+        "prediction": "expectedKeys<0 || expectedValuesPerKey<0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 574,
-        "completion_tokens": 14,
-        "latency_ms": 1335.355511
+        "prompt_tokens": 1066,
+        "completion_tokens": 12,
+        "latency_ms": 1963.516244
     },
     {
         "id": 49,
@@ -534,31 +534,31 @@
         "prediction": "position < 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 572,
+        "prompt_tokens": 904,
         "completion_tokens": 5,
-        "latency_ms": 871.834738
+        "latency_ms": 555.105461
     },
     {
         "id": 50,
         "signature": "max(float[] array)",
         "ground_truth": "array.length==0",
-        "prediction": "array.length == 0",
-        "match": false,
+        "prediction": "array.length==0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 563,
-        "completion_tokens": 6,
-        "latency_ms": 920.18481
+        "prompt_tokens": 714,
+        "completion_tokens": 5,
+        "latency_ms": 530.639301
     },
     {
         "id": 51,
         "signature": "LoessInterpolator(double bandwidth,int robustnessIters,double accuracy)",
         "ground_truth": "bandwidth<0 || bandwidth>1",
-        "prediction": "bandwidth < 0 || bandwidth > 1",
-        "match": false,
+        "prediction": "bandwidth<0 || bandwidth>1",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 582,
-        "completion_tokens": 11,
-        "latency_ms": 1225.29905
+        "prompt_tokens": 1183,
+        "completion_tokens": 9,
+        "latency_ms": 1954.657085
     },
     {
         "id": 52,
@@ -567,9 +567,9 @@
         "prediction": "predicates.length != closures.length",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 581,
+        "prompt_tokens": 906,
         "completion_tokens": 7,
-        "latency_ms": 1008.044142
+        "latency_ms": 952.879831
     },
     {
         "id": 53,
@@ -578,9 +578,9 @@
         "prediction": "graph==null || startVertex==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 589,
+        "prompt_tokens": 1068,
         "completion_tokens": 9,
-        "latency_ms": 1162.989016
+        "latency_ms": 1833.50397
     },
     {
         "id": 54,
@@ -589,9 +589,9 @@
         "prediction": "minLength<0 || padding<0",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 570,
+        "prompt_tokens": 942,
         "completion_tokens": 9,
-        "latency_ms": 1120.562385
+        "latency_ms": 779.071509
     },
     {
         "id": 55,
@@ -600,9 +600,9 @@
         "prediction": "n < 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 565,
+        "prompt_tokens": 937,
         "completion_tokens": 5,
-        "latency_ms": 900.214704
+        "latency_ms": 530.681252
     },
     {
         "id": 56,
@@ -611,9 +611,9 @@
         "prediction": "isCompatible(that) == false",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 572,
+        "prompt_tokens": 863,
         "completion_tokens": 7,
-        "latency_ms": 997.423629
+        "latency_ms": 666.079697
     },
     {
         "id": 57,
@@ -622,20 +622,20 @@
         "prediction": "predicate==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 568,
+        "prompt_tokens": 719,
         "completion_tokens": 4,
-        "latency_ms": 888.601056
+        "latency_ms": 490.721254
     },
     {
         "id": 58,
         "signature": "canCashInTreasureTrain()",
         "ground_truth": "(receiverObjectID.canCarryTreasure()) == false",
-        "prediction": "this.unit.isNotTreasureTrain()",
+        "prediction": "this.isTreasureTrain()==false",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 569,
-        "completion_tokens": 9,
-        "latency_ms": 987.178262
+        "prompt_tokens": 1011,
+        "completion_tokens": 8,
+        "latency_ms": 720.734782
     },
     {
         "id": 59,
@@ -644,20 +644,20 @@
         "prediction": "first.getLength() != second.getLength()",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 592,
+        "prompt_tokens": 1069,
         "completion_tokens": 8,
-        "latency_ms": 1162.708578
+        "latency_ms": 1747.290935
     },
     {
         "id": 60,
         "signature": "interpolate(double[] x,double[] y)",
         "ground_truth": "x.length<2",
-        "prediction": "x.length < 2 || y.length < 2",
-        "match": false,
+        "prediction": "x.length<2",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 576,
-        "completion_tokens": 12,
-        "latency_ms": 1219.135436
+        "prompt_tokens": 1058,
+        "completion_tokens": 5,
+        "latency_ms": 1573.722184
     },
     {
         "id": 61,
@@ -666,9 +666,9 @@
         "prediction": "f.length != getOrder() + 1",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 578,
+        "prompt_tokens": 1232,
         "completion_tokens": 9,
-        "latency_ms": 1073.299665
+        "latency_ms": 2061.240617
     },
     {
         "id": 62,
@@ -677,9 +677,9 @@
         "prediction": "predicate==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
+        "prompt_tokens": 910,
         "completion_tokens": 4,
-        "latency_ms": 822.101417
+        "latency_ms": 1366.280217
     },
     {
         "id": 63,
@@ -688,9 +688,9 @@
         "prediction": "other==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 565,
+        "prompt_tokens": 729,
         "completion_tokens": 4,
-        "latency_ms": 861.919828
+        "latency_ms": 893.527978
     },
     {
         "id": 64,
@@ -699,9 +699,9 @@
         "prediction": "fraction==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 572,
+        "prompt_tokens": 792,
         "completion_tokens": 4,
-        "latency_ms": 895.835228
+        "latency_ms": 488.410408
     },
     {
         "id": 65,
@@ -710,9 +710,9 @@
         "prediction": "n < 1",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 580,
+        "prompt_tokens": 1011,
         "completion_tokens": 5,
-        "latency_ms": 794.927142
+        "latency_ms": 1522.9441
     },
     {
         "id": 66,
@@ -721,9 +721,9 @@
         "prediction": "inputCollection==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 576,
+        "prompt_tokens": 908,
         "completion_tokens": 5,
-        "latency_ms": 934.756656
+        "latency_ms": 591.177147
     },
     {
         "id": 67,
@@ -732,9 +732,9 @@
         "prediction": "lower >= upper",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 574,
+        "prompt_tokens": 794,
         "completion_tokens": 4,
-        "latency_ms": 811.342875
+        "latency_ms": 504.677851
     },
     {
         "id": 68,
@@ -743,9 +743,9 @@
         "prediction": "closures==null || closures.isEmpty()",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 567,
+        "prompt_tokens": 899,
         "completion_tokens": 9,
-        "latency_ms": 1121.680852
+        "latency_ms": 777.493566
     },
     {
         "id": 69,
@@ -754,42 +754,42 @@
         "prediction": "predicates==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
+        "prompt_tokens": 939,
         "completion_tokens": 5,
-        "latency_ms": 912.858866
+        "latency_ms": 1281.653554
     },
     {
         "id": 70,
         "signature": "switchMapClosure(java.util.Map objectsAndClosures)",
         "ground_truth": "objectsAndClosures.values().stream().anyMatch(e -> e==null)",
-        "prediction": "any closure in the map is null",
+        "prediction": "java.util.Map.values().stream().anyMatch(c -> c == null)",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 573,
-        "completion_tokens": 8,
-        "latency_ms": 997.909162
+        "prompt_tokens": 1015,
+        "completion_tokens": 16,
+        "latency_ms": 1294.452092
     },
     {
         "id": 71,
         "signature": "min(double[] a)",
         "ground_truth": "a.length==0",
-        "prediction": "a.length == 0",
-        "match": false,
+        "prediction": "a.length==0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 568,
-        "completion_tokens": 6,
-        "latency_ms": 910.240148
+        "prompt_tokens": 859,
+        "completion_tokens": 5,
+        "latency_ms": 630.256313
     },
     {
         "id": 72,
         "signature": "PolynomialFunctionNewtonForm(double[] a,double[] c)",
         "ground_truth": "((a.length - c.length) == 1) == false",
-        "prediction": "Math.abs(a.length - c.length) != 1",
+        "prediction": "(a.length - c.length) == 1",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 581,
-        "completion_tokens": 12,
-        "latency_ms": 1223.129307
+        "prompt_tokens": 1242,
+        "completion_tokens": 10,
+        "latency_ms": 848.319676
     },
     {
         "id": 73,
@@ -798,9 +798,9 @@
         "prediction": "entry==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 579,
+        "prompt_tokens": 786,
         "completion_tokens": 4,
-        "latency_ms": 744.330151
+        "latency_ms": 1229.514713
     },
     {
         "id": 74,
@@ -809,31 +809,31 @@
         "prediction": "denominator == 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 569,
+        "prompt_tokens": 901,
         "completion_tokens": 6,
-        "latency_ms": 950.278565
+        "latency_ms": 594.590561
     },
     {
         "id": 75,
         "signature": "ifClosure(org.apache.commons.collections4.Predicate<? predicate, org.apache.commons.collections4.Closure<? trueClosure)",
         "ground_truth": "predicate==null || trueClosure==null",
-        "prediction": "predicate==null || trueClosure==null",
-        "match": true,
+        "prediction": "predicate==null || closure==null",
+        "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 580,
-        "completion_tokens": 9,
-        "latency_ms": 1082.638049
+        "prompt_tokens": 800,
+        "completion_tokens": 8,
+        "latency_ms": 711.06841
     },
     {
         "id": 76,
         "signature": "crossover(org.apache.commons.math3.genetics.Chromosome first,org.apache.commons.math3.genetics.Chromosome second)",
         "ground_truth": "(first instanceof AbstractListChromosome) == false || (second instanceof AbstractListChromosome) == false",
-        "prediction": "!(first instanceof AbstractListChromosome) || !(second instanceof AbstractListChromosome)",
+        "prediction": "(first instanceof AbstractListChromosome) == false && (second instanceof AbstractListChromosome) == false",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 590,
-        "completion_tokens": 18,
-        "latency_ms": 1565.136517
+        "prompt_tokens": 1163,
+        "completion_tokens": 21,
+        "latency_ms": 2561.713953
     },
     {
         "id": 77,
@@ -842,31 +842,31 @@
         "prediction": "xval.length != yval.length",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 575,
+        "prompt_tokens": 1074,
         "completion_tokens": 8,
-        "latency_ms": 1043.482375
+        "latency_ms": 1759.927364
     },
     {
         "id": 78,
         "signature": "nextHexString(int len)",
         "ground_truth": "len<=0",
-        "prediction": "len <= 0",
-        "match": false,
+        "prediction": "len<=0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 568,
-        "completion_tokens": 5,
-        "latency_ms": 885.761915
+        "prompt_tokens": 1010,
+        "completion_tokens": 4,
+        "latency_ms": 526.652118
     },
     {
         "id": 79,
         "signature": "chainedClosure(java.util.Collection closures)",
         "ground_truth": "closures.stream().anyMatch(e -> e==null)",
-        "prediction": "closures==null || closures.contains(null)",
+        "prediction": "java.util.Arrays.stream(closures).anyMatch(e -> e==null)",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 569,
-        "completion_tokens": 10,
-        "latency_ms": 1134.941727
+        "prompt_tokens": 1011,
+        "completion_tokens": 16,
+        "latency_ms": 1109.317611
     },
     {
         "id": 80,
@@ -875,53 +875,53 @@
         "prediction": "predicate==null || closure==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 578,
+        "prompt_tokens": 798,
         "completion_tokens": 8,
-        "latency_ms": 1035.105284
+        "latency_ms": 741.143133
     },
     {
         "id": 81,
         "signature": "orthogonal()",
         "ground_truth": "receiverObjectID.getNorm()==null",
-        "prediction": "norm == 0",
+        "prediction": "receiverObjectID.getNorm()==0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 567,
-        "completion_tokens": 5,
-        "latency_ms": 862.191498
+        "prompt_tokens": 1007,
+        "completion_tokens": 8,
+        "latency_ms": 1708.800834
     },
     {
         "id": 82,
         "signature": "ensureCapacity(double[] array,int minLength,int padding)",
         "ground_truth": "minLength<0 || padding<0",
-        "prediction": "minLength < 0 || padding < 0",
-        "match": false,
+        "prediction": "minLength<0 || padding<0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 570,
-        "completion_tokens": 11,
-        "latency_ms": 1248.171736
+        "prompt_tokens": 935,
+        "completion_tokens": 9,
+        "latency_ms": 1402.693135
     },
     {
         "id": 83,
         "signature": "verifyInputArray(double[] a,double[] c)",
         "ground_truth": "((a.length - c.length)==1) == false",
-        "prediction": "Math.abs(a.length - c.length) != 1",
+        "prediction": "((a.length - c.length) == 1) == false",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 580,
-        "completion_tokens": 12,
-        "latency_ms": 1224.855934
+        "prompt_tokens": 1230,
+        "completion_tokens": 14,
+        "latency_ms": 1894.125939
     },
     {
         "id": 84,
         "signature": "stirlingS2(int n,int k)",
         "ground_truth": "k<0",
-        "prediction": "k < 0",
-        "match": false,
+        "prediction": "k<0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 570,
-        "completion_tokens": 5,
-        "latency_ms": 904.649333
+        "prompt_tokens": 790,
+        "completion_tokens": 4,
+        "latency_ms": 510.217177
     },
     {
         "id": 85,
@@ -930,9 +930,9 @@
         "prediction": "inputCollection==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 577,
+        "prompt_tokens": 909,
         "completion_tokens": 5,
-        "latency_ms": 848.537576
+        "latency_ms": 718.978783
     },
     {
         "id": 86,
@@ -941,9 +941,9 @@
         "prediction": "fraction==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
+        "prompt_tokens": 791,
         "completion_tokens": 4,
-        "latency_ms": 822.149099
+        "latency_ms": 495.946556
     },
     {
         "id": 87,
@@ -952,9 +952,9 @@
         "prediction": "factor==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
+        "prompt_tokens": 791,
         "completion_tokens": 4,
-        "latency_ms": 764.66047
+        "latency_ms": 446.163429
     },
     {
         "id": 88,
@@ -963,9 +963,9 @@
         "prediction": "bag==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 569,
+        "prompt_tokens": 729,
         "completion_tokens": 4,
-        "latency_ms": 819.776003
+        "latency_ms": 1209.02619
     },
     {
         "id": 89,
@@ -974,20 +974,20 @@
         "prediction": "predicates==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 567,
+        "prompt_tokens": 939,
         "completion_tokens": 5,
-        "latency_ms": 900.087101
+        "latency_ms": 1335.756059
     },
     {
         "id": 90,
         "signature": "switchClosure(java.util.Map predicatesAndClosures)",
         "ground_truth": "predicatesAndClosures.values().stream().anyMatch(e -> e==null)",
-        "prediction": "predicatesAndClosures == null || predicatesAndClosures.values().contains(null)",
+        "prediction": "java.util.Map.values().stream().anyMatch(e -> e==null)",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 572,
-        "completion_tokens": 18,
-        "latency_ms": 1416.440871
+        "prompt_tokens": 1014,
+        "completion_tokens": 16,
+        "latency_ms": 1209.852732
     },
     {
         "id": 91,
@@ -996,9 +996,9 @@
         "prediction": "predicates.length != closures.length",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 591,
+        "prompt_tokens": 923,
         "completion_tokens": 7,
-        "latency_ms": 990.249847
+        "latency_ms": 846.815828
     },
     {
         "id": 92,
@@ -1007,9 +1007,9 @@
         "prediction": "sourceVertex==null || targetVertex==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 581,
+        "prompt_tokens": 1068,
         "completion_tokens": 10,
-        "latency_ms": 1161.844339
+        "latency_ms": 1228.468677
     },
     {
         "id": 93,
@@ -1018,53 +1018,53 @@
         "prediction": "maxSize<1",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 574,
+        "prompt_tokens": 1016,
         "completion_tokens": 5,
-        "latency_ms": 821.785449
+        "latency_ms": 573.01716
     },
     {
         "id": 94,
         "signature": "EmptyGraphGenerator(int size)",
         "ground_truth": "size<0",
-        "prediction": "size < 0",
-        "match": false,
+        "prediction": "size<0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 566,
-        "completion_tokens": 5,
-        "latency_ms": 900.564198
+        "prompt_tokens": 939,
+        "completion_tokens": 4,
+        "latency_ms": 710.605454
     },
     {
         "id": 95,
         "signature": "SimpsonIntegrator(double relativeAccuracy,double absoluteAccuracy,int minimalIterationCount,int maximalIterationCount)",
         "ground_truth": "(minimalIterationCount>0)==false",
-        "prediction": "minimalIterationCount <= 0",
-        "match": false,
+        "prediction": "(minimalIterationCount>0)==false",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 585,
-        "completion_tokens": 7,
-        "latency_ms": 956.786119
+        "prompt_tokens": 1076,
+        "completion_tokens": 9,
+        "latency_ms": 1169.540447
     },
     {
         "id": 96,
         "signature": "addEdge(java.lang.Object sourceVertex,java.lang.Object targetVertex)",
         "ground_truth": "receiverObjectID.contains(sourceVertex)==false || receiverObjectID.contains(targetVertex)==false",
-        "prediction": "sourceVertex not found in the graph || targetVertex not found in the graph",
-        "match": false,
+        "prediction": "receiverObjectID.contains(sourceVertex)==false || receiverObjectID.contains(targetVertex)==false",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 579,
-        "completion_tokens": 16,
-        "latency_ms": 1489.76273
+        "prompt_tokens": 1180,
+        "completion_tokens": 18,
+        "latency_ms": 2448.738796
     },
     {
         "id": 97,
         "signature": "skip(long elementsToSkip)",
         "ground_truth": "elementsToSkip<0",
-        "prediction": "elementsToSkip < 0",
-        "match": false,
+        "prediction": "elementsToSkip<0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 566,
-        "completion_tokens": 7,
-        "latency_ms": 1071.295735
+        "prompt_tokens": 908,
+        "completion_tokens": 6,
+        "latency_ms": 1340.949239
     },
     {
         "id": 98,
@@ -1073,53 +1073,53 @@
         "prediction": "p1.equals(p2)",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 593,
+        "prompt_tokens": 965,
         "completion_tokens": 7,
-        "latency_ms": 984.312458
+        "latency_ms": 861.199142
     },
     {
         "id": 99,
         "signature": "floorMod(int a,int b)",
         "ground_truth": "b==0",
-        "prediction": "b == 0",
-        "match": false,
+        "prediction": "b==0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 569,
-        "completion_tokens": 5,
-        "latency_ms": 877.398313
+        "prompt_tokens": 729,
+        "completion_tokens": 4,
+        "latency_ms": 795.147934
     },
     {
         "id": 100,
         "signature": "pow(java.math.BigInteger k,int e)",
         "ground_truth": "e<0",
-        "prediction": "e < 0",
-        "match": false,
+        "prediction": "e<0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 569,
-        "completion_tokens": 5,
-        "latency_ms": 871.561013
+        "prompt_tokens": 786,
+        "completion_tokens": 4,
+        "latency_ms": 513.252149
     },
     {
         "id": 101,
         "signature": "LRUMap(int maxSize)",
         "ground_truth": "maxSize<1",
-        "prediction": "maxSize < 1",
-        "match": false,
+        "prediction": "maxSize<1",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 568,
-        "completion_tokens": 6,
-        "latency_ms": 815.708988
+        "prompt_tokens": 1011,
+        "completion_tokens": 5,
+        "latency_ms": 999.885173
     },
     {
         "id": 102,
         "signature": "verify(boolean expression,java.lang.String errorMessageTemplate,java.lang.Object[] errorMessageArgs)",
         "ground_truth": "expression==false",
-        "prediction": "expression == false",
-        "match": false,
+        "prediction": "expression==false",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 576,
+        "prompt_tokens": 794,
         "completion_tokens": 4,
-        "latency_ms": 776.738086
+        "latency_ms": 1238.192058
     },
     {
         "id": 103,
@@ -1128,20 +1128,20 @@
         "prediction": "bag==null || transformer==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 583,
+        "prompt_tokens": 1025,
         "completion_tokens": 8,
-        "latency_ms": 1020.200929
+        "latency_ms": 744.687732
     },
     {
         "id": 104,
         "signature": "walkInDefaultOrder(org.apache.commons.math3.linear.RealVectorChangingVisitor visitor,int start,int end)",
         "ground_truth": "end<start",
-        "prediction": "end < start",
-        "match": false,
+        "prediction": "end<start",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 582,
+        "prompt_tokens": 910,
         "completion_tokens": 4,
-        "latency_ms": 868.170875
+        "latency_ms": 1172.804014
     },
     {
         "id": 105,
@@ -1150,64 +1150,64 @@
         "prediction": "bag==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 570,
+        "prompt_tokens": 717,
         "completion_tokens": 4,
-        "latency_ms": 827.461694
+        "latency_ms": 1114.772351
     },
     {
         "id": 106,
         "signature": "allPredicate(org.apache.commons.collections4.Predicate[] predicates)",
         "ground_truth": "java.util.Arrays.stream(predicates).anyMatch(e->e==null)",
-        "prediction": "any(predicates[i] == null for i in 0..predicates.length-1)",
+        "prediction": "java.util.Arrays.stream(predicates).anyMatch(e -> e==null)",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 573,
-        "completion_tokens": 20,
-        "latency_ms": 1634.257057
+        "prompt_tokens": 1015,
+        "completion_tokens": 16,
+        "latency_ms": 1194.580061
     },
     {
         "id": 107,
         "signature": "checkedCast(long value)",
         "ground_truth": "value>Short.MAX_VALUE || value<Short.MIN_VALUE",
-        "prediction": "(value > Short.MAX_VALUE) || (value < Short.MIN_VALUE)",
+        "prediction": "value > Short.MAX_VALUE || value < Short.MIN_VALUE",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 573,
-        "completion_tokens": 15,
-        "latency_ms": 1458.921647
+        "prompt_tokens": 1232,
+        "completion_tokens": 12,
+        "latency_ms": 2192.982813
     },
     {
         "id": 108,
         "signature": "pow(int k,long e)",
         "ground_truth": "e<0",
-        "prediction": "e < 0",
-        "match": false,
+        "prediction": "e<0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 567,
-        "completion_tokens": 5,
-        "latency_ms": 861.002774
+        "prompt_tokens": 786,
+        "completion_tokens": 4,
+        "latency_ms": 1101.367009
     },
     {
         "id": 109,
         "signature": "asRegex(java.lang.String s,int groups)",
         "ground_truth": "(plume.RegexUtil.isRegex(s, groups)) == false",
-        "prediction": "s.matches(\".*\") == false && groups < 0",
+        "prediction": "(plume.RegexUtil.isRegex(s)) == false",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 569,
-        "completion_tokens": 13,
-        "latency_ms": 1308.976862
+        "prompt_tokens": 796,
+        "completion_tokens": 12,
+        "latency_ms": 1369.499658
     },
     {
         "id": 110,
         "signature": "WeakHasherMap(int initialCapacity,float loadFactor)",
         "ground_truth": "initialCapacity<0 || loadFactor<=0",
-        "prediction": "initialCapacity < 0 || loadFactor <= 0",
-        "match": false,
+        "prediction": "initialCapacity<0 || loadFactor<=0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 582,
-        "completion_tokens": 12,
-        "latency_ms": 1262.172972
+        "prompt_tokens": 1213,
+        "completion_tokens": 10,
+        "latency_ms": 2059.160208
     },
     {
         "id": 111,
@@ -1216,9 +1216,9 @@
         "prediction": "vertex==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 565,
+        "prompt_tokens": 785,
         "completion_tokens": 4,
-        "latency_ms": 763.675813
+        "latency_ms": 1125.531597
     },
     {
         "id": 112,
@@ -1227,20 +1227,20 @@
         "prediction": "n <= 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 564,
+        "prompt_tokens": 906,
         "completion_tokens": 5,
-        "latency_ms": 856.340085
+        "latency_ms": 1210.219061
     },
     {
         "id": 113,
         "signature": "setStance(net.sf.freecol.common.model.Player player,net.sf.freecol.common.model.Stance newStance)",
         "ground_truth": "player==null || player==receiverObjectID",
-        "prediction": "player==null || player==this",
+        "prediction": "player==null || this==null",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 586,
+        "prompt_tokens": 958,
         "completion_tokens": 8,
-        "latency_ms": 1060.559225
+        "latency_ms": 768.447832
     },
     {
         "id": 114,
@@ -1249,9 +1249,9 @@
         "prediction": "k>n",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
+        "prompt_tokens": 903,
         "completion_tokens": 3,
-        "latency_ms": 823.726985
+        "latency_ms": 473.759838
     },
     {
         "id": 115,
@@ -1260,9 +1260,9 @@
         "prediction": "count < 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 567,
+        "prompt_tokens": 718,
         "completion_tokens": 5,
-        "latency_ms": 920.877823
+        "latency_ms": 557.01074
     },
     {
         "id": 116,
@@ -1271,9 +1271,9 @@
         "prediction": "shape<=0 || scale<=0",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 577,
+        "prompt_tokens": 1077,
         "completion_tokens": 8,
-        "latency_ms": 1059.922424
+        "latency_ms": 1764.808689
     },
     {
         "id": 117,
@@ -1282,9 +1282,9 @@
         "prediction": "loadFactor<0",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 578,
+        "prompt_tokens": 1020,
         "completion_tokens": 5,
-        "latency_ms": 883.666202
+        "latency_ms": 612.314183
     },
     {
         "id": 118,
@@ -1293,9 +1293,9 @@
         "prediction": "a==null || m==null || b==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 594,
+        "prompt_tokens": 966,
         "completion_tokens": 12,
-        "latency_ms": 1229.809081
+        "latency_ms": 950.098727
     },
     {
         "id": 119,
@@ -1304,9 +1304,9 @@
         "prediction": "bag==null || predicate==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 581,
+        "prompt_tokens": 1023,
         "completion_tokens": 8,
-        "latency_ms": 1028.347848
+        "latency_ms": 737.12422
     },
     {
         "id": 120,
@@ -1315,9 +1315,9 @@
         "prediction": "function==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 582,
+        "prompt_tokens": 802,
         "completion_tokens": 4,
-        "latency_ms": 827.632066
+        "latency_ms": 547.541447
     },
     {
         "id": 121,
@@ -1326,20 +1326,20 @@
         "prediction": "x.length != y.length",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 570,
+        "prompt_tokens": 1012,
         "completion_tokens": 6,
-        "latency_ms": 919.059372
+        "latency_ms": 624.193642
     },
     {
         "id": 122,
         "signature": "nextT(double df)",
         "ground_truth": "df<=0",
-        "prediction": "df<=0",
-        "match": true,
+        "prediction": "df <= 0",
+        "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 568,
-        "completion_tokens": 4,
-        "latency_ms": 813.011375
+        "prompt_tokens": 939,
+        "completion_tokens": 5,
+        "latency_ms": 1322.948724
     },
     {
         "id": 123,
@@ -1348,9 +1348,9 @@
         "prediction": "bytes.length < 2",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 568,
+        "prompt_tokens": 938,
         "completion_tokens": 6,
-        "latency_ms": 913.740384
+        "latency_ms": 1528.612929
     },
     {
         "id": 124,
@@ -1359,9 +1359,9 @@
         "prediction": "comparisonMade",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 567,
+        "prompt_tokens": 939,
         "completion_tokens": 3,
-        "latency_ms": 690.497509
+        "latency_ms": 1176.682352
     },
     {
         "id": 125,
@@ -1370,9 +1370,9 @@
         "prediction": "fraction==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 572,
+        "prompt_tokens": 792,
         "completion_tokens": 4,
-        "latency_ms": 812.420167
+        "latency_ms": 501.909212
     },
     {
         "id": 126,
@@ -1381,9 +1381,9 @@
         "prediction": "x==null || y==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 570,
+        "prompt_tokens": 942,
         "completion_tokens": 8,
-        "latency_ms": 1018.75349
+        "latency_ms": 741.786207
     },
     {
         "id": 127,
@@ -1392,42 +1392,42 @@
         "prediction": "den == 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 568,
+        "prompt_tokens": 900,
         "completion_tokens": 5,
-        "latency_ms": 875.092811
+        "latency_ms": 556.540837
     },
     {
         "id": 128,
         "signature": "binomialCoefficientDouble(int n,int k)",
         "ground_truth": "n<0",
-        "prediction": "n < 0",
-        "match": false,
+        "prediction": "n<0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 570,
-        "completion_tokens": 5,
-        "latency_ms": 918.687274
+        "prompt_tokens": 790,
+        "completion_tokens": 4,
+        "latency_ms": 500.58388
     },
     {
         "id": 129,
         "signature": "Logistic(double k,double m,double b,double q,double a,double n)",
         "ground_truth": "n<=0",
-        "prediction": "n<=0",
-        "match": true,
+        "prediction": "n <= 0",
+        "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 577,
-        "completion_tokens": 4,
-        "latency_ms": 853.58652
+        "prompt_tokens": 1011,
+        "completion_tokens": 5,
+        "latency_ms": 1226.512335
     },
     {
         "id": 130,
         "signature": "element_range(long[] a)",
         "ground_truth": "a.length==0",
-        "prediction": "a.length == 0",
-        "match": false,
+        "prediction": "a.length==0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 569,
-        "completion_tokens": 6,
-        "latency_ms": 972.253708
+        "prompt_tokens": 890,
+        "completion_tokens": 5,
+        "latency_ms": 565.693411
     },
     {
         "id": 131,
@@ -1436,9 +1436,9 @@
         "prediction": "inputCollection==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 577,
+        "prompt_tokens": 909,
         "completion_tokens": 5,
-        "latency_ms": 801.28488
+        "latency_ms": 566.188741
     },
     {
         "id": 132,
@@ -1447,9 +1447,9 @@
         "prediction": "loadFactor<0",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 577,
+        "prompt_tokens": 1011,
         "completion_tokens": 5,
-        "latency_ms": 802.834913
+        "latency_ms": 1159.811982
     },
     {
         "id": 133,
@@ -1458,9 +1458,9 @@
         "prediction": "predicates==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 567,
+        "prompt_tokens": 939,
         "completion_tokens": 5,
-        "latency_ms": 872.398833
+        "latency_ms": 566.615759
     },
     {
         "id": 134,
@@ -1469,31 +1469,31 @@
         "prediction": "methodName==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 568,
+        "prompt_tokens": 900,
         "completion_tokens": 4,
-        "latency_ms": 752.00168
+        "latency_ms": 529.263925
     },
     {
         "id": 135,
         "signature": "org.apache.commons.math3.random.HaltonSequenceGenerator(int dimension, int[] bases, int[] weights)",
         "ground_truth": "weights!=null && bases.length!=weights.length",
-        "prediction": "bases == null || weights == null || bases.length != weights.length",
+        "prediction": "weights != null && bases.length != weights.length",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 590,
-        "completion_tokens": 14,
-        "latency_ms": 1364.064485
+        "prompt_tokens": 1168,
+        "completion_tokens": 10,
+        "latency_ms": 2016.796419
     },
     {
         "id": 136,
         "signature": "factorialDouble(int n)",
         "ground_truth": "n<0",
-        "prediction": "n < 0",
-        "match": false,
+        "prediction": "n<0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 566,
-        "completion_tokens": 5,
-        "latency_ms": 811.241877
+        "prompt_tokens": 786,
+        "completion_tokens": 4,
+        "latency_ms": 502.659101
     },
     {
         "id": 137,
@@ -1502,9 +1502,9 @@
         "prediction": "transformer==null || predicate==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 581,
+        "prompt_tokens": 1023,
         "completion_tokens": 9,
-        "latency_ms": 1067.331213
+        "latency_ms": 768.506747
     },
     {
         "id": 138,
@@ -1513,20 +1513,20 @@
         "prediction": "pivotingStrategy==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 585,
+        "prompt_tokens": 1027,
         "completion_tokens": 7,
-        "latency_ms": 970.151755
+        "latency_ms": 634.076253
     },
     {
         "id": 139,
         "signature": "ArrayStack(int initialSize)",
         "ground_truth": "initialSize<0",
-        "prediction": "initialSize < 0",
-        "match": false,
+        "prediction": "initialSize<0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 567,
-        "completion_tokens": 6,
-        "latency_ms": 950.922475
+        "prompt_tokens": 939,
+        "completion_tokens": 5,
+        "latency_ms": 556.632934
     },
     {
         "id": 140,
@@ -1535,20 +1535,20 @@
         "prediction": "original==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 580,
+        "prompt_tokens": 740,
         "completion_tokens": 4,
-        "latency_ms": 813.895717
+        "latency_ms": 917.795919
     },
     {
         "id": 141,
         "signature": "org.apache.commons.math3.optimization.SimpleValueChecker(double relativeThreshold, double absoluteThreshold, int maxIter)",
         "ground_truth": "maxIter<=0",
-        "prediction": "maxIter <= 0",
-        "match": false,
+        "prediction": "maxIter<=0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 585,
-        "completion_tokens": 6,
-        "latency_ms": 852.539155
+        "prompt_tokens": 1027,
+        "completion_tokens": 5,
+        "latency_ms": 577.174709
     },
     {
         "id": 142,
@@ -1557,31 +1557,31 @@
         "prediction": "true",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 559,
+        "prompt_tokens": 809,
         "completion_tokens": 2,
-        "latency_ms": 722.800379
+        "latency_ms": 903.621594
     },
     {
         "id": 143,
         "signature": "WeakIdentityHashMap(int initialCapacity,float loadFactor)",
         "ground_truth": "initialCapacity<0 || loadFactor<=0",
-        "prediction": "initialCapacity < 0 || loadFactor <= 0",
-        "match": false,
+        "prediction": "initialCapacity<0 || loadFactor<=0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 579,
-        "completion_tokens": 12,
-        "latency_ms": 1254.294597
+        "prompt_tokens": 1175,
+        "completion_tokens": 10,
+        "latency_ms": 1188.315369
     },
     {
         "id": 144,
         "signature": "onePredicate(java.util.Collection predicates)",
         "ground_truth": "predicates.contains(null)",
-        "prediction": "any(predicate == null for predicate in predicates)",
+        "prediction": "java.util.Arrays.stream(predicates).anyMatch(e -> e==null)",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 569,
-        "completion_tokens": 10,
-        "latency_ms": 1112.906289
+        "prompt_tokens": 1011,
+        "completion_tokens": 16,
+        "latency_ms": 1182.026324
     },
     {
         "id": 145,
@@ -1590,9 +1590,9 @@
         "prediction": "shape<=0 || scale<=0",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 575,
+        "prompt_tokens": 1077,
         "completion_tokens": 8,
-        "latency_ms": 1019.068856
+        "latency_ms": 1515.354329
     },
     {
         "id": 146,
@@ -1601,31 +1601,31 @@
         "prediction": "n < 2",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 565,
+        "prompt_tokens": 937,
         "completion_tokens": 5,
-        "latency_ms": 921.045214
+        "latency_ms": 562.958293
     },
     {
         "id": 147,
         "signature": "collate(java.lang.Iterable a,java.lang.Iterable b,java.util.Comparator c,boolean includeDuplicates)",
         "ground_truth": "a==null || b==null || c==null",
-        "prediction": "a==null || b==null || c==null",
-        "match": true,
+        "prediction": "a == null || c == null",
+        "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 585,
-        "completion_tokens": 12,
-        "latency_ms": 1278.835304
+        "prompt_tokens": 820,
+        "completion_tokens": 8,
+        "latency_ms": 766.133505
     },
     {
         "id": 148,
         "signature": "floorDiv(long a,long b)",
         "ground_truth": "b==0",
-        "prediction": "b == 0",
-        "match": false,
+        "prediction": "b==0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 569,
-        "completion_tokens": 5,
-        "latency_ms": 789.437677
+        "prompt_tokens": 725,
+        "completion_tokens": 4,
+        "latency_ms": 1154.233362
     },
     {
         "id": 149,
@@ -1634,20 +1634,20 @@
         "prediction": "norm == 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 563,
+        "prompt_tokens": 782,
         "completion_tokens": 5,
-        "latency_ms": 909.773735
+        "latency_ms": 1139.696672
     },
     {
         "id": 150,
         "signature": "toArray(java.util.Collection collection)",
         "ground_truth": "collection==null || collection.contains(null)",
-        "prediction": "collection==null || (collection != null && collection.contains(null))",
-        "match": false,
+        "prediction": "collection==null || collection.contains(null)",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 569,
-        "completion_tokens": 14,
-        "latency_ms": 1365.423294
+        "prompt_tokens": 887,
+        "completion_tokens": 9,
+        "latency_ms": 1599.268762
     },
     {
         "id": 151,
@@ -1656,9 +1656,9 @@
         "prediction": "x.length != y.length",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
+        "prompt_tokens": 883,
         "completion_tokens": 6,
-        "latency_ms": 984.725541
+        "latency_ms": 997.273181
     },
     {
         "id": 152,
@@ -1667,20 +1667,20 @@
         "prediction": "predicate==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 568,
+        "prompt_tokens": 733,
         "completion_tokens": 4,
-        "latency_ms": 833.961725
+        "latency_ms": 489.932907
     },
     {
         "id": 153,
         "signature": "pow(long k,int e)",
         "ground_truth": "e<0",
-        "prediction": "e < 0",
-        "match": false,
+        "prediction": "e<0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 567,
-        "completion_tokens": 5,
-        "latency_ms": 870.408146
+        "prompt_tokens": 787,
+        "completion_tokens": 4,
+        "latency_ms": 1078.154134
     },
     {
         "id": 154,
@@ -1689,20 +1689,20 @@
         "prediction": "n < 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 585,
+        "prompt_tokens": 1181,
         "completion_tokens": 5,
-        "latency_ms": 874.993523
+        "latency_ms": 1029.678064
     },
     {
         "id": 155,
         "signature": "toArray(java.util.Collection collection)",
         "ground_truth": "collection==null || collection.contains(null)",
-        "prediction": "collection==null || (collection != null && containsNull(collection))",
-        "match": false,
+        "prediction": "collection==null || collection.contains(null)",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 569,
-        "completion_tokens": 14,
-        "latency_ms": 1315.104
+        "prompt_tokens": 887,
+        "completion_tokens": 9,
+        "latency_ms": 754.232567
     },
     {
         "id": 156,
@@ -1711,9 +1711,9 @@
         "prediction": "graph==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
+        "prompt_tokens": 910,
         "completion_tokens": 4,
-        "latency_ms": 813.087806
+        "latency_ms": 1340.26573
     },
     {
         "id": 157,
@@ -1722,9 +1722,9 @@
         "prediction": "predicates==null || closures==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 581,
+        "prompt_tokens": 906,
         "completion_tokens": 9,
-        "latency_ms": 1108.228057
+        "latency_ms": 882.762759
     },
     {
         "id": 158,
@@ -1733,9 +1733,9 @@
         "prediction": "function==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 580,
+        "prompt_tokens": 786,
         "completion_tokens": 4,
-        "latency_ms": 858.717663
+        "latency_ms": 762.752506
     },
     {
         "id": 159,
@@ -1744,9 +1744,9 @@
         "prediction": "eps < 0.0 || minPts < 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 587,
+        "prompt_tokens": 1179,
         "completion_tokens": 13,
-        "latency_ms": 1310.961935
+        "latency_ms": 2172.897164
     },
     {
         "id": 160,
@@ -1755,9 +1755,9 @@
         "prediction": "vertices==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 568,
+        "prompt_tokens": 1010,
         "completion_tokens": 4,
-        "latency_ms": 830.566903
+        "latency_ms": 582.185677
     },
     {
         "id": 161,
@@ -1766,9 +1766,9 @@
         "prediction": "occurrences < 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 567,
+        "prompt_tokens": 717,
         "completion_tokens": 6,
-        "latency_ms": 862.292786
+        "latency_ms": 1047.618464
     },
     {
         "id": 162,
@@ -1777,20 +1777,20 @@
         "prediction": "predicate==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
+        "prompt_tokens": 903,
         "completion_tokens": 4,
-        "latency_ms": 779.521079
+        "latency_ms": 498.638462
     },
     {
         "id": 163,
         "signature": "nextInt(int n)",
         "ground_truth": "(n>0) == false",
-        "prediction": "n <= 0",
+        "prediction": "n<=0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 564,
-        "completion_tokens": 5,
-        "latency_ms": 916.150971
+        "prompt_tokens": 896,
+        "completion_tokens": 4,
+        "latency_ms": 424.193902
     },
     {
         "id": 164,
@@ -1799,9 +1799,9 @@
         "prediction": "function==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 579,
+        "prompt_tokens": 799,
         "completion_tokens": 4,
-        "latency_ms": 870.458879
+        "latency_ms": 502.229909
     },
     {
         "id": 165,
@@ -1810,9 +1810,9 @@
         "prediction": "p1.equals(p2)",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 595,
+        "prompt_tokens": 967,
         "completion_tokens": 7,
-        "latency_ms": 944.875203
+        "latency_ms": 734.719336
     },
     {
         "id": 166,
@@ -1821,20 +1821,20 @@
         "prediction": "other==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 565,
+        "prompt_tokens": 729,
         "completion_tokens": 4,
-        "latency_ms": 820.681093
+        "latency_ms": 1175.985418
     },
     {
         "id": 167,
         "signature": "walkInOptimizedOrder(org.apache.commons.math3.linear.RealVectorPreservingVisitor visitor,int start,int end)",
         "ground_truth": "end<start",
-        "prediction": "end < start",
-        "match": false,
+        "prediction": "end<start",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 584,
+        "prompt_tokens": 910,
         "completion_tokens": 4,
-        "latency_ms": 848.886063
+        "latency_ms": 725.573345
     },
     {
         "id": 168,
@@ -1843,9 +1843,9 @@
         "prediction": "x.length != y.length",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 573,
+        "prompt_tokens": 1009,
         "completion_tokens": 6,
-        "latency_ms": 840.064007
+        "latency_ms": 1589.800576
     },
     {
         "id": 169,
@@ -1854,9 +1854,9 @@
         "prediction": "occurrences < 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 566,
+        "prompt_tokens": 726,
         "completion_tokens": 6,
-        "latency_ms": 913.181465
+        "latency_ms": 1268.583156
     },
     {
         "id": 170,
@@ -1865,9 +1865,9 @@
         "prediction": "n<=0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 572,
+        "prompt_tokens": 839,
         "completion_tokens": 4,
-        "latency_ms": 825.033162
+        "latency_ms": 1241.069896
     },
     {
         "id": 171,
@@ -1876,20 +1876,20 @@
         "prediction": "bag==null || lock==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 577,
+        "prompt_tokens": 906,
         "completion_tokens": 8,
-        "latency_ms": 1095.805058
+        "latency_ms": 1540.966818
     },
     {
         "id": 172,
         "signature": "min_max(long[] a)",
         "ground_truth": "a.length==0",
-        "prediction": "a.length == 0",
-        "match": false,
+        "prediction": "a.length==0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 569,
-        "completion_tokens": 6,
-        "latency_ms": 866.754558
+        "prompt_tokens": 890,
+        "completion_tokens": 5,
+        "latency_ms": 1163.570265
     },
     {
         "id": 173,
@@ -1898,9 +1898,9 @@
         "prediction": "size < 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
+        "prompt_tokens": 903,
         "completion_tokens": 5,
-        "latency_ms": 868.184204
+        "latency_ms": 714.807613
     },
     {
         "id": 174,
@@ -1909,9 +1909,9 @@
         "prediction": "denominator == 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
+        "prompt_tokens": 903,
         "completion_tokens": 6,
-        "latency_ms": 943.611543
+        "latency_ms": 528.837326
     },
     {
         "id": 175,
@@ -1920,31 +1920,31 @@
         "prediction": "collection==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 564,
+        "prompt_tokens": 715,
         "completion_tokens": 4,
-        "latency_ms": 819.032286
+        "latency_ms": 918.263062
     },
     {
         "id": 176,
         "signature": "floorDiv(int a,int b)",
         "ground_truth": "b==0",
-        "prediction": "b == 0",
-        "match": false,
+        "prediction": "b==0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 569,
-        "completion_tokens": 5,
-        "latency_ms": 897.374804
+        "prompt_tokens": 725,
+        "completion_tokens": 4,
+        "latency_ms": 1145.186839
     },
     {
         "id": 177,
         "signature": "SimpsonIntegrator(int minimalIterationCount,int maximalIterationCount)",
         "ground_truth": "maximalIterationCount<=minimalIterationCount",
-        "prediction": "maximalIterationCount <= minimalIterationCount",
-        "match": false,
+        "prediction": "maximalIterationCount<=minimalIterationCount",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 586,
+        "prompt_tokens": 1222,
         "completion_tokens": 9,
-        "latency_ms": 1093.309083
+        "latency_ms": 1980.497586
     },
     {
         "id": 178,
@@ -1953,9 +1953,9 @@
         "prediction": "predicate1==null || predicate2==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 579,
+        "prompt_tokens": 799,
         "completion_tokens": 10,
-        "latency_ms": 1135.608958
+        "latency_ms": 840.095209
     },
     {
         "id": 179,
@@ -1964,9 +1964,9 @@
         "prediction": "p <= 0 || p > 100",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 590,
+        "prompt_tokens": 1161,
         "completion_tokens": 12,
-        "latency_ms": 1238.074771
+        "latency_ms": 1696.284577
     },
     {
         "id": 180,
@@ -1975,20 +1975,20 @@
         "prediction": "maxSize <= 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 580,
+        "prompt_tokens": 1022,
         "completion_tokens": 6,
-        "latency_ms": 925.401136
+        "latency_ms": 677.45266
     },
     {
         "id": 181,
         "signature": "peek(int n)",
         "ground_truth": "receiverObjectID.size()<n",
-        "prediction": "stackSize < n",
+        "prediction": "n <= 0 || n > stackSize",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 573,
-        "completion_tokens": 5,
-        "latency_ms": 863.080527
+        "prompt_tokens": 1078,
+        "completion_tokens": 10,
+        "latency_ms": 1090.583912
     },
     {
         "id": 182,
@@ -1997,9 +1997,9 @@
         "prediction": "type==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 566,
+        "prompt_tokens": 786,
         "completion_tokens": 4,
-        "latency_ms": 815.643291
+        "latency_ms": 546.064818
     },
     {
         "id": 183,
@@ -2008,20 +2008,20 @@
         "prediction": "predicates==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
+        "prompt_tokens": 943,
         "completion_tokens": 5,
-        "latency_ms": 906.367341
+        "latency_ms": 626.786492
     },
     {
         "id": 184,
         "signature": "anyPredicate(org.apache.commons.collections4.Predicate[] predicates)",
         "ground_truth": "java.util.Arrays.stream(predicates).anyMatch(e->e==null)",
-        "prediction": "any predicate in the array is null",
+        "prediction": "java.util.Arrays.stream(predicates).anyMatch(e -> e==null)",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 573,
-        "completion_tokens": 8,
-        "latency_ms": 1020.913616
+        "prompt_tokens": 1015,
+        "completion_tokens": 16,
+        "latency_ms": 1210.766916
     },
     {
         "id": 185,
@@ -2030,9 +2030,9 @@
         "prediction": "predicatesAndClosures.isEmpty()",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 569,
+        "prompt_tokens": 789,
         "completion_tokens": 8,
-        "latency_ms": 1004.602253
+        "latency_ms": 719.414281
     },
     {
         "id": 186,
@@ -2041,9 +2041,9 @@
         "prediction": "equator==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 583,
+        "prompt_tokens": 915,
         "completion_tokens": 5,
-        "latency_ms": 933.263484
+        "latency_ms": 554.119378
     },
     {
         "id": 187,
@@ -2052,9 +2052,9 @@
         "prediction": "values == null || begin < 0 || length <= 0 || begin + length > values.length",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 578,
+        "prompt_tokens": 1238,
         "completion_tokens": 21,
-        "latency_ms": 1682.806772
+        "latency_ms": 2285.372712
     },
     {
         "id": 188,
@@ -2063,9 +2063,9 @@
         "prediction": "p1.equals(p2)",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 593,
+        "prompt_tokens": 965,
         "completion_tokens": 7,
-        "latency_ms": 896.813153
+        "latency_ms": 708.867921
     },
     {
         "id": 189,
@@ -2074,31 +2074,31 @@
         "prediction": "index < 0 || index >= map.size()",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 568,
+        "prompt_tokens": 940,
         "completion_tokens": 11,
-        "latency_ms": 1238.13253
+        "latency_ms": 797.814785
     },
     {
         "id": 190,
         "signature": "min(java.lang.Integer[] a)",
         "ground_truth": "a.length==0",
-        "prediction": "a.length == 0",
-        "match": false,
+        "prediction": "a.length==0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 570,
-        "completion_tokens": 6,
-        "latency_ms": 955.880952
+        "prompt_tokens": 876,
+        "completion_tokens": 5,
+        "latency_ms": 1388.044352
     },
     {
         "id": 191,
         "signature": "FieldRotation(org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D u,org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D v)",
         "ground_truth": "u.getNorm().getReal()==0 || v.getNorm().getReal()==0",
-        "prediction": "(u.getNorm() <= 0) || (v.getNorm() <= 0)",
+        "prediction": "u.getNorm().sign() == 0 || v.getNorm().sign() == 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 601,
-        "completion_tokens": 19,
-        "latency_ms": 1623.577836
+        "prompt_tokens": 1062,
+        "completion_tokens": 20,
+        "latency_ms": 1897.310696
     },
     {
         "id": 192,
@@ -2107,9 +2107,9 @@
         "prediction": "subtrahend==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 577,
+        "prompt_tokens": 949,
         "completion_tokens": 7,
-        "latency_ms": 974.616038
+        "latency_ms": 709.08205
     },
     {
         "id": 193,
@@ -2118,42 +2118,42 @@
         "prediction": "predicates==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
+        "prompt_tokens": 943,
         "completion_tokens": 5,
-        "latency_ms": 861.922482
+        "latency_ms": 486.211051
     },
     {
         "id": 194,
         "signature": "getL1Distance(org.apache.commons.math3.linear.RealVector v)",
         "ground_truth": "v.getDimension() != receiverObjectID.getDimension()",
-        "prediction": "v.getDimension() != getDimension()",
-        "match": false,
+        "prediction": "v.getDimension() != receiverObjectID.getDimension()",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 580,
-        "completion_tokens": 9,
-        "latency_ms": 996.548693
+        "prompt_tokens": 1074,
+        "completion_tokens": 12,
+        "latency_ms": 1722.783566
     },
     {
         "id": 195,
         "signature": "bracket(org.apache.commons.math3.analysis.UnivariateFunction function,double initial,double lowerBound,double upperBound,int maximumIterations)",
         "ground_truth": "maximumIterations<=0",
-        "prediction": "maximumIterations<=0",
-        "match": true,
+        "prediction": "maximumIterations <= 0",
+        "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 587,
-        "completion_tokens": 5,
-        "latency_ms": 857.417897
+        "prompt_tokens": 1104,
+        "completion_tokens": 6,
+        "latency_ms": 1745.066391
     },
     {
         "id": 196,
         "signature": "LRUMap(int maxSize,float loadFactor)",
         "ground_truth": "maxSize<1",
-        "prediction": "maxSize < 1",
-        "match": false,
+        "prediction": "maxSize<1",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
-        "completion_tokens": 6,
-        "latency_ms": 905.706166
+        "prompt_tokens": 1011,
+        "completion_tokens": 5,
+        "latency_ms": 589.368861
     },
     {
         "id": 197,
@@ -2162,9 +2162,9 @@
         "prediction": "s==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 567,
+        "prompt_tokens": 717,
         "completion_tokens": 4,
-        "latency_ms": 669.145241
+        "latency_ms": 919.684199
     },
     {
         "id": 198,
@@ -2173,9 +2173,9 @@
         "prediction": "map==null || factory==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 585,
+        "prompt_tokens": 906,
         "completion_tokens": 8,
-        "latency_ms": 1017.39359
+        "latency_ms": 1347.961044
     },
     {
         "id": 199,
@@ -2184,9 +2184,9 @@
         "prediction": "norm == 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 565,
+        "prompt_tokens": 906,
         "completion_tokens": 5,
-        "latency_ms": 869.718965
+        "latency_ms": 1175.553803
     },
     {
         "id": 200,
@@ -2195,9 +2195,9 @@
         "prediction": "source==null || dest==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 586,
+        "prompt_tokens": 958,
         "completion_tokens": 8,
-        "latency_ms": 1087.349043
+        "latency_ms": 741.497528
     },
     {
         "id": 201,
@@ -2206,31 +2206,31 @@
         "prediction": "predicate1==null || predicate2==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 579,
+        "prompt_tokens": 799,
         "completion_tokens": 10,
-        "latency_ms": 1168.527736
+        "latency_ms": 841.093062
     },
     {
         "id": 202,
         "signature": "walkInOptimizedOrder(org.apache.commons.math3.linear.RealVectorChangingVisitor visitor,int start,int end)",
         "ground_truth": "end<start",
-        "prediction": "end < start",
-        "match": false,
+        "prediction": "end<start",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 583,
+        "prompt_tokens": 910,
         "completion_tokens": 4,
-        "latency_ms": 850.359663
+        "latency_ms": 1138.996795
     },
     {
         "id": 203,
         "signature": "divide(org.apache.commons.math3.fraction.Fraction fraction)",
         "ground_truth": "fraction==(org.apache.commons.math3.fraction.Fraction.ZERO)",
-        "prediction": "fraction.equals(Fraction.ZERO)",
+        "prediction": "fraction.getDenominator() == 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 577,
-        "completion_tokens": 7,
-        "latency_ms": 984.904307
+        "prompt_tokens": 1019,
+        "completion_tokens": 9,
+        "latency_ms": 793.623909
     },
     {
         "id": 204,
@@ -2239,9 +2239,9 @@
         "prediction": "x.length != y.length",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 575,
+        "prompt_tokens": 1074,
         "completion_tokens": 6,
-        "latency_ms": 916.338641
+        "latency_ms": 661.812396
     },
     {
         "id": 205,
@@ -2250,9 +2250,9 @@
         "prediction": "e.compareTo(BigInteger.ZERO) < 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 572,
+        "prompt_tokens": 792,
         "completion_tokens": 9,
-        "latency_ms": 1082.902136
+        "latency_ms": 779.649845
     },
     {
         "id": 206,
@@ -2261,20 +2261,20 @@
         "prediction": "bag==null || transformer==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 581,
+        "prompt_tokens": 1023,
         "completion_tokens": 8,
-        "latency_ms": 1016.055266
+        "latency_ms": 734.830676
     },
     {
         "id": 207,
         "signature": "max(double[] array)",
         "ground_truth": "array.length==0",
-        "prediction": "array.length == 0",
-        "match": false,
+        "prediction": "array.length==0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 563,
-        "completion_tokens": 6,
-        "latency_ms": 958.669767
+        "prompt_tokens": 723,
+        "completion_tokens": 5,
+        "latency_ms": 558.219601
     },
     {
         "id": 208,
@@ -2283,9 +2283,9 @@
         "prediction": "collection==null || iterable==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 574,
+        "prompt_tokens": 946,
         "completion_tokens": 8,
-        "latency_ms": 1020.438225
+        "latency_ms": 707.263241
     },
     {
         "id": 209,
@@ -2294,20 +2294,20 @@
         "prediction": "array==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 565,
+        "prompt_tokens": 729,
         "completion_tokens": 4,
-        "latency_ms": 825.411175
+        "latency_ms": 728.379767
     },
     {
         "id": 210,
         "signature": "LRUMap(int maxSize,int initialSize)",
         "ground_truth": "maxSize<1",
-        "prediction": "maxSize < 1",
-        "match": false,
+        "prediction": "maxSize<1",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
-        "completion_tokens": 6,
-        "latency_ms": 911.893431
+        "prompt_tokens": 1013,
+        "completion_tokens": 5,
+        "latency_ms": 562.454856
     },
     {
         "id": 211,
@@ -2316,9 +2316,9 @@
         "prediction": "a==null || m==null || b==null || x0==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 607,
+        "prompt_tokens": 926,
         "completion_tokens": 17,
-        "latency_ms": 1492.263447
+        "latency_ms": 1484.619913
     },
     {
         "id": 212,
@@ -2327,9 +2327,9 @@
         "prediction": "collection==null || elements==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 574,
+        "prompt_tokens": 935,
         "completion_tokens": 8,
-        "latency_ms": 948.687825
+        "latency_ms": 923.688862
     },
     {
         "id": 213,
@@ -2338,20 +2338,20 @@
         "prediction": "xval.length != yval.length",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 575,
+        "prompt_tokens": 1061,
         "completion_tokens": 8,
-        "latency_ms": 1020.707017
+        "latency_ms": 1763.761083
     },
     {
         "id": 214,
         "signature": "ensureCapacity(short[] array,int minLength,int padding)",
         "ground_truth": "minLength<0 || padding<0",
-        "prediction": "minLength < 0 || padding < 0",
-        "match": false,
+        "prediction": "minLength<0 || padding<0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 570,
-        "completion_tokens": 11,
-        "latency_ms": 1166.997114
+        "prompt_tokens": 942,
+        "completion_tokens": 9,
+        "latency_ms": 982.75955
     },
     {
         "id": 215,
@@ -2360,9 +2360,9 @@
         "prediction": "collection==null || remove==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 570,
+        "prompt_tokens": 790,
         "completion_tokens": 8,
-        "latency_ms": 1079.060074
+        "latency_ms": 724.726071
     },
     {
         "id": 216,
@@ -2371,20 +2371,20 @@
         "prediction": "methodName==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 567,
+        "prompt_tokens": 939,
         "completion_tokens": 4,
-        "latency_ms": 835.877312
+        "latency_ms": 504.688447
     },
     {
         "id": 217,
         "signature": "divide(org.apache.commons.math3.fraction.BigFraction fraction)",
         "ground_truth": "fraction==(org.apache.commons.math3.fraction.BigFraction.ZERO)",
-        "prediction": "fraction.isZero()",
+        "prediction": "fraction.getNumerator()==0 || fraction.getDenominator()==0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 577,
-        "completion_tokens": 5,
-        "latency_ms": 904.992043
+        "prompt_tokens": 1019,
+        "completion_tokens": 14,
+        "latency_ms": 1100.576588
     },
     {
         "id": 218,
@@ -2393,9 +2393,9 @@
         "prediction": "bag==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
+        "prompt_tokens": 786,
         "completion_tokens": 4,
-        "latency_ms": 808.710695
+        "latency_ms": 1162.353771
     },
     {
         "id": 219,
@@ -2404,20 +2404,20 @@
         "prediction": "fraction==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 572,
+        "prompt_tokens": 910,
         "completion_tokens": 4,
-        "latency_ms": 822.597811
+        "latency_ms": 711.03768
     },
     {
         "id": 220,
         "signature": "anyPredicate(java.util.Collection predicates)",
         "ground_truth": "predicates.contains(null)",
-        "prediction": "any predicate in predicates is null",
+        "prediction": "java.util.Arrays.stream(predicates).anyMatch(e -> e==null)",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 569,
-        "completion_tokens": 7,
-        "latency_ms": 974.091386
+        "prompt_tokens": 1011,
+        "completion_tokens": 16,
+        "latency_ms": 1184.136682
     },
     {
         "id": 221,
@@ -2426,20 +2426,20 @@
         "prediction": "maxSize <= 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 588,
+        "prompt_tokens": 1030,
         "completion_tokens": 6,
-        "latency_ms": 938.638104
+        "latency_ms": 553.540084
     },
     {
         "id": 222,
         "signature": "add(java.lang.Object element,int occurrences)",
         "ground_truth": "occurrences<0",
-        "prediction": "occurrences < 0 || (occurrences + (collection.size() * element)) > Integer.MAX_VALUE",
+        "prediction": "occurrences < 0 || (occurrences + 1) > Integer.MAX_VALUE",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 577,
-        "completion_tokens": 22,
-        "latency_ms": 1785.663299
+        "prompt_tokens": 1219,
+        "completion_tokens": 18,
+        "latency_ms": 2489.078854
     },
     {
         "id": 223,
@@ -2448,9 +2448,9 @@
         "prediction": "predicate1==null || predicate2==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 579,
+        "prompt_tokens": 799,
         "completion_tokens": 10,
-        "latency_ms": 1078.122537
+        "latency_ms": 1424.558023
     },
     {
         "id": 224,
@@ -2459,9 +2459,9 @@
         "prediction": "minimalIterationCount <= 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 579,
+        "prompt_tokens": 1076,
         "completion_tokens": 7,
-        "latency_ms": 897.205721
+        "latency_ms": 1057.988558
     },
     {
         "id": 225,
@@ -2470,9 +2470,9 @@
         "prediction": "lower >= upper",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 569,
+        "prompt_tokens": 901,
         "completion_tokens": 4,
-        "latency_ms": 672.098603
+        "latency_ms": 599.209527
     },
     {
         "id": 226,
@@ -2481,9 +2481,9 @@
         "prediction": "predicate1==null || predicate2==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 579,
+        "prompt_tokens": 780,
         "completion_tokens": 10,
-        "latency_ms": 1116.79776
+        "latency_ms": 1584.761575
     },
     {
         "id": 227,
@@ -2492,9 +2492,9 @@
         "prediction": "function==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 577,
+        "prompt_tokens": 786,
         "completion_tokens": 4,
-        "latency_ms": 735.808213
+        "latency_ms": 632.678052
     },
     {
         "id": 228,
@@ -2503,9 +2503,9 @@
         "prediction": "v1.getNorm() == 0 || v2.getNorm() == 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 597,
+        "prompt_tokens": 929,
         "completion_tokens": 18,
-        "latency_ms": 1535.892472
+        "latency_ms": 2084.411025
     },
     {
         "id": 229,
@@ -2514,9 +2514,9 @@
         "prediction": "initialCapacity<0",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 570,
+        "prompt_tokens": 1012,
         "completion_tokens": 5,
-        "latency_ms": 891.835281
+        "latency_ms": 556.330608
     },
     {
         "id": 230,
@@ -2525,20 +2525,20 @@
         "prediction": "a==null || c==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 570,
+        "prompt_tokens": 902,
         "completion_tokens": 8,
-        "latency_ms": 1026.642389
+        "latency_ms": 724.838468
     },
     {
         "id": 231,
         "signature": "SimpsonIntegrator(double relativeAccuracy,double absoluteAccuracy,int minimalIterationCount,int maximalIterationCount)",
         "ground_truth": "maximalIterationCount>receiverObjectID.SIMPSON_MAX_ITERATIONS_COUNT",
-        "prediction": "maximalIterationCount>SIMPSON_MAX_ITERATIONS_COUNT",
-        "match": false,
+        "prediction": "maximalIterationCount>receiverObjectID.SIMPSON_MAX_ITERATIONS_COUNT",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 591,
-        "completion_tokens": 12,
-        "latency_ms": 1236.503498
+        "prompt_tokens": 1228,
+        "completion_tokens": 16,
+        "latency_ms": 2400.437786
     },
     {
         "id": 232,
@@ -2547,9 +2547,9 @@
         "prediction": "outputCollection==null && (inputCollection==null) == false && (transformer==null) == false",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 593,
+        "prompt_tokens": 1162,
         "completion_tokens": 23,
-        "latency_ms": 1813.769729
+        "latency_ms": 1910.632206
     },
     {
         "id": 233,
@@ -2558,20 +2558,20 @@
         "prediction": "lower >= upper",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 569,
+        "prompt_tokens": 789,
         "completion_tokens": 4,
-        "latency_ms": 806.572268
+        "latency_ms": 713.768749
     },
     {
         "id": 234,
         "signature": "limit(java.util.Iterator iterator,int limitSize)",
         "ground_truth": "limitSize<0",
-        "prediction": "limitSize < 0",
-        "match": false,
+        "prediction": "limitSize<0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 568,
-        "completion_tokens": 6,
-        "latency_ms": 847.027397
+        "prompt_tokens": 788,
+        "completion_tokens": 5,
+        "latency_ms": 587.277295
     },
     {
         "id": 235,
@@ -2580,31 +2580,31 @@
         "prediction": "coll==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
+        "prompt_tokens": 729,
         "completion_tokens": 4,
-        "latency_ms": 851.033808
+        "latency_ms": 769.238809
     },
     {
         "id": 236,
         "signature": "allPredicate(org.apache.commons.collections4.Predicate[] predicates)",
         "ground_truth": "java.util.Arrays.stream(predicates).anyMatch(e -> e==null)",
-        "prediction": "any(predicates[i]==null for i in 0..predicates.length-1)",
-        "match": false,
+        "prediction": "java.util.Arrays.stream(predicates).anyMatch(e -> e==null)",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 573,
-        "completion_tokens": 19,
-        "latency_ms": 1590.400948
+        "prompt_tokens": 1015,
+        "completion_tokens": 16,
+        "latency_ms": 1214.044515
     },
     {
         "id": 237,
         "signature": "min(short[] array)",
         "ground_truth": "array.length==0",
-        "prediction": "array.length == 0",
-        "match": false,
+        "prediction": "array.length==0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 563,
-        "completion_tokens": 6,
-        "latency_ms": 836.104664
+        "prompt_tokens": 723,
+        "completion_tokens": 5,
+        "latency_ms": 1219.730689
     },
     {
         "id": 238,
@@ -2613,9 +2613,9 @@
         "prediction": "collection==null || iterator==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 573,
+        "prompt_tokens": 945,
         "completion_tokens": 8,
-        "latency_ms": 1043.333397
+        "latency_ms": 699.748365
     },
     {
         "id": 239,
@@ -2624,9 +2624,9 @@
         "prediction": "predicate==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 569,
+        "prompt_tokens": 789,
         "completion_tokens": 4,
-        "latency_ms": 736.263746
+        "latency_ms": 509.189348
     },
     {
         "id": 240,
@@ -2635,9 +2635,9 @@
         "prediction": "map==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 573,
+        "prompt_tokens": 793,
         "completion_tokens": 4,
-        "latency_ms": 835.522313
+        "latency_ms": 446.811757
     },
     {
         "id": 241,
@@ -2646,20 +2646,20 @@
         "prediction": "t==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 568,
+        "prompt_tokens": 940,
         "completion_tokens": 4,
-        "latency_ms": 768.205742
+        "latency_ms": 495.499671
     },
     {
         "id": 242,
         "signature": "max(int[] a)",
         "ground_truth": "a.length==0",
-        "prediction": "a.length == 0",
-        "match": false,
+        "prediction": "a.length==0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 568,
-        "completion_tokens": 6,
-        "latency_ms": 950.27946
+        "prompt_tokens": 890,
+        "completion_tokens": 5,
+        "latency_ms": 1014.263399
     },
     {
         "id": 243,
@@ -2668,9 +2668,9 @@
         "prediction": "loadFactor<0",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 580,
+        "prompt_tokens": 1022,
         "completion_tokens": 5,
-        "latency_ms": 904.802897
+        "latency_ms": 588.882029
     },
     {
         "id": 244,
@@ -2679,9 +2679,9 @@
         "prediction": "bag==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 574,
+        "prompt_tokens": 1016,
         "completion_tokens": 4,
-        "latency_ms": 828.308144
+        "latency_ms": 444.548297
     },
     {
         "id": 245,
@@ -2690,9 +2690,9 @@
         "prediction": "predicates==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
+        "prompt_tokens": 939,
         "completion_tokens": 5,
-        "latency_ms": 906.580069
+        "latency_ms": 1317.910439
     },
     {
         "id": 246,
@@ -2701,9 +2701,9 @@
         "prediction": "populationSize<=0",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 579,
+        "prompt_tokens": 832,
         "completion_tokens": 5,
-        "latency_ms": 872.144464
+        "latency_ms": 1199.623311
     },
     {
         "id": 247,
@@ -2712,9 +2712,9 @@
         "prediction": "n<0",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 570,
+        "prompt_tokens": 786,
         "completion_tokens": 4,
-        "latency_ms": 842.693972
+        "latency_ms": 763.365157
     },
     {
         "id": 248,
@@ -2723,9 +2723,9 @@
         "prediction": "initialCapacity < 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 576,
+        "prompt_tokens": 909,
         "completion_tokens": 6,
-        "latency_ms": 913.228863
+        "latency_ms": 1441.75095
     },
     {
         "id": 249,
@@ -2734,9 +2734,9 @@
         "prediction": "loadFactor<0",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 574,
+        "prompt_tokens": 1016,
         "completion_tokens": 5,
-        "latency_ms": 913.370646
+        "latency_ms": 560.03191
     },
     {
         "id": 250,
@@ -2745,9 +2745,9 @@
         "prediction": "function==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 577,
+        "prompt_tokens": 797,
         "completion_tokens": 4,
-        "latency_ms": 755.460735
+        "latency_ms": 505.182221
     },
     {
         "id": 251,
@@ -2756,9 +2756,9 @@
         "prediction": "expectedOldCount < 0 || newCount < 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 577,
+        "prompt_tokens": 799,
         "completion_tokens": 13,
-        "latency_ms": 1270.969119
+        "latency_ms": 1680.257559
     },
     {
         "id": 252,
@@ -2767,9 +2767,9 @@
         "prediction": "bag==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 573,
+        "prompt_tokens": 1011,
         "completion_tokens": 4,
-        "latency_ms": 827.898603
+        "latency_ms": 923.761222
     },
     {
         "id": 253,
@@ -2778,9 +2778,9 @@
         "prediction": "r <= 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 574,
+        "prompt_tokens": 1084,
         "completion_tokens": 5,
-        "latency_ms": 870.033236
+        "latency_ms": 1593.877018
     },
     {
         "id": 254,
@@ -2789,20 +2789,20 @@
         "prediction": "k>n",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 570,
+        "prompt_tokens": 902,
         "completion_tokens": 3,
-        "latency_ms": 772.722715
+        "latency_ms": 508.723397
     },
     {
         "id": 255,
         "signature": "binomialCoefficient(int n,int k)",
         "ground_truth": "n<0",
-        "prediction": "n < 0",
-        "match": false,
+        "prediction": "n<0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 569,
-        "completion_tokens": 5,
-        "latency_ms": 882.262226
+        "prompt_tokens": 786,
+        "completion_tokens": 4,
+        "latency_ms": 1087.985785
     },
     {
         "id": 256,
@@ -2811,31 +2811,31 @@
         "prediction": "fraction==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 572,
+        "prompt_tokens": 792,
         "completion_tokens": 4,
-        "latency_ms": 737.087944
+        "latency_ms": 1083.247187
     },
     {
         "id": 257,
         "signature": "LinearGraphGenerator(int size)",
         "ground_truth": "size<0",
-        "prediction": "size < 0",
-        "match": false,
+        "prediction": "size<0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 566,
-        "completion_tokens": 5,
-        "latency_ms": 796.083126
+        "prompt_tokens": 939,
+        "completion_tokens": 4,
+        "latency_ms": 1139.440671
     },
     {
         "id": 258,
         "signature": "min_max(int[] a)",
         "ground_truth": "a.length==0",
-        "prediction": "a.length == 0",
-        "match": false,
+        "prediction": "a.length==0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 569,
-        "completion_tokens": 6,
-        "latency_ms": 924.674657
+        "prompt_tokens": 890,
+        "completion_tokens": 5,
+        "latency_ms": 1171.70391
     },
     {
         "id": 259,
@@ -2844,20 +2844,20 @@
         "prediction": "collection==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 567,
+        "prompt_tokens": 786,
         "completion_tokens": 4,
-        "latency_ms": 854.568182
+        "latency_ms": 921.187126
     },
     {
         "id": 260,
         "signature": "max(long[] a)",
         "ground_truth": "a.length==0",
-        "prediction": "a.length == 0",
-        "match": false,
+        "prediction": "a.length==0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 568,
-        "completion_tokens": 6,
-        "latency_ms": 914.750326
+        "prompt_tokens": 876,
+        "completion_tokens": 5,
+        "latency_ms": 1394.378209
     },
     {
         "id": 261,
@@ -2866,20 +2866,20 @@
         "prediction": "start.equals(end)",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 592,
+        "prompt_tokens": 964,
         "completion_tokens": 5,
-        "latency_ms": 865.735797
+        "latency_ms": 1278.789893
     },
     {
         "id": 262,
         "signature": "org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver(double relativeAccuracy, double absoluteAccuracy, double functionValueAccuracy, int maximalOrder)",
         "ground_truth": "maximalOrder<2",
-        "prediction": "maximalOrder < 2",
-        "match": false,
+        "prediction": "maximalOrder<2",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 599,
-        "completion_tokens": 7,
-        "latency_ms": 973.191313
+        "prompt_tokens": 1010,
+        "completion_tokens": 6,
+        "latency_ms": 996.231393
     },
     {
         "id": 263,
@@ -2888,9 +2888,9 @@
         "prediction": "k<=0",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
+        "prompt_tokens": 1013,
         "completion_tokens": 4,
-        "latency_ms": 847.725693
+        "latency_ms": 511.62086
     },
     {
         "id": 264,
@@ -2899,9 +2899,9 @@
         "prediction": "num==null || den==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 574,
+        "prompt_tokens": 935,
         "completion_tokens": 8,
-        "latency_ms": 1016.125179
+        "latency_ms": 1052.722583
     },
     {
         "id": 265,
@@ -2910,9 +2910,9 @@
         "prediction": "bg==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 566,
+        "prompt_tokens": 939,
         "completion_tokens": 4,
-        "latency_ms": 748.196829
+        "latency_ms": 1375.111623
     },
     {
         "id": 266,
@@ -2921,31 +2921,31 @@
         "prediction": "bg==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 566,
+        "prompt_tokens": 910,
         "completion_tokens": 4,
-        "latency_ms": 812.093487
+        "latency_ms": 906.422471
     },
     {
         "id": 267,
         "signature": "walkInDefaultOrder(org.apache.commons.math3.linear.RealVectorPreservingVisitor visitor,int start,int end)",
         "ground_truth": "end<start",
-        "prediction": "end < start",
-        "match": false,
+        "prediction": "end<start",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 583,
+        "prompt_tokens": 915,
         "completion_tokens": 4,
-        "latency_ms": 828.288943
+        "latency_ms": 508.401068
     },
     {
         "id": 268,
         "signature": "floorMod(long a,long b)",
         "ground_truth": "b==0",
-        "prediction": "b == 0",
-        "match": false,
+        "prediction": "b==0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 569,
-        "completion_tokens": 5,
-        "latency_ms": 879.903997
+        "prompt_tokens": 729,
+        "completion_tokens": 4,
+        "latency_ms": 880.828391
     },
     {
         "id": 269,
@@ -2954,31 +2954,31 @@
         "prediction": "k>n",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 570,
+        "prompt_tokens": 902,
         "completion_tokens": 3,
-        "latency_ms": 764.461939
+        "latency_ms": 458.302242
     },
     {
         "id": 270,
         "signature": "IterativeLegendreGaussIntegrator(int n,double relativeAccuracy,double absoluteAccuracy,int minimalIterationCount,int maximalIterationCount)",
         "ground_truth": "maximalIterationCount<=minimalIterationCount",
-        "prediction": "maximalIterationCount <= minimalIterationCount",
-        "match": false,
+        "prediction": "maximalIterationCount<=minimalIterationCount",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 599,
+        "prompt_tokens": 1237,
         "completion_tokens": 9,
-        "latency_ms": 1243.596662
+        "latency_ms": 1534.233929
     },
     {
         "id": 271,
         "signature": "projection(org.apache.commons.math3.linear.RealVector v)",
         "ground_truth": "receiverObjectID.getNorm()==0 || v.getNorm()==0",
-        "prediction": "v.isZero() || this.isZero()",
-        "match": false,
+        "prediction": "receiverObjectID.getNorm()==0 || v.getNorm()==0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 576,
-        "completion_tokens": 10,
-        "latency_ms": 1118.075627
+        "prompt_tokens": 1001,
+        "completion_tokens": 14,
+        "latency_ms": 1789.32236
     },
     {
         "id": 272,
@@ -2987,9 +2987,9 @@
         "prediction": "objectsAndClosures==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 570,
+        "prompt_tokens": 784,
         "completion_tokens": 7,
-        "latency_ms": 903.775243
+        "latency_ms": 1093.245774
     },
     {
         "id": 273,
@@ -2998,9 +2998,9 @@
         "prediction": "bag==null || predicate==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 584,
+        "prompt_tokens": 1073,
         "completion_tokens": 8,
-        "latency_ms": 1071.451399
+        "latency_ms": 1745.714089
     },
     {
         "id": 274,
@@ -3009,9 +3009,9 @@
         "prediction": "predicates==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
+        "prompt_tokens": 943,
         "completion_tokens": 5,
-        "latency_ms": 760.773834
+        "latency_ms": 562.63837
     },
     {
         "id": 275,
@@ -3020,9 +3020,9 @@
         "prediction": "originalData.size() != permutedData.size()",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 589,
+        "prompt_tokens": 1168,
         "completion_tokens": 11,
-        "latency_ms": 1178.387397
+        "latency_ms": 2065.468111
     },
     {
         "id": 276,
@@ -3031,9 +3031,9 @@
         "prediction": "source==null || dest==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 586,
+        "prompt_tokens": 958,
         "completion_tokens": 8,
-        "latency_ms": 881.497347
+        "latency_ms": 743.928259
     },
     {
         "id": 277,
@@ -3042,9 +3042,9 @@
         "prediction": "sourceVertex==null || targetVertex==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 576,
+        "prompt_tokens": 1070,
         "completion_tokens": 10,
-        "latency_ms": 1118.318218
+        "latency_ms": 1197.20924
     },
     {
         "id": 278,
@@ -3053,9 +3053,9 @@
         "prediction": "other==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
+        "prompt_tokens": 717,
         "completion_tokens": 4,
-        "latency_ms": 812.304839
+        "latency_ms": 628.911173
     },
     {
         "id": 279,
@@ -3064,9 +3064,9 @@
         "prediction": "coll==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 566,
+        "prompt_tokens": 786,
         "completion_tokens": 4,
-        "latency_ms": 856.732681
+        "latency_ms": 506.999738
     },
     {
         "id": 280,
@@ -3075,9 +3075,9 @@
         "prediction": "sigma<=0",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
+        "prompt_tokens": 877,
         "completion_tokens": 4,
-        "latency_ms": 819.857835
+        "latency_ms": 807.633909
     },
     {
         "id": 281,
@@ -3086,9 +3086,9 @@
         "prediction": "bg.equals(BigInteger.ZERO)",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
+        "prompt_tokens": 1013,
         "completion_tokens": 6,
-        "latency_ms": 927.945891
+        "latency_ms": 653.92044
     },
     {
         "id": 282,
@@ -3097,9 +3097,9 @@
         "prediction": "addend==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 573,
+        "prompt_tokens": 905,
         "completion_tokens": 5,
-        "latency_ms": 867.39477
+        "latency_ms": 627.859715
     },
     {
         "id": 283,
@@ -3108,9 +3108,9 @@
         "prediction": "numeratorDf<=0 || denominatorDf<=0",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 583,
+        "prompt_tokens": 1232,
         "completion_tokens": 13,
-        "latency_ms": 1201.126221
+        "latency_ms": 1765.613282
     },
     {
         "id": 284,
@@ -3119,9 +3119,9 @@
         "prediction": "collection==null || remove==null || equator==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 585,
+        "prompt_tokens": 930,
         "completion_tokens": 13,
-        "latency_ms": 1285.718913
+        "latency_ms": 1107.513465
     },
     {
         "id": 285,
@@ -3130,20 +3130,20 @@
         "prediction": "manager==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 582,
+        "prompt_tokens": 730,
         "completion_tokens": 4,
-        "latency_ms": 855.639576
+        "latency_ms": 1199.630611
     },
     {
         "id": 286,
         "signature": "allPredicate(java.util.Collection predicates)",
         "ground_truth": "predicates.contains(null)",
-        "prediction": "any(predicate == null for predicate in predicates)",
+        "prediction": "java.util.Arrays.stream(predicates).anyMatch(e -> e==null)",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 569,
-        "completion_tokens": 10,
-        "latency_ms": 1119.317605
+        "prompt_tokens": 1011,
+        "completion_tokens": 16,
+        "latency_ms": 1140.12797
     },
     {
         "id": 287,
@@ -3152,20 +3152,20 @@
         "prediction": "map==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 573,
+        "prompt_tokens": 793,
         "completion_tokens": 4,
-        "latency_ms": 732.544932
+        "latency_ms": 523.427633
     },
     {
         "id": 288,
         "signature": "addAllVertices(org.jgrapht.Graph destination,java.util.Collection vertices)",
         "ground_truth": "vertices.contains(null) || vertices==null",
-        "prediction": "vertices==null || vertices.contains(null)",
+        "prediction": "vertices == null || vertices.contains(null)",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 589,
+        "prompt_tokens": 1244,
         "completion_tokens": 9,
-        "latency_ms": 1071.559463
+        "latency_ms": 2047.520203
     },
     {
         "id": 289,
@@ -3174,9 +3174,9 @@
         "prediction": "collection==null || transformer==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 577,
+        "prompt_tokens": 1019,
         "completion_tokens": 8,
-        "latency_ms": 1024.305845
+        "latency_ms": 761.946066
     },
     {
         "id": 290,
@@ -3185,31 +3185,31 @@
         "prediction": "start.equals(end)",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 594,
+        "prompt_tokens": 966,
         "completion_tokens": 5,
-        "latency_ms": 1031.970573
+        "latency_ms": 694.585813
     },
     {
         "id": 291,
         "signature": "evaluate(double[] a,double[] c,double z)",
         "ground_truth": "((a.lenght - c.length)==1) == false",
-        "prediction": "Math.abs(a.length - c.length) != 1",
+        "prediction": "((a.length - c.length) == 1) == false",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 580,
-        "completion_tokens": 12,
-        "latency_ms": 1143.07461
+        "prompt_tokens": 1241,
+        "completion_tokens": 14,
+        "latency_ms": 2306.766748
     },
     {
         "id": 292,
         "signature": "assertVertexExist(java.lang.Object v)",
         "ground_truth": "receiverObjectID.containsVertex(v)==false",
-        "prediction": "!vertexExists(v)",
+        "prediction": "v does not exist in this graph.",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
-        "completion_tokens": 6,
-        "latency_ms": 918.270566
+        "prompt_tokens": 1069,
+        "completion_tokens": 9,
+        "latency_ms": 1374.372808
     },
     {
         "id": 293,
@@ -3218,9 +3218,9 @@
         "prediction": "fraction==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
+        "prompt_tokens": 791,
         "completion_tokens": 4,
-        "latency_ms": 815.684759
+        "latency_ms": 533.35224
     },
     {
         "id": 294,
@@ -3229,20 +3229,20 @@
         "prediction": "collection==null || collection.contains(null)",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 569,
+        "prompt_tokens": 887,
         "completion_tokens": 9,
-        "latency_ms": 1118.875041
+        "latency_ms": 695.825407
     },
     {
         "id": 295,
         "signature": "interpolate(double[] xval,double[] yval)",
         "ground_truth": "xval.length==0 || yval.length==0",
-        "prediction": "xval.length == 0 || yval.length == 0",
-        "match": false,
+        "prediction": "xval.length==0 || yval.length==0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 575,
-        "completion_tokens": 14,
-        "latency_ms": 1241.680488
+        "prompt_tokens": 826,
+        "completion_tokens": 12,
+        "latency_ms": 1664.893689
     },
     {
         "id": 296,
@@ -3251,9 +3251,9 @@
         "prediction": "v==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 567,
+        "prompt_tokens": 899,
         "completion_tokens": 4,
-        "latency_ms": 831.653143
+        "latency_ms": 505.366298
     },
     {
         "id": 297,
@@ -3262,64 +3262,64 @@
         "prediction": "xval.length == 0 || yval.length == 0 || fval.length == 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 579,
+        "prompt_tokens": 925,
         "completion_tokens": 21,
-        "latency_ms": 1695.490967
+        "latency_ms": 2108.008094
     },
     {
         "id": 298,
         "signature": "computeDividedDifference(double[] x,double[] y)",
         "ground_truth": "x.length<2",
-        "prediction": "x.length < 2 || y.length < 2",
-        "match": false,
+        "prediction": "x.length<2",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 579,
-        "completion_tokens": 12,
-        "latency_ms": 1228.08897
+        "prompt_tokens": 1080,
+        "completion_tokens": 5,
+        "latency_ms": 1585.939805
     },
     {
         "id": 299,
         "signature": "zip(java.lang.Iterable[] others)",
         "ground_truth": "Arrays.asList(others).contains(null)",
-        "prediction": "others[i]==null for some i",
+        "prediction": "others==null",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
-        "completion_tokens": 8,
-        "latency_ms": 1056.830131
+        "prompt_tokens": 873,
+        "completion_tokens": 4,
+        "latency_ms": 1320.837542
     },
     {
         "id": 300,
         "signature": "addAsEqual(java.lang.Object existingObj,java.lang.Object newObj)",
         "ground_truth": "receiverObjectID.isLocked()",
-        "prediction": "comparisonHasBeenMade()",
+        "prediction": "comparisonMade",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 575,
-        "completion_tokens": 5,
-        "latency_ms": 865.78362
+        "prompt_tokens": 947,
+        "completion_tokens": 3,
+        "latency_ms": 1173.805392
     },
     {
         "id": 301,
         "signature": "switchClosure(org.apache.commons.collections4.Predicate[] predicates,org.apache.commons.collections4.Closure[] closures,org.apache.commons.collections4.Closure defaultClosure)",
         "ground_truth": "java.util.Arrays.stream(predicates).anyMatch(e -> e==null) || java.util.Arrays.stream(closures).anyMatch(e -> e==null)",
-        "prediction": "predicates==null || closures==null || defaultClosure==null",
+        "prediction": "java.util.Arrays.stream(predicates).anyMatch(e -> e==null) || java.util.Arrays.stream(closures).anyMatch(e -> e==null) || defaultClosure==null",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 593,
-        "completion_tokens": 14,
-        "latency_ms": 1334.509651
+        "prompt_tokens": 984,
+        "completion_tokens": 37,
+        "latency_ms": 2874.993318
     },
     {
         "id": 302,
         "signature": "IterativeLegendreGaussIntegrator(int n,int minimalIterationCount,int maximalIterationCount)",
         "ground_truth": "(minimalIterationCount>0)==false",
-        "prediction": "minimalIterationCount <= 0",
-        "match": false,
+        "prediction": "(minimalIterationCount>0)==false",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 586,
-        "completion_tokens": 7,
-        "latency_ms": 988.580456
+        "prompt_tokens": 1177,
+        "completion_tokens": 9,
+        "latency_ms": 1953.540509
     },
     {
         "id": 303,
@@ -3328,20 +3328,20 @@
         "prediction": "collection==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 565,
+        "prompt_tokens": 729,
         "completion_tokens": 4,
-        "latency_ms": 736.96851
+        "latency_ms": 1165.489092
     },
     {
         "id": 304,
         "signature": "onePredicate(org.apache.commons.collections4.Predicate[] predicates)",
         "ground_truth": "java.util.Arrays.stream(predicates).anyMatch(e->e==null)",
-        "prediction": "any predicate in the array is null",
+        "prediction": "java.util.Arrays.stream(predicates).anyMatch(e -> e==null)",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 573,
-        "completion_tokens": 8,
-        "latency_ms": 1036.728259
+        "prompt_tokens": 1015,
+        "completion_tokens": 16,
+        "latency_ms": 1178.7272
     },
     {
         "id": 305,
@@ -3350,20 +3350,20 @@
         "prediction": "transformer==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 570,
+        "prompt_tokens": 790,
         "completion_tokens": 5,
-        "latency_ms": 879.717114
+        "latency_ms": 586.495126
     },
     {
         "id": 306,
         "signature": "BigFraction(java.math.BigInteger num,java.math.BigInteger den)",
         "ground_truth": "den==(org.apache.commons.math3.fraction.BigFraction.ZERO)",
-        "prediction": "den == BigInteger.ZERO",
+        "prediction": "den.equals(BigInteger.ZERO)",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 572,
-        "completion_tokens": 5,
-        "latency_ms": 859.286577
+        "prompt_tokens": 792,
+        "completion_tokens": 6,
+        "latency_ms": 571.916587
     },
     {
         "id": 307,
@@ -3372,9 +3372,9 @@
         "prediction": "predicates==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
+        "prompt_tokens": 943,
         "completion_tokens": 5,
-        "latency_ms": 893.532696
+        "latency_ms": 543.942606
     },
     {
         "id": 308,
@@ -3383,20 +3383,20 @@
         "prediction": "predicate1==null || predicate2==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 579,
+        "prompt_tokens": 799,
         "completion_tokens": 10,
-        "latency_ms": 1136.900443
+        "latency_ms": 837.454876
     },
     {
         "id": 309,
         "signature": "asRegex(java.lang.String s)",
         "ground_truth": "(plume.RegexUtil.isRegex(s)) == false",
-        "prediction": "s.matches(\".*\") == false",
+        "prediction": "plume.RegexUtil.isRegex(s) == false",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 567,
-        "completion_tokens": 8,
-        "latency_ms": 1076.743176
+        "prompt_tokens": 798,
+        "completion_tokens": 12,
+        "latency_ms": 1373.533267
     },
     {
         "id": 310,
@@ -3405,20 +3405,20 @@
         "prediction": "count < 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 566,
+        "prompt_tokens": 726,
         "completion_tokens": 5,
-        "latency_ms": 874.482654
+        "latency_ms": 554.896688
     },
     {
         "id": 311,
         "signature": "extractSingleton(java.util.Collection collection)",
         "ground_truth": "collection.isEmpty() || collection.size()>1",
-        "prediction": "collection.isEmpty() || collection.size() > 1",
-        "match": false,
+        "prediction": "collection.isEmpty() || collection.size()>1",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
-        "completion_tokens": 11,
-        "latency_ms": 1182.561657
+        "prompt_tokens": 1105,
+        "completion_tokens": 9,
+        "latency_ms": 1882.592543
     },
     {
         "id": 312,
@@ -3427,42 +3427,42 @@
         "prediction": "closure==null || predicate==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 579,
+        "prompt_tokens": 799,
         "completion_tokens": 8,
-        "latency_ms": 1026.767378
+        "latency_ms": 720.065507
     },
     {
         "id": 313,
         "signature": "max(java.lang.Long[] a)",
         "ground_truth": "a.length==0",
-        "prediction": "a.length == 0",
-        "match": false,
+        "prediction": "a.length==0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 570,
-        "completion_tokens": 6,
-        "latency_ms": 820.773321
+        "prompt_tokens": 861,
+        "completion_tokens": 5,
+        "latency_ms": 860.78299
     },
     {
         "id": 314,
         "signature": "KShortestPaths(org.jgrapht.Graph graph,java.lang.Object startVertex,int nPaths,int nMaxHops)",
         "ground_truth": "nMaxHops<0 || nMaxHops==0",
-        "prediction": "nMaxHops <= 0",
-        "match": false,
+        "prediction": "nMaxHops<0 || nMaxHops==0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 590,
-        "completion_tokens": 8,
-        "latency_ms": 1017.520185
+        "prompt_tokens": 1124,
+        "completion_tokens": 14,
+        "latency_ms": 1038.596973
     },
     {
         "id": 315,
         "signature": "switchMapClosure(java.util.Map objectsAndClosures)",
         "ground_truth": "objectsAndClosures.isEmpty()",
-        "prediction": "objectsAndClosures==null || objectsAndClosures.isEmpty()",
-        "match": false,
+        "prediction": "objectsAndClosures.isEmpty()",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 570,
-        "completion_tokens": 14,
-        "latency_ms": 1350.740862
+        "prompt_tokens": 784,
+        "completion_tokens": 7,
+        "latency_ms": 746.059718
     },
     {
         "id": 316,
@@ -3471,9 +3471,9 @@
         "prediction": "coll==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 565,
+        "prompt_tokens": 785,
         "completion_tokens": 4,
-        "latency_ms": 880.340479
+        "latency_ms": 479.077372
     },
     {
         "id": 317,
@@ -3482,20 +3482,20 @@
         "prediction": "loadFactor<0",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
+        "prompt_tokens": 1011,
         "completion_tokens": 5,
-        "latency_ms": 879.151344
+        "latency_ms": 582.554818
     },
     {
         "id": 318,
         "signature": "min(java.lang.Double[] a)",
         "ground_truth": "a.length==0",
-        "prediction": "a.length == 0",
-        "match": false,
+        "prediction": "a.length==0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 570,
-        "completion_tokens": 6,
-        "latency_ms": 828.919729
+        "prompt_tokens": 851,
+        "completion_tokens": 5,
+        "latency_ms": 1396.862211
     },
     {
         "id": 319,
@@ -3504,9 +3504,9 @@
         "prediction": "a==null || c==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
+        "prompt_tokens": 903,
         "completion_tokens": 8,
-        "latency_ms": 1063.798729
+        "latency_ms": 825.035055
     },
     {
         "id": 320,
@@ -3515,20 +3515,20 @@
         "prediction": "reference==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 566,
+        "prompt_tokens": 806,
         "completion_tokens": 4,
-        "latency_ms": 821.096305
+        "latency_ms": 1279.58116
     },
     {
         "id": 321,
         "signature": "anyPredicate(org.apache.commons.collections4.Predicate[] predicates)",
         "ground_truth": "java.util.Arrays.stream(predicates).anyMatch(e -> e==null)",
-        "prediction": "any predicate in the array is null",
-        "match": false,
+        "prediction": "java.util.Arrays.stream(predicates).anyMatch(e -> e==null)",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 573,
-        "completion_tokens": 8,
-        "latency_ms": 960.068388
+        "prompt_tokens": 1015,
+        "completion_tokens": 16,
+        "latency_ms": 1169.217026
     },
     {
         "id": 322,
@@ -3537,9 +3537,9 @@
         "prediction": "a==null || m==null || b==null || x0==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 606,
+        "prompt_tokens": 978,
         "completion_tokens": 17,
-        "latency_ms": 1550.974265
+        "latency_ms": 1251.841756
     },
     {
         "id": 323,
@@ -3548,9 +3548,9 @@
         "prediction": "predicate==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
+        "prompt_tokens": 903,
         "completion_tokens": 4,
-        "latency_ms": 738.059687
+        "latency_ms": 539.640518
     },
     {
         "id": 324,
@@ -3559,9 +3559,9 @@
         "prediction": "queue==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 567,
+        "prompt_tokens": 787,
         "completion_tokens": 4,
-        "latency_ms": 816.21675
+        "latency_ms": 496.25972
     },
     {
         "id": 325,
@@ -3570,20 +3570,20 @@
         "prediction": "elementList==null || edge==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 598,
+        "prompt_tokens": 1097,
         "completion_tokens": 9,
-        "latency_ms": 1229.299787
+        "latency_ms": 803.240588
     },
     {
         "id": 326,
         "signature": "FieldRotation(org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D u1,org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D u2,org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D v1,org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D v2)",
         "ground_truth": "u1.getNorm().getReal()==0 || u2.getNorm().getReal()==0 || v1.getNorm().getReal()==0",
-        "prediction": "(u1.getNorm() <= 0 || u2.getNorm() <= 0 || (u1.dotProduct(u2) == 1 || u1.dotProduct(u2) == -1)) || (v1.getNorm() <= 0 || v2.getNorm() <= 0 || (v1.dotProduct(v2) == 1 || v1.dotProduct(v2) == -1))",
+        "prediction": "(u1.getNorm().isZero() || u2.getNorm().isZero() || v1.getNorm().isZero() || v2.getNorm().isZero() || (u1.dot(u2).isZero() && u1.dot(u2).isZero()) || (v1.dot(v2).isZero() && v1.dot(v2).isZero()))",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 659,
-        "completion_tokens": 85,
-        "latency_ms": 5024.452483
+        "prompt_tokens": 1335,
+        "completion_tokens": 78,
+        "latency_ms": 6017.760513
     },
     {
         "id": 327,
@@ -3592,42 +3592,42 @@
         "prediction": "graph==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 575,
+        "prompt_tokens": 947,
         "completion_tokens": 4,
-        "latency_ms": 862.952711
+        "latency_ms": 542.683163
     },
     {
         "id": 328,
         "signature": "ebeDivide(org.apache.commons.math3.linear.RealVector v)",
         "ground_truth": "v.getDimension() != receiverObjectID.getDimension()",
-        "prediction": "v.getDimension() != this.getDimension()",
-        "match": false,
+        "prediction": "v.getDimension() != receiverObjectID.getDimension()",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 580,
-        "completion_tokens": 10,
-        "latency_ms": 1166.830188
+        "prompt_tokens": 1074,
+        "completion_tokens": 12,
+        "latency_ms": 1690.327156
     },
     {
         "id": 329,
         "signature": "max(java.lang.Integer[] a)",
         "ground_truth": "a.length==0",
-        "prediction": "a.length == 0",
-        "match": false,
+        "prediction": "a.length==0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 570,
-        "completion_tokens": 6,
-        "latency_ms": 914.827305
+        "prompt_tokens": 851,
+        "completion_tokens": 5,
+        "latency_ms": 576.385976
     },
     {
         "id": 330,
         "signature": "solve(org.apache.commons.math3.linear.RealLinearOperator a, org.apache.commons.math3.linear.RealVector b, boolean goodb, double shift)",
         "ground_truth": "a==null || b==null",
-        "prediction": "a == null || b == null || goodb == false || shift == 0",
-        "match": false,
+        "prediction": "a==null || b==null",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 590,
-        "completion_tokens": 18,
-        "latency_ms": 1521.505408
+        "prompt_tokens": 962,
+        "completion_tokens": 8,
+        "latency_ms": 721.599433
     },
     {
         "id": 331,
@@ -3636,9 +3636,9 @@
         "prediction": "function==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 577,
+        "prompt_tokens": 797,
         "completion_tokens": 4,
-        "latency_ms": 818.154288
+        "latency_ms": 497.095554
     },
     {
         "id": 332,
@@ -3647,9 +3647,9 @@
         "prediction": "string==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 563,
+        "prompt_tokens": 729,
         "completion_tokens": 4,
-        "latency_ms": 823.419923
+        "latency_ms": 876.714636
     },
     {
         "id": 333,
@@ -3658,9 +3658,9 @@
         "prediction": "predicate==null || trueClosure==null || falseClosure==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 592,
+        "prompt_tokens": 1001,
         "completion_tokens": 14,
-        "latency_ms": 1351.713966
+        "latency_ms": 1095.417153
     },
     {
         "id": 334,
@@ -3669,9 +3669,9 @@
         "prediction": "closure==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 568,
+        "prompt_tokens": 729,
         "completion_tokens": 4,
-        "latency_ms": 810.464783
+        "latency_ms": 1162.987977
     },
     {
         "id": 335,
@@ -3680,20 +3680,20 @@
         "prediction": "queue==null || transformer==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 577,
+        "prompt_tokens": 949,
         "completion_tokens": 8,
-        "latency_ms": 1059.463917
+        "latency_ms": 755.226615
     },
     {
         "id": 336,
         "signature": "nonePredicate(java.util.Collection predicates)",
         "ground_truth": "predicates.contains(null)",
-        "prediction": "predicates==null || any(predicate -> predicate==null)",
+        "prediction": "java.util.Arrays.stream(predicates).anyMatch(e -> e==null)",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 569,
-        "completion_tokens": 13,
-        "latency_ms": 1270.25607
+        "prompt_tokens": 1011,
+        "completion_tokens": 16,
+        "latency_ms": 1271.118957
     },
     {
         "id": 337,
@@ -3702,9 +3702,9 @@
         "prediction": "points==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 568,
+        "prompt_tokens": 900,
         "completion_tokens": 4,
-        "latency_ms": 824.279394
+        "latency_ms": 494.596691
     },
     {
         "id": 338,
@@ -3713,9 +3713,9 @@
         "prediction": "predicates==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 567,
+        "prompt_tokens": 939,
         "completion_tokens": 5,
-        "latency_ms": 900.131249
+        "latency_ms": 553.47849
     },
     {
         "id": 339,
@@ -3724,9 +3724,9 @@
         "prediction": "predicatesAndClosures==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 569,
+        "prompt_tokens": 789,
         "completion_tokens": 8,
-        "latency_ms": 1075.063696
+        "latency_ms": 709.950481
     },
     {
         "id": 340,
@@ -3735,20 +3735,20 @@
         "prediction": "classToInstantiate==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
+        "prompt_tokens": 1013,
         "completion_tokens": 6,
-        "latency_ms": 930.816491
+        "latency_ms": 603.599282
     },
     {
         "id": 341,
         "signature": "ebeMultiply(org.apache.commons.math3.linear.RealVector v)",
         "ground_truth": "v.getDimension() != receiverObjectID.getDimension()",
-        "prediction": "v.getDimension() != this.getDimension()",
-        "match": false,
+        "prediction": "v.getDimension() != receiverObjectID.getDimension()",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 579,
-        "completion_tokens": 10,
-        "latency_ms": 1131.513662
+        "prompt_tokens": 1074,
+        "completion_tokens": 12,
+        "latency_ms": 1326.130318
     },
     {
         "id": 342,
@@ -3757,31 +3757,31 @@
         "prediction": "xval.length != yval.length",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 578,
+        "prompt_tokens": 1062,
         "completion_tokens": 8,
-        "latency_ms": 1065.19039
+        "latency_ms": 1763.681864
     },
     {
         "id": 343,
         "signature": "min(int[] a)",
         "ground_truth": "a.length==0",
-        "prediction": "a.length == 0",
-        "match": false,
+        "prediction": "a.length==0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 568,
-        "completion_tokens": 6,
-        "latency_ms": 954.877293
+        "prompt_tokens": 889,
+        "completion_tokens": 5,
+        "latency_ms": 562.239578
     },
     {
         "id": 344,
         "signature": "unitVector()",
         "ground_truth": "receiverObjectID.getNorm()==0",
-        "prediction": "norm == 0",
-        "match": false,
+        "prediction": "receiverObjectID.getNorm()==0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 565,
-        "completion_tokens": 5,
-        "latency_ms": 906.299476
+        "prompt_tokens": 897,
+        "completion_tokens": 8,
+        "latency_ms": 697.751136
     },
     {
         "id": 345,
@@ -3790,20 +3790,20 @@
         "prediction": "vector.getNorm() == 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 580,
+        "prompt_tokens": 800,
         "completion_tokens": 8,
-        "latency_ms": 1069.001235
+        "latency_ms": 706.17992
     },
     {
         "id": 346,
         "signature": "solve(org.apache.commons.math3.linear.RealLinearOperator a, org.apache.commons.math3.linear.RealLinearOperator m, org.apache.commons.math3.linear.RealVector b, boolean goodb, double shift)",
         "ground_truth": "a==null || m==null || b==null",
-        "prediction": "a == null || m == null || b == null || shift == 0.0",
-        "match": false,
+        "prediction": "a==null || m==null || b==null",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 601,
-        "completion_tokens": 19,
-        "latency_ms": 1617.400662
+        "prompt_tokens": 973,
+        "completion_tokens": 12,
+        "latency_ms": 932.076221
     },
     {
         "id": 347,
@@ -3812,31 +3812,31 @@
         "prediction": "maxSize<1",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 574,
+        "prompt_tokens": 1016,
         "completion_tokens": 5,
-        "latency_ms": 802.079843
+        "latency_ms": 581.180861
     },
     {
         "id": 348,
         "signature": "partition(java.util.Iterator iterator,int size)",
         "ground_truth": "size<=0",
-        "prediction": "size <= 0",
-        "match": false,
+        "prediction": "size<=0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 567,
-        "completion_tokens": 5,
-        "latency_ms": 873.572993
+        "prompt_tokens": 786,
+        "completion_tokens": 4,
+        "latency_ms": 1241.293129
     },
     {
         "id": 349,
         "signature": "FieldRotation(org.apache.commons.math3.RealFieldElement[][] m,double threshold)",
         "ground_truth": "(m.length != 3) || (m[0].length != 3) || (m[1].length != 3) || (m[2].length != 3)",
-        "prediction": "(m.length != 3 || m[0].length != 3 || m[1].length != 3 || m[2].length != 3) || !isRotationMatrix(m, threshold) || determinant < 0",
+        "prediction": "m.length != 3 || m[0].length != 3 || m[1].length != 3 || m[2].length != 3 || !isRotationMatrix(m, threshold) || determinant < 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 611,
-        "completion_tokens": 48,
-        "latency_ms": 3311.227179
+        "prompt_tokens": 1325,
+        "completion_tokens": 47,
+        "latency_ms": 3128.237355
     },
     {
         "id": 350,
@@ -3845,20 +3845,20 @@
         "prediction": "true",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 564,
+        "prompt_tokens": 809,
         "completion_tokens": 2,
-        "latency_ms": 749.771818
+        "latency_ms": 921.826865
     },
     {
         "id": 351,
         "signature": "solve(org.apache.commons.math3.linear.RealLinearOperator a, org.apache.commons.math3.linear.RealLinearOperator m, org.apache.commons.math3.linear.RealVector b, org.apache.commons.math3.linear.RealVector x0)",
         "ground_truth": "a==null || m==null || b==null || x0==null",
-        "prediction": "a == null || m == null || b == null || x0 == null",
-        "match": false,
+        "prediction": "a==null || m==null || b==null || x0==null",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 605,
+        "prompt_tokens": 977,
         "completion_tokens": 17,
-        "latency_ms": 1710.095692
+        "latency_ms": 1177.044588
     },
     {
         "id": 352,
@@ -3867,20 +3867,20 @@
         "prediction": "index < 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 566,
+        "prompt_tokens": 1008,
         "completion_tokens": 5,
-        "latency_ms": 871.209156
+        "latency_ms": 554.944227
     },
     {
         "id": 353,
         "signature": "combineToSelf(double a,double b,org.apache.commons.math3.linear.RealVector y)",
         "ground_truth": "y.getDimension() != receiverObjectID.getDimension()",
-        "prediction": "y.getDimension() != this.getDimension()",
-        "match": false,
+        "prediction": "y.getDimension() != receiverObjectID.getDimension()",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 584,
-        "completion_tokens": 10,
-        "latency_ms": 1138.164722
+        "prompt_tokens": 1074,
+        "completion_tokens": 12,
+        "latency_ms": 1220.217218
     },
     {
         "id": 354,
@@ -3889,9 +3889,9 @@
         "prediction": "reference==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 579,
+        "prompt_tokens": 807,
         "completion_tokens": 4,
-        "latency_ms": 851.040021
+        "latency_ms": 809.269337
     },
     {
         "id": 355,
@@ -3900,9 +3900,9 @@
         "prediction": "k>n",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
+        "prompt_tokens": 903,
         "completion_tokens": 3,
-        "latency_ms": 761.98511
+        "latency_ms": 443.52595
     },
     {
         "id": 356,
@@ -3911,9 +3911,9 @@
         "prediction": "edges==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 568,
+        "prompt_tokens": 1011,
         "completion_tokens": 4,
-        "latency_ms": 870.213851
+        "latency_ms": 686.291818
     },
     {
         "id": 357,
@@ -3922,20 +3922,20 @@
         "prediction": "optimizer==null || generator==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 605,
+        "prompt_tokens": 937,
         "completion_tokens": 8,
-        "latency_ms": 1010.907441
+        "latency_ms": 759.01177
     },
     {
         "id": 358,
         "signature": "combine(double a,double b,org.apache.commons.math3.linear.RealVector y)",
         "ground_truth": "y.getDimension() != receiverObjectID.getDimension()",
-        "prediction": "y.getDimension() != this.getDimension()",
-        "match": false,
+        "prediction": "y.getDimension() != receiverObjectID.getDimension()",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 582,
-        "completion_tokens": 10,
-        "latency_ms": 1170.995442
+        "prompt_tokens": 1074,
+        "completion_tokens": 12,
+        "latency_ms": 1861.349462
     },
     {
         "id": 359,
@@ -3944,20 +3944,20 @@
         "prediction": "queue==null || predicate==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 577,
+        "prompt_tokens": 949,
         "completion_tokens": 8,
-        "latency_ms": 1034.420057
+        "latency_ms": 847.275029
     },
     {
         "id": 360,
         "signature": "AbstractPathElementList(org.jgrapht.Graph graph,int maxSize,org.jgrapht.alg.AbstractPathElementList elementList,java.lang.Object edge)",
         "ground_truth": "maxSize<0 || maxSize==0",
-        "prediction": "maxSize < 0",
+        "prediction": "maxSize <= 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 594,
+        "prompt_tokens": 1036,
         "completion_tokens": 6,
-        "latency_ms": 1092.839272
+        "latency_ms": 900.591636
     },
     {
         "id": 361,
@@ -3966,9 +3966,9 @@
         "prediction": "v==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 567,
+        "prompt_tokens": 939,
         "completion_tokens": 4,
-        "latency_ms": 814.074922
+        "latency_ms": 950.898039
     },
     {
         "id": 362,
@@ -3977,9 +3977,9 @@
         "prediction": "a==null || m==null || b==null || x==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 613,
+        "prompt_tokens": 985,
         "completion_tokens": 16,
-        "latency_ms": 1690.544765
+        "latency_ms": 1268.534098
     },
     {
         "id": 363,
@@ -3988,9 +3988,9 @@
         "prediction": "end < start",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 569,
+        "prompt_tokens": 789,
         "completion_tokens": 4,
-        "latency_ms": 815.503768
+        "latency_ms": 496.900546
     },
     {
         "id": 364,
@@ -3999,9 +3999,9 @@
         "prediction": "lower >= initial || initial >= upper",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 575,
+        "prompt_tokens": 1101,
         "completion_tokens": 8,
-        "latency_ms": 1028.57093
+        "latency_ms": 829.606442
     },
     {
         "id": 365,
@@ -4010,31 +4010,31 @@
         "prediction": "e<0",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 567,
+        "prompt_tokens": 787,
         "completion_tokens": 4,
-        "latency_ms": 743.711615
+        "latency_ms": 494.33013
     },
     {
         "id": 366,
         "signature": "FieldRotation(org.apache.commons.math3.geometry.euclidean.threed.FieldVector3D axis,org.apache.commons.math3.RealFieldElement angle)",
         "ground_truth": "axis.getNorm().getReal()==0",
-        "prediction": "axis.getNorm().getReal() <= 0",
+        "prediction": "axis.getNorm().getReal() == 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 589,
+        "prompt_tokens": 1031,
         "completion_tokens": 11,
-        "latency_ms": 1181.572276
+        "latency_ms": 880.034168
     },
     {
         "id": 367,
         "signature": "org.apache.commons.collections4.map.HashedMap(int initialCapacity)",
         "ground_truth": "initialCapacity<0",
-        "prediction": "initialCapacity < 0",
-        "match": false,
+        "prediction": "initialCapacity<0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 572,
-        "completion_tokens": 6,
-        "latency_ms": 932.322094
+        "prompt_tokens": 904,
+        "completion_tokens": 5,
+        "latency_ms": 593.79832
     },
     {
         "id": 368,
@@ -4043,20 +4043,20 @@
         "prediction": "a==null || c==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 570,
+        "prompt_tokens": 902,
         "completion_tokens": 8,
-        "latency_ms": 942.368659
+        "latency_ms": 663.645086
     },
     {
         "id": 369,
         "signature": "getDistance(org.apache.commons.math3.linear.RealVector v)",
         "ground_truth": "v.getDimension() != receiverObjectID.getDimension()",
-        "prediction": "v.getDimension() != getDimension()",
-        "match": false,
+        "prediction": "v.getDimension() != receiverObjectID.getDimension()",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 578,
-        "completion_tokens": 9,
-        "latency_ms": 1094.181154
+        "prompt_tokens": 1074,
+        "completion_tokens": 12,
+        "latency_ms": 1329.305217
     },
     {
         "id": 370,
@@ -4065,20 +4065,20 @@
         "prediction": "robustnessIters<0",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 576,
+        "prompt_tokens": 1018,
         "completion_tokens": 8,
-        "latency_ms": 1018.026221
+        "latency_ms": 736.401327
     },
     {
         "id": 371,
         "signature": "min(java.lang.Long[] a)",
         "ground_truth": "a.length==0",
-        "prediction": "a.length == 0",
-        "match": false,
+        "prediction": "a.length==0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 570,
-        "completion_tokens": 6,
-        "latency_ms": 954.551743
+        "prompt_tokens": 861,
+        "completion_tokens": 5,
+        "latency_ms": 545.875219
     },
     {
         "id": 372,
@@ -4087,9 +4087,9 @@
         "prediction": "predicates==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 567,
+        "prompt_tokens": 939,
         "completion_tokens": 5,
-        "latency_ms": 919.156534
+        "latency_ms": 540.995664
     },
     {
         "id": 373,
@@ -4098,9 +4098,9 @@
         "prediction": "maxSize<0",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 562,
+        "prompt_tokens": 782,
         "completion_tokens": 5,
-        "latency_ms": 790.474809
+        "latency_ms": 692.702949
     },
     {
         "id": 374,
@@ -4109,9 +4109,9 @@
         "prediction": "map==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 567,
+        "prompt_tokens": 787,
         "completion_tokens": 4,
-        "latency_ms": 830.163995
+        "latency_ms": 774.694846
     },
     {
         "id": 375,
@@ -4120,9 +4120,9 @@
         "prediction": "l == 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 569,
+        "prompt_tokens": 1011,
         "completion_tokens": 5,
-        "latency_ms": 794.325237
+        "latency_ms": 544.840201
     },
     {
         "id": 376,
@@ -4131,9 +4131,9 @@
         "prediction": "steps==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 573,
+        "prompt_tokens": 725,
         "completion_tokens": 4,
-        "latency_ms": 830.206905
+        "latency_ms": 694.402794
     },
     {
         "id": 377,
@@ -4142,9 +4142,9 @@
         "prediction": "collection==null || retain==null || equator==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 586,
+        "prompt_tokens": 958,
         "completion_tokens": 13,
-        "latency_ms": 1270.048481
+        "latency_ms": 975.581391
     },
     {
         "id": 378,
@@ -4153,9 +4153,9 @@
         "prediction": "a.length == 0 || c.length == 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 573,
+        "prompt_tokens": 905,
         "completion_tokens": 12,
-        "latency_ms": 1275.221377
+        "latency_ms": 960.029773
     },
     {
         "id": 379,
@@ -4164,9 +4164,9 @@
         "prediction": "original==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 580,
+        "prompt_tokens": 731,
         "completion_tokens": 4,
-        "latency_ms": 873.43828
+        "latency_ms": 1198.261104
     },
     {
         "id": 380,
@@ -4175,9 +4175,9 @@
         "prediction": "n<=0",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 566,
+        "prompt_tokens": 786,
         "completion_tokens": 4,
-        "latency_ms": 820.085634
+        "latency_ms": 535.527945
     },
     {
         "id": 381,
@@ -4186,31 +4186,31 @@
         "prediction": "dimension < 1 || dimension > 40",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 585,
+        "prompt_tokens": 1182,
         "completion_tokens": 11,
-        "latency_ms": 1175.556222
+        "latency_ms": 2096.920702
     },
     {
         "id": 382,
         "signature": "projection(org.apache.commons.math3.linear.RealVector v)",
         "ground_truth": "v.getDimension() != receiverObjectID.getDimension()",
-        "prediction": "v.getDimension() != this.getDimension()",
-        "match": false,
+        "prediction": "v.getDimension() != receiverObjectID.getDimension()",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 577,
-        "completion_tokens": 10,
-        "latency_ms": 1168.123391
+        "prompt_tokens": 1076,
+        "completion_tokens": 12,
+        "latency_ms": 1009.712229
     },
     {
         "id": 383,
         "signature": "SimpsonIntegrator(double relativeAccuracy,double absoluteAccuracy,int minimalIterationCount,int maximalIterationCount)",
         "ground_truth": "maximalIterationCount<=minimalIterationCount",
-        "prediction": "maximalIterationCount <= minimalIterationCount",
-        "match": false,
+        "prediction": "maximalIterationCount<=minimalIterationCount",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 592,
+        "prompt_tokens": 1228,
         "completion_tokens": 9,
-        "latency_ms": 1103.051696
+        "latency_ms": 2062.685725
     },
     {
         "id": 384,
@@ -4219,9 +4219,9 @@
         "prediction": "true",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 557,
+        "prompt_tokens": 809,
         "completion_tokens": 2,
-        "latency_ms": 633.460109
+        "latency_ms": 669.424275
     },
     {
         "id": 385,
@@ -4230,9 +4230,9 @@
         "prediction": "map.isEmpty()",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 567,
+        "prompt_tokens": 787,
         "completion_tokens": 4,
-        "latency_ms": 814.097552
+        "latency_ms": 643.525472
     },
     {
         "id": 386,
@@ -4241,20 +4241,20 @@
         "prediction": "Double.isNaN(value) || Double.isInfinite(value)",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 566,
+        "prompt_tokens": 869,
         "completion_tokens": 13,
-        "latency_ms": 1283.24903
+        "latency_ms": 1756.706254
     },
     {
         "id": 387,
         "signature": "LRUMap(int maxSize,float loadFactor,boolean scanUntilRemovable)",
         "ground_truth": "maxSize<1",
-        "prediction": "maxSize < 1",
-        "match": false,
+        "prediction": "maxSize<1",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 577,
-        "completion_tokens": 6,
-        "latency_ms": 950.283128
+        "prompt_tokens": 1011,
+        "completion_tokens": 5,
+        "latency_ms": 1367.464849
     },
     {
         "id": 388,
@@ -4263,9 +4263,9 @@
         "prediction": "stack.isEmpty()",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 563,
+        "prompt_tokens": 723,
         "completion_tokens": 4,
-        "latency_ms": 809.916396
+        "latency_ms": 514.114597
     },
     {
         "id": 389,
@@ -4274,9 +4274,9 @@
         "prediction": "initialCapacity < 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 567,
+        "prompt_tokens": 938,
         "completion_tokens": 6,
-        "latency_ms": 957.871859
+        "latency_ms": 1331.641214
     },
     {
         "id": 390,
@@ -4285,9 +4285,9 @@
         "prediction": "predicate==null || trueClosure==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 581,
+        "prompt_tokens": 934,
         "completion_tokens": 9,
-        "latency_ms": 1102.092087
+        "latency_ms": 1677.264634
     },
     {
         "id": 391,
@@ -4296,9 +4296,9 @@
         "prediction": "true",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 580,
+        "prompt_tokens": 809,
         "completion_tokens": 2,
-        "latency_ms": 642.23941
+        "latency_ms": 651.773528
     },
     {
         "id": 392,
@@ -4307,9 +4307,9 @@
         "prediction": "v.length != 3",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
+        "prompt_tokens": 1007,
         "completion_tokens": 6,
-        "latency_ms": 955.045911
+        "latency_ms": 1255.395369
     },
     {
         "id": 393,
@@ -4318,9 +4318,9 @@
         "prediction": "first==null && second==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 573,
+        "prompt_tokens": 945,
         "completion_tokens": 8,
-        "latency_ms": 954.16671
+        "latency_ms": 1440.008905
     },
     {
         "id": 394,
@@ -4329,9 +4329,9 @@
         "prediction": "collection==null || retain==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
+        "prompt_tokens": 791,
         "completion_tokens": 8,
-        "latency_ms": 1027.390819
+        "latency_ms": 712.545934
     },
     {
         "id": 395,
@@ -4340,9 +4340,9 @@
         "prediction": "x==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 571,
+        "prompt_tokens": 791,
         "completion_tokens": 4,
-        "latency_ms": 751.26642
+        "latency_ms": 444.707614
     },
     {
         "id": 396,
@@ -4351,9 +4351,9 @@
         "prediction": "m==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 567,
+        "prompt_tokens": 939,
         "completion_tokens": 4,
-        "latency_ms": 837.32896
+        "latency_ms": 1229.14816
     },
     {
         "id": 397,
@@ -4362,20 +4362,20 @@
         "prediction": "numberOfElements<=0 || exponent<=0",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 578,
+        "prompt_tokens": 1233,
         "completion_tokens": 9,
-        "latency_ms": 1073.763297
+        "latency_ms": 2101.823548
     },
     {
         "id": 398,
         "signature": "IterativeLegendreGaussIntegrator(int n,int minimalIterationCount,int maximalIterationCount)",
         "ground_truth": "maximalIterationCount<=minimalIterationCount",
-        "prediction": "maximalIterationCount <= minimalIterationCount",
-        "match": false,
+        "prediction": "maximalIterationCount<=minimalIterationCount",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 593,
+        "prompt_tokens": 1237,
         "completion_tokens": 9,
-        "latency_ms": 1111.313974
+        "latency_ms": 2088.705589
     },
     {
         "id": 399,
@@ -4384,20 +4384,20 @@
         "prediction": "graph==null",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 565,
+        "prompt_tokens": 935,
         "completion_tokens": 4,
-        "latency_ms": 829.652499
+        "latency_ms": 1127.166405
     },
     {
         "id": 400,
         "signature": "cosine(org.apache.commons.math3.linear.RealVector v)",
         "ground_truth": "receiverObjectID.getNorm()==0 || v.getNorm()==0",
-        "prediction": "v.isZero() || v.isZero()",
-        "match": false,
+        "prediction": "receiverObjectID.getNorm()==0 || v.getNorm()==0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 576,
-        "completion_tokens": 10,
-        "latency_ms": 1123.265031
+        "prompt_tokens": 1018,
+        "completion_tokens": 14,
+        "latency_ms": 1066.230745
     },
     {
         "id": 401,
@@ -4406,9 +4406,9 @@
         "prediction": "predicates==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 567,
+        "prompt_tokens": 939,
         "completion_tokens": 5,
-        "latency_ms": 859.503577
+        "latency_ms": 1268.28972
     },
     {
         "id": 402,
@@ -4417,9 +4417,9 @@
         "prediction": "position < 0 || position >= size",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 576,
+        "prompt_tokens": 1242,
         "completion_tokens": 9,
-        "latency_ms": 1085.303367
+        "latency_ms": 2050.768887
     },
     {
         "id": 403,
@@ -4428,9 +4428,9 @@
         "prediction": "stack.isEmpty()",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 563,
+        "prompt_tokens": 723,
         "completion_tokens": 4,
-        "latency_ms": 748.1998
+        "latency_ms": 527.205795
     },
     {
         "id": 404,
@@ -4439,9 +4439,9 @@
         "prediction": "start < 0 || start > sequence.length()",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 574,
+        "prompt_tokens": 1181,
         "completion_tokens": 11,
-        "latency_ms": 1168.522936
+        "latency_ms": 2109.891021
     },
     {
         "id": 405,
@@ -4450,31 +4450,31 @@
         "prediction": "methodName==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 581,
+        "prompt_tokens": 913,
         "completion_tokens": 4,
-        "latency_ms": 810.156321
+        "latency_ms": 554.393426
     },
     {
         "id": 406,
         "signature": "interpolate(double[] x,double[] y)",
         "ground_truth": "x.length<2",
-        "prediction": "x.length < 2",
-        "match": false,
+        "prediction": "x.length<2",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 576,
-        "completion_tokens": 6,
-        "latency_ms": 911.619404
+        "prompt_tokens": 1058,
+        "completion_tokens": 5,
+        "latency_ms": 1586.129957
     },
     {
         "id": 407,
         "signature": "cosine(org.apache.commons.math3.linear.RealVector v)",
         "ground_truth": "receiverObjectID.getDimension() != v.getDimension()",
-        "prediction": "this.getDimension() != v.getDimension()",
+        "prediction": "v.getDimension() != receiverObjectID.getDimension()",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 577,
-        "completion_tokens": 10,
-        "latency_ms": 1120.859588
+        "prompt_tokens": 1059,
+        "completion_tokens": 12,
+        "latency_ms": 1740.170283
     },
     {
         "id": 408,
@@ -4483,20 +4483,20 @@
         "prediction": "methodName==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 581,
+        "prompt_tokens": 913,
         "completion_tokens": 4,
-        "latency_ms": 827.19046
+        "latency_ms": 541.731321
     },
     {
         "id": 409,
         "signature": "org.apache.commons.math3.random.HaltonSequenceGenerator(int dimension, int[] bases, int[] weights)",
         "ground_truth": "bases==null",
-        "prediction": "bases == null",
-        "match": false,
+        "prediction": "bases==null",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 580,
+        "prompt_tokens": 732,
         "completion_tokens": 4,
-        "latency_ms": 813.986914
+        "latency_ms": 1176.112696
     },
     {
         "id": 410,
@@ -4505,9 +4505,9 @@
         "prediction": "predicates==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 567,
+        "prompt_tokens": 939,
         "completion_tokens": 5,
-        "latency_ms": 794.766792
+        "latency_ms": 575.102875
     },
     {
         "id": 411,
@@ -4516,9 +4516,9 @@
         "prediction": "fraction==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 573,
+        "prompt_tokens": 1015,
         "completion_tokens": 4,
-        "latency_ms": 726.639364
+        "latency_ms": 507.915695
     },
     {
         "id": 412,
@@ -4527,20 +4527,20 @@
         "prediction": "true",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 572,
+        "prompt_tokens": 809,
         "completion_tokens": 2,
-        "latency_ms": 753.927689
+        "latency_ms": 694.036643
     },
     {
         "id": 413,
         "signature": "collect(java.util.Iterator inputIterator,org.apache.commons.collections4.Transformer transformer,java.util.Collection outputCollection)",
         "ground_truth": "outputCollection==null && (inputIterator==null) == false && (transformer==null) == false",
-        "prediction": "outputCollection==null && inputIterator!=null && transformer!=null",
-        "match": false,
+        "prediction": "outputCollection==null && (inputIterator==null) == false && (transformer==null) == false",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 625,
-        "completion_tokens": 14,
-        "latency_ms": 1518.219493
+        "prompt_tokens": 880,
+        "completion_tokens": 23,
+        "latency_ms": 2322.484224
     },
     {
         "id": 414,
@@ -4549,9 +4549,9 @@
         "prediction": "items==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 600,
+        "prompt_tokens": 754,
         "completion_tokens": 4,
-        "latency_ms": 869.054104
+        "latency_ms": 1174.534968
     },
     {
         "id": 415,
@@ -4560,31 +4560,31 @@
         "prediction": "true",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 629,
+        "prompt_tokens": 829,
         "completion_tokens": 2,
-        "latency_ms": 914.811114
+        "latency_ms": 1135.955994
     },
     {
         "id": 416,
         "signature": "Gaussian(double mean,double sigma)",
         "ground_truth": "sigma<=0",
-        "prediction": "sigma <= 0",
-        "match": false,
+        "prediction": "sigma<=0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 602,
-        "completion_tokens": 5,
-        "latency_ms": 1079.355351
+        "prompt_tokens": 998,
+        "completion_tokens": 4,
+        "latency_ms": 1459.504559
     },
     {
         "id": 417,
         "signature": "collate(java.lang.Iterable a,java.lang.Iterable b,java.util.Comparator c)",
         "ground_truth": "a==null || b==null || c==null",
-        "prediction": "(a==null || b==null || c==null)",
-        "match": false,
+        "prediction": "a==null || b==null || c==null",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 614,
-        "completion_tokens": 13,
-        "latency_ms": 1536.368325
+        "prompt_tokens": 816,
+        "completion_tokens": 12,
+        "latency_ms": 1688.969877
     },
     {
         "id": 418,
@@ -4593,9 +4593,9 @@
         "prediction": "first.getLength() != second.getLength()",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 621,
+        "prompt_tokens": 1093,
         "completion_tokens": 8,
-        "latency_ms": 1190.071362
+        "latency_ms": 1745.586503
     },
     {
         "id": 419,
@@ -4604,31 +4604,31 @@
         "prediction": "collection==null || enumeration==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 607,
+        "prompt_tokens": 794,
         "completion_tokens": 8,
-        "latency_ms": 1247.657683
+        "latency_ms": 1453.416307
     },
     {
         "id": 420,
         "signature": "nextPoisson(double mean)",
         "ground_truth": "mean<=0",
-        "prediction": "len <= 0",
+        "prediction": "len<=0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 603,
-        "completion_tokens": 5,
-        "latency_ms": 1071.589927
+        "prompt_tokens": 868,
+        "completion_tokens": 4,
+        "latency_ms": 1288.161225
     },
     {
         "id": 421,
         "signature": "nextHypergeometric(int populationSize,int numberOfSuccesses,int sampleSize)",
         "ground_truth": "numberOfSuccesses>populationSize || sampleSize>populationSize",
-        "prediction": "numberOfSuccesses > populationSize || sampleSize > populationSize",
+        "prediction": "numberOfSuccesses>populationSize||sampleSize>populationSize",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 620,
+        "prompt_tokens": 1024,
         "completion_tokens": 13,
-        "latency_ms": 1450.702715
+        "latency_ms": 1978.856457
     },
     {
         "id": 422,
@@ -4637,9 +4637,9 @@
         "prediction": "closures==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 600,
+        "prompt_tokens": 823,
         "completion_tokens": 5,
-        "latency_ms": 1040.893165
+        "latency_ms": 1315.660628
     },
     {
         "id": 423,
@@ -4648,20 +4648,20 @@
         "prediction": "other==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 599,
+        "prompt_tokens": 964,
         "completion_tokens": 4,
-        "latency_ms": 986.017447
+        "latency_ms": 1382.276627
     },
     {
         "id": 424,
         "signature": "FixedOrderComparator(java.lang.Object[] items)",
         "ground_truth": "items==null",
-        "prediction": "items==null",
-        "match": true,
+        "prediction": "array==null",
+        "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 601,
+        "prompt_tokens": 960,
         "completion_tokens": 4,
-        "latency_ms": 1010.81512
+        "latency_ms": 1390.552349
     },
     {
         "id": 425,
@@ -4670,9 +4670,9 @@
         "prediction": "size<=0",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 601,
+        "prompt_tokens": 867,
         "completion_tokens": 4,
-        "latency_ms": 1012.597741
+        "latency_ms": 1311.819626
     },
     {
         "id": 426,
@@ -4681,9 +4681,9 @@
         "prediction": "a.length==0",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 603,
+        "prompt_tokens": 774,
         "completion_tokens": 5,
-        "latency_ms": 1060.25961
+        "latency_ms": 1251.402889
     },
     {
         "id": 427,
@@ -4692,9 +4692,9 @@
         "prediction": "bag==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 603,
+        "prompt_tokens": 840,
         "completion_tokens": 4,
-        "latency_ms": 1005.687392
+        "latency_ms": 1250.983905
     },
     {
         "id": 428,
@@ -4703,9 +4703,9 @@
         "prediction": "divisor==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 604,
+        "prompt_tokens": 840,
         "completion_tokens": 5,
-        "latency_ms": 1080.821711
+        "latency_ms": 1314.837323
     },
     {
         "id": 429,
@@ -4714,31 +4714,31 @@
         "prediction": "a==null || b==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 610,
+        "prompt_tokens": 774,
         "completion_tokens": 8,
-        "latency_ms": 1039.331478
+        "latency_ms": 1407.921922
     },
     {
         "id": 430,
         "signature": "org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver(double relativeAccuracy, double absoluteAccuracy, int maximalOrder)",
         "ground_truth": "maximalOrder<2",
-        "prediction": "maximalOrder < 2",
-        "match": false,
+        "prediction": "maximalOrder<2",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 627,
-        "completion_tokens": 7,
-        "latency_ms": 1142.010623
+        "prompt_tokens": 950,
+        "completion_tokens": 6,
+        "latency_ms": 1471.92583
     },
     {
         "id": 431,
         "signature": "edgesOf(java.lang.Object vertex)",
         "ground_truth": "(receiverObjectID.containsVertex(vertex))==false",
-        "prediction": "vertex not in graph",
+        "prediction": "receiverObjectID.containsVertex(vertex)==false",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 602,
-        "completion_tokens": 5,
-        "latency_ms": 1063.153985
+        "prompt_tokens": 994,
+        "completion_tokens": 9,
+        "latency_ms": 1723.707113
     },
     {
         "id": 432,
@@ -4747,9 +4747,9 @@
         "prediction": "a.length==0",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 601,
+        "prompt_tokens": 774,
         "completion_tokens": 5,
-        "latency_ms": 1040.334069
+        "latency_ms": 1093.863476
     },
     {
         "id": 433,
@@ -4758,31 +4758,31 @@
         "prediction": "predicate==null || trueClosure==null || falseClosure==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 624,
+        "prompt_tokens": 1200,
         "completion_tokens": 14,
-        "latency_ms": 1436.522551
+        "latency_ms": 2236.154659
     },
     {
         "id": 434,
         "signature": "getLInfDistance(org.apache.commons.math3.linear.RealVector v)",
         "ground_truth": "v.getDimension() != receiverObjectID.getDimension()",
-        "prediction": "v.getDimension() != this.getDimension()",
-        "match": false,
+        "prediction": "v.getDimension() != receiverObjectID.getDimension()",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 613,
-        "completion_tokens": 10,
-        "latency_ms": 1395.416523
+        "prompt_tokens": 1073,
+        "completion_tokens": 12,
+        "latency_ms": 2094.80268
     },
     {
         "id": 435,
         "signature": "evaluate(double[] a,double[] c,double z)",
         "ground_truth": "a.length==0 || c.length==0",
-        "prediction": "a.length == 0 || c.length == 0",
-        "match": false,
+        "prediction": "a.length==0 || c.length==0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 605,
-        "completion_tokens": 12,
-        "latency_ms": 1244.067063
+        "prompt_tokens": 924,
+        "completion_tokens": 10,
+        "latency_ms": 1726.951716
     },
     {
         "id": 436,
@@ -4791,9 +4791,9 @@
         "prediction": "java.util.Arrays.stream(predicates).anyMatch(e -> e==null) || java.util.Arrays.stream(closures).anyMatch(e -> e==null)",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 616,
+        "prompt_tokens": 977,
         "completion_tokens": 32,
-        "latency_ms": 2250.204588
+        "latency_ms": 2977.252772
     },
     {
         "id": 437,
@@ -4802,9 +4802,9 @@
         "prediction": "index >= parameters",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 619,
+        "prompt_tokens": 966,
         "completion_tokens": 4,
-        "latency_ms": 986.519982
+        "latency_ms": 1404.822225
     },
     {
         "id": 438,
@@ -4813,9 +4813,9 @@
         "prediction": "a.length==0 || c.length==0",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 605,
+        "prompt_tokens": 933,
         "completion_tokens": 10,
-        "latency_ms": 1350.20408
+        "latency_ms": 1697.026239
     },
     {
         "id": 439,
@@ -4824,97 +4824,97 @@
         "prediction": "fraction==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 605,
+        "prompt_tokens": 831,
         "completion_tokens": 4,
-        "latency_ms": 838.381859
+        "latency_ms": 1251.183302
     },
     {
         "id": 440,
         "signature": "toString(java.lang.Object obj)",
         "ground_truth": "obj==null || ! (obj instanceof boolean[] || obj instanceof double[] || obj instanceof int[] || obj instanceof long[] || obj instanceof Object[])",
-        "prediction": "obj==null || !(obj instanceof java.lang.Number || obj instanceof java.lang.String || obj instanceof java.lang.Boolean || obj instanceof java.lang.Character)",
-        "match": false,
+        "prediction": "obj==null || ! (obj instanceof boolean[] || obj instanceof double[] || obj instanceof int[] || obj instanceof long[] || obj instanceof Object[])",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 606,
-        "completion_tokens": 30,
-        "latency_ms": 2375.748635
+        "prompt_tokens": 958,
+        "completion_tokens": 31,
+        "latency_ms": 2796.780886
     },
     {
         "id": 441,
         "signature": "StepFunction(double[] x,double[] y)",
         "ground_truth": "MathArrays.checkOrder(x)==false",
-        "prediction": "x.length == 0 || !isStrictlyIncreasing(x)",
+        "prediction": "x[0] >= x[1] || x[0] >= x[2] || x[1] >= x[2]",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 612,
-        "completion_tokens": 14,
-        "latency_ms": 1595.048559
+        "prompt_tokens": 948,
+        "completion_tokens": 30,
+        "latency_ms": 2763.176824
     },
     {
         "id": 442,
         "signature": "sample(org.apache.commons.math3.analysis.UnivariateFunction f,double min,double max,int n)",
         "ground_truth": "min<=max",
-        "prediction": "min >= max",
-        "match": false,
+        "prediction": "min<=max",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 625,
+        "prompt_tokens": 986,
         "completion_tokens": 4,
-        "latency_ms": 987.781085
+        "latency_ms": 1455.90721
     },
     {
         "id": 443,
         "signature": "pow(java.math.BigInteger k,long e)",
         "ground_truth": "e<0",
-        "prediction": "e < 0",
-        "match": false,
+        "prediction": "e<0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 602,
-        "completion_tokens": 5,
-        "latency_ms": 1048.582764
+        "prompt_tokens": 772,
+        "completion_tokens": 4,
+        "latency_ms": 1186.252489
     },
     {
         "id": 444,
         "signature": "getTreasureAmount()",
         "ground_truth": "(receiverObjectID.canCarryTreasure()) == false",
-        "prediction": "this.isTreasureCarryingUnit == false",
-        "match": false,
+        "prediction": "(receiverObjectID.canCarryTreasure()) == false",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 600,
-        "completion_tokens": 10,
-        "latency_ms": 1135.211992
+        "prompt_tokens": 853,
+        "completion_tokens": 12,
+        "latency_ms": 1696.55268
     },
     {
         "id": 445,
         "signature": "stirlingS2(int n,int k)",
         "ground_truth": "k>n",
-        "prediction": "k > n",
-        "match": false,
+        "prediction": "k>n",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 604,
-        "completion_tokens": 4,
-        "latency_ms": 1026.054105
+        "prompt_tokens": 934,
+        "completion_tokens": 3,
+        "latency_ms": 1305.652446
     },
     {
         "id": 446,
         "signature": "ConcurrentHashMultiset(java.util.concurrent.ConcurrentMap countMap)",
         "ground_truth": "(countMap.isEmpty()) == false",
-        "prediction": "countMap.size() > 0",
+        "prediction": "countMap.isEmpty() == false",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 605,
-        "completion_tokens": 8,
-        "latency_ms": 1240.703229
+        "prompt_tokens": 783,
+        "completion_tokens": 7,
+        "latency_ms": 1396.718047
     },
     {
         "id": 447,
         "signature": "factorial(int n)",
         "ground_truth": "n<0",
-        "prediction": "n < 0",
-        "match": false,
+        "prediction": "n<0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 598,
-        "completion_tokens": 5,
-        "latency_ms": 1065.593586
+        "prompt_tokens": 784,
+        "completion_tokens": 4,
+        "latency_ms": 1203.963977
     },
     {
         "id": 448,
@@ -4923,53 +4923,53 @@
         "prediction": "true",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 621,
+        "prompt_tokens": 829,
         "completion_tokens": 2,
-        "latency_ms": 890.251886
+        "latency_ms": 699.780827
     },
     {
         "id": 449,
         "signature": "IterativeLegendreGaussIntegrator(int n,double relativeAccuracy,double absoluteAccuracy,int minimalIterationCount,int maximalIterationCount)",
         "ground_truth": "n<=0 || minimalIterationCount<=0",
-        "prediction": "n <= 0 || relativeAccuracy <= 0 || absoluteAccuracy <= 0 || minimalIterationCount <= 0 || maximalIterationCount <= 0",
+        "prediction": "(minimalIterationCount>0)==false || n<1",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 629,
-        "completion_tokens": 31,
-        "latency_ms": 2229.388662
+        "prompt_tokens": 1035,
+        "completion_tokens": 13,
+        "latency_ms": 1960.194322
     },
     {
         "id": 450,
         "signature": "get(java.util.Iterator iterator,int position)",
         "ground_truth": "position<0",
-        "prediction": "position < 0 || position >= iterator.nextIndex() - iterator.index()",
+        "prediction": "position<0 || position>=iterator.remaining()",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 613,
-        "completion_tokens": 16,
-        "latency_ms": 1710.005975
+        "prompt_tokens": 788,
+        "completion_tokens": 10,
+        "latency_ms": 1582.582374
     },
     {
         "id": 451,
         "signature": "nextBytes(byte[] bytes,int start,int len)",
         "ground_truth": "start<0 || start>=bytes.length",
-        "prediction": "(start < 0) || (start >= bytes.length)",
-        "match": false,
+        "prediction": "start<0 || start>=bytes.length",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 610,
-        "completion_tokens": 13,
-        "latency_ms": 1273.316342
+        "prompt_tokens": 896,
+        "completion_tokens": 9,
+        "latency_ms": 1600.323577
     },
     {
         "id": 452,
         "signature": "SimpsonIntegrator(int minimalIterationCount,int maximalIterationCount)",
         "ground_truth": "maximalIterationCount>receiverObjectID.SIMPSON_MAX_ITERATIONS_COUNT",
-        "prediction": "maximalIterationCount > SIMPSON_MAX_ITERATIONS_COUNT",
-        "match": false,
+        "prediction": "maximalIterationCount>receiverObjectID.SIMPSON_MAX_ITERATIONS_COUNT",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 618,
-        "completion_tokens": 13,
-        "latency_ms": 1570.746341
+        "prompt_tokens": 1110,
+        "completion_tokens": 16,
+        "latency_ms": 2325.6281
     },
     {
         "id": 453,
@@ -4978,20 +4978,20 @@
         "prediction": "map.isEmpty()",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 606,
+        "prompt_tokens": 762,
         "completion_tokens": 4,
-        "latency_ms": 818.016109
+        "latency_ms": 1196.878742
     },
     {
         "id": 454,
         "signature": "addEdge(java.lang.Object sourceVertex,java.lang.Object targetVertex,java.lang.Object e)",
         "ground_truth": "receiverObjectID.contains(sourceVertex)==false || receiverObjectID.contains(targetVertex)==false",
-        "prediction": "sourceVertex not found in the graph || targetVertex not found in the graph",
-        "match": false,
+        "prediction": "receiverObjectID.contains(sourceVertex)==false || receiverObjectID.contains(targetVertex)==false",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 617,
-        "completion_tokens": 16,
-        "latency_ms": 1437.976529
+        "prompt_tokens": 1021,
+        "completion_tokens": 18,
+        "latency_ms": 2207.383116
     },
     {
         "id": 455,
@@ -5000,31 +5000,31 @@
         "prediction": "collection==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 598,
+        "prompt_tokens": 809,
         "completion_tokens": 4,
-        "latency_ms": 835.222759
+        "latency_ms": 1238.61579
     },
     {
         "id": 456,
         "signature": "setUnknownObjectBehavior(org.apache.commons.collections4.comparators.FixedOrderComparator.UnknownObjectBehavior unknownObjectBehavior)",
         "ground_truth": "receiverObjectID.isLocked()",
-        "prediction": "comparator.hasCompareBeenCalled()",
-        "match": false,
+        "prediction": "receiverObjectID.isLocked()",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 615,
+        "prompt_tokens": 810,
         "completion_tokens": 7,
-        "latency_ms": 1014.082402
+        "latency_ms": 1375.053524
     },
     {
         "id": 457,
         "signature": "StepFunction(double[] x,double[] y)",
         "ground_truth": "x.length==0 || y.length==0",
-        "prediction": "x.length == 0 || y.length == 0",
-        "match": false,
+        "prediction": "x.length==0 || y.length==0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 605,
-        "completion_tokens": 12,
-        "latency_ms": 1232.201437
+        "prompt_tokens": 934,
+        "completion_tokens": 10,
+        "latency_ms": 1677.20895
     },
     {
         "id": 458,
@@ -5033,31 +5033,31 @@
         "prediction": "classToInstantiate==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 618,
+        "prompt_tokens": 1060,
         "completion_tokens": 6,
-        "latency_ms": 936.44354
+        "latency_ms": 1619.484747
     },
     {
         "id": 459,
         "signature": "factorialLog(int n)",
         "ground_truth": "n<0",
-        "prediction": "n < 0",
-        "match": false,
+        "prediction": "n<0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 599,
-        "completion_tokens": 5,
-        "latency_ms": 1034.049542
+        "prompt_tokens": 784,
+        "completion_tokens": 4,
+        "latency_ms": 1221.352468
     },
     {
         "id": 460,
         "signature": "nextSecureHexString(int len)",
         "ground_truth": "len<=0",
-        "prediction": "len <= 0",
-        "match": false,
+        "prediction": "len<=0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 602,
-        "completion_tokens": 5,
-        "latency_ms": 794.371286
+        "prompt_tokens": 868,
+        "completion_tokens": 4,
+        "latency_ms": 519.442962
     },
     {
         "id": 461,
@@ -5066,9 +5066,9 @@
         "prediction": "transformer==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 601,
+        "prompt_tokens": 948,
         "completion_tokens": 5,
-        "latency_ms": 1061.352975
+        "latency_ms": 1434.793387
     },
     {
         "id": 462,
@@ -5077,75 +5077,75 @@
         "prediction": "length <= 0",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 598,
+        "prompt_tokens": 812,
         "completion_tokens": 5,
-        "latency_ms": 1028.312769
+        "latency_ms": 1306.20493
     },
     {
         "id": 463,
         "signature": "smooth(double[] xval,double[] yval,double[] weights)",
         "ground_truth": "xval.length==0 || yval.length==0",
-        "prediction": "xval.length == 0 || yval.length == 0",
-        "match": false,
+        "prediction": "xval.length==0 || yval.length==0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 611,
-        "completion_tokens": 14,
-        "latency_ms": 1363.216571
+        "prompt_tokens": 991,
+        "completion_tokens": 12,
+        "latency_ms": 1859.994658
     },
     {
         "id": 464,
         "signature": "min(double[] array)",
         "ground_truth": "array.length==0",
-        "prediction": "array.length == 0",
-        "match": false,
+        "prediction": "array.length==0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 596,
-        "completion_tokens": 6,
-        "latency_ms": 928.32868
+        "prompt_tokens": 770,
+        "completion_tokens": 5,
+        "latency_ms": 1259.836019
     },
     {
         "id": 465,
         "signature": "factorial(int n)",
         "ground_truth": "n>20",
-        "prediction": "n > 20",
-        "match": false,
+        "prediction": "n>20",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 612,
-        "completion_tokens": 6,
-        "latency_ms": 942.347565
+        "prompt_tokens": 921,
+        "completion_tokens": 5,
+        "latency_ms": 1426.170323
     },
     {
         "id": 466,
         "signature": "fn_inverse(int[] a,int arange)",
         "ground_truth": "min(a)<0 || max(a)>=arange",
-        "prediction": "Math.abs(a[i]) > arange",
+        "prediction": "a[i] < 0 || a[i] >= arange",
         "match": false,
         "model": "Qwen3:8B",
-        "prompt_tokens": 606,
-        "completion_tokens": 9,
-        "latency_ms": 1279.114714
+        "prompt_tokens": 834,
+        "completion_tokens": 14,
+        "latency_ms": 1780.116314
     },
     {
         "id": 467,
         "signature": "undirectedGraph(org.jgrapht.Graph g)",
         "ground_truth": "!(g instanceof org.jgrapht.DirectedGraph) && !(g instanceof org.jgrapht.UndirectedGraph)",
-        "prediction": "!(g instanceof org.jgrapht.Graph) || !(g instanceof org.jgrapht.Graph) || !(g instanceof org.jgrapht.Graph) || !(g instanceof org.jgrapht.Graph) || !(g instanceof org.jgrapht.Graph) || !(g instanceof org.jgrapht.Graph) || !(g instanceof org.jgrapht.Graph) || !(g instanceof org.jgrapht.Graph) || !(g instanceof org.jgrapht.Graph) || !(g instanceof org.jgrapht.Graph) || !(g instanceof org.jgrapht.Graph) || !(g instanceof org.jgrap",
-        "match": false,
+        "prediction": "!(g instanceof org.jgrapht.DirectedGraph) && !(g instanceof org.jgrapht.UndirectedGraph)",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 609,
-        "completion_tokens": 128,
-        "latency_ms": 7377.82377
+        "prompt_tokens": 1011,
+        "completion_tokens": 27,
+        "latency_ms": 2684.32394
     },
     {
         "id": 468,
         "signature": "nextHypergeometric(int populationSize,int numberOfSuccesses,int sampleSize)",
         "ground_truth": "numberOfSuccesses<0",
-        "prediction": "numberOfSuccesses < 0",
-        "match": false,
+        "prediction": "numberOfSuccesses<0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 611,
-        "completion_tokens": 7,
-        "latency_ms": 1220.85036
+        "prompt_tokens": 818,
+        "completion_tokens": 6,
+        "latency_ms": 1357.300402
     },
     {
         "id": 469,
@@ -5154,9 +5154,9 @@
         "prediction": "initialSize<0 || initialSize>maxSize",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 617,
+        "prompt_tokens": 860,
         "completion_tokens": 11,
-        "latency_ms": 1463.629519
+        "latency_ms": 1669.631061
     },
     {
         "id": 470,
@@ -5165,30 +5165,30 @@
         "prediction": "bg==null",
         "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 598,
+        "prompt_tokens": 902,
         "completion_tokens": 4,
-        "latency_ms": 968.55771
+        "latency_ms": 1375.432885
     },
     {
         "id": 471,
         "signature": "divide(int i)",
         "ground_truth": "i==0",
-        "prediction": "i == 0",
-        "match": false,
+        "prediction": "i==0",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 602,
-        "completion_tokens": 5,
-        "latency_ms": 1073.620797
+        "prompt_tokens": 813,
+        "completion_tokens": 4,
+        "latency_ms": 1245.719572
     },
     {
         "id": 472,
         "signature": "anyPredicate(java.util.Collection predicates)",
         "ground_truth": "predicates.stream().anyMatch(e -> e==null)",
-        "prediction": "java.util.Arrays.stream(predicates).anyMatch(e -> e==null)",
-        "match": false,
+        "prediction": "predicates.stream().anyMatch(e -> e==null)",
+        "match": true,
         "model": "Qwen3:8B",
-        "prompt_tokens": 602,
-        "completion_tokens": 16,
-        "latency_ms": 1443.004119
+        "prompt_tokens": 833,
+        "completion_tokens": 13,
+        "latency_ms": 1722.241301
     }
 ]
