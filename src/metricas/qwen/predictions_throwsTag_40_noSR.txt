@@ -1,0 +1,643 @@
+
+
+Item: 1
+Id:4
+Ground truth: n<1
+Prediction: n<=0
+
+Item: 2
+Id:13
+Ground truth: len<0 || len>(bytes.length - start)
+Prediction: len<0 || len>bytes.length - start
+
+Item: 3
+Id:16
+Ground truth: (original instanceof BinaryChromosome) == false
+Prediction: original instanceof BinaryChromosome == false
+
+Item: 4
+Id:20
+Ground truth: array.length==0
+Prediction: array.length == 0
+
+Item: 5
+Id:21
+Ground truth: endInclusive<startInclusive
+Prediction: endInclusive < startInclusive
+
+Item: 6
+Id:23
+Ground truth: nPaths<0 || nPaths==0
+Prediction: nPaths <= 0
+
+Item: 7
+Id:25
+Ground truth: p<0||p>1
+Prediction: p < 0 || p > 1
+
+Item: 8
+Id:29
+Ground truth: java.util.Arrays.stream(closures).anyMatch(e -> e==null)
+Prediction: closures==null || java.util.Arrays.stream(closures).anyMatch(e -> e==null)
+
+Item: 9
+Id:35
+Ground truth: array.length==0
+Prediction: array.length == 0
+
+Item: 10
+Id:38 nao
+Ground truth: (receiverObjectID.canCarryTreasure())==false
+Prediction: receiverObjectID.isTreasureTrain() == false
+
+Item: 11
+Id:39 nao
+Ground truth: predicates.stream().anyMatch(e -> e==null)
+Prediction: predicates==null
+
+Item: 12
+Id:40 nao
+Ground truth: axis.getNorm().getReal()==0
+Prediction: axis.getNorm().getReal() <= FieldVector3D.EPSILON
+
+Item: 13
+Id:45
+Ground truth: java.util.Arrays.stream(predicates).anyMatch(e->e==null)
+Prediction: predicates==null || java.util.Arrays.stream(predicates).anyMatch(e -> e==null)
+
+Item: 14
+Id:50
+Ground truth: array.length==0
+Prediction: array.length == 0
+
+Item: 15
+Id:51
+Ground truth: bandwidth<0 || bandwidth>1
+Prediction: bandwidth < 0 || bandwidth > 1
+
+Item: 16
+Id:55
+Ground truth: n<0
+Prediction: n < 0
+
+Item: 17
+Id:56
+Ground truth: receiverObjectID.isCompatible(that)==false
+Prediction: isCompatible(that) == false
+
+Item: 18
+Id:58 nao
+Ground truth: (receiverObjectID.canCarryTreasure()) == false
+Prediction: (receiverObjectID.isTreasureTrain()) == false
+
+Item: 19
+Id:59
+Ground truth: (first.getLength() == second.getLength()) == false
+Prediction: first.getLength() != second.getLength()
+
+Item: 20
+Id:60 nao
+Ground truth: x.length<2
+Prediction: x.length < 2 || y.length < 2
+
+Item: 21
+Id:65
+Ground truth: n<1
+Prediction: n<=0
+
+Item: 22
+Id:70 nao
+Ground truth: objectsAndClosures.values().stream().anyMatch(e -> e==null)
+Prediction: objectsAndClosures==null || java.util.Arrays.stream(objectsAndClosures.values().toArray(new Object[0])).anyMatch(e -> e==null)
+
+Item: 23
+Id:72 nao
+Ground truth: ((a.length - c.length) == 1) == false
+Prediction: a.length != c.length || a.length - c.length != 1
+
+Item: 24
+Id:74
+Ground truth: denominator==0
+Prediction: denominator == 0
+
+Item: 25
+Id:76
+Ground truth: (first instanceof AbstractListChromosome) == false || (second instanceof AbstractListChromosome) == false
+Prediction: first instanceof AbstractListChromosome == false || second instanceof AbstractListChromosome == false
+
+Item: 26
+Id:77
+Ground truth: ((xval.length) == (yval.length)) == false
+Prediction: xval.length != yval.length
+
+Item: 27
+Id:79
+Ground truth: closures.stream().anyMatch(e -> e==null)
+Prediction: closures==null || java.util.Arrays.stream(closures).anyMatch(e -> e==null)
+
+Item: 28
+Id:83
+Ground truth: ((a.length - c.length)==1) == false
+Prediction: a.length - c.length != 1
+
+Item: 29
+Id:90
+Ground truth: predicatesAndClosures.values().stream().anyMatch(e -> e==null)
+Prediction: predicatesAndClosures.values().stream().anyMatch(closure -> closure == null)
+
+Item: 30
+Id:92 nao
+Ground truth: sourceVertex==null || targetVertex==null
+Prediction: sourceVertex==null || targetVertex==null || e==null
+
+Item: 31
+Id:95
+Ground truth: (minimalIterationCount>0)==false
+Prediction: minimalIterationCount<=0
+
+Item: 32
+Id:96 nao
+Ground truth: receiverObjectID.contains(sourceVertex)==false || receiverObjectID.contains(targetVertex)==false
+Prediction: sourceVertex==null || targetVertex==null || receiverObjectID.containsVertex(sourceVertex)==false || receiverObjectID.containsVertex(targetVertex)==false
+
+Item: 33
+Id:102
+Ground truth: expression==false
+Prediction: expression == false
+
+Item: 34
+Id:104
+Ground truth: end<start
+Prediction: end < start
+
+Item: 35
+Id:107
+Ground truth: value>Short.MAX_VALUE || value<Short.MIN_VALUE
+Prediction: value > Short.MAX_VALUE || value < Short.MIN_VALUE
+
+Item: 36
+Id:113
+Ground truth: player==null || player==receiverObjectID
+Prediction: player==null || player==this
+
+Item: 37
+Id:123
+Ground truth: bytes.length<2
+Prediction: bytes.length < 2
+
+Item: 38
+Id:135 nao
+Ground truth: weights!=null && bases.length!=weights.length
+Prediction: bases.length != weights.length
+
+Item: 39
+Id:139
+Ground truth: initialSize<0
+Prediction: initialSize < 0
+
+Item: 40
+Id:141
+Ground truth: maxIter<=0
+Prediction: maxIter <= 0
+
+Item: 41
+Id:143
+Ground truth: initialCapacity<0 || loadFactor<=0
+Prediction: initialCapacity < 0 || loadFactor <= 0
+
+Item: 42
+Id:146
+Ground truth: n<2
+Prediction: n < 2
+
+Item: 43
+Id:148
+Ground truth: b==0
+Prediction: b == 0
+
+Item: 44
+Id:150
+Ground truth: collection==null || collection.contains(null)
+Prediction: collection==null || java.util.Arrays.stream(collection.toArray()).anyMatch(e -> e==null)
+
+Item: 45
+Id:151
+Ground truth: ((x.length) == (y.length)) == false
+Prediction: x.length != y.length
+
+Item: 46
+Id:154 nao
+Ground truth: n<0
+Prediction: n<=0
+
+Item: 47
+Id:155
+Ground truth: collection==null || collection.contains(null)
+Prediction: collection==null || java.util.Arrays.stream(collection.toArray()).anyMatch(e -> e==null)
+
+Item: 48
+Id:159
+Ground truth: eps<0.0 || minPts<0
+Prediction: eps < 0.0 || minPts < 0
+
+Item: 49
+Id:161
+Ground truth: occurrences<0
+Prediction: occurrences < 0
+
+Item: 50
+Id:167
+Ground truth: end<start
+Prediction: end < start
+
+Item: 51
+Id:173
+Ground truth: size<0
+Prediction: size < 0
+
+Item: 52
+Id:174
+Ground truth: denominator==0
+Prediction: denominator == 0
+
+Item: 53
+Id:180
+Ground truth: maxSize<0 || maxSize==0
+Prediction: maxSize<=0
+
+Item: 54
+Id:184
+Ground truth: java.util.Arrays.stream(predicates).anyMatch(e->e==null)
+Prediction: java.util.Arrays.stream(predicates).anyMatch(e -> e==null)
+
+Item: 55
+Id:191 nao
+Ground truth: u.getNorm().getReal()==0 || v.getNorm().getReal()==0
+Prediction: u.getNorm().isZero() || v.getNorm().isZero()
+
+Item: 56
+Id:202
+Ground truth: end<start
+Prediction: end < start
+
+Item: 57
+Id:203
+Ground truth: fraction==(org.apache.commons.math3.fraction.Fraction.ZERO)
+Prediction: fraction.equals(Fraction.ZERO)
+
+Item: 58
+Id:204
+Ground truth: ((x.length) == (y.length)) == false
+Prediction: x.length != y.length
+
+Item: 59
+Id:207
+Ground truth: array.length==0
+Prediction: array.length == 0
+
+Item: 60
+Id:210
+Ground truth: maxSize<1
+Prediction: maxSize < 1
+
+Item: 61
+Id:213
+Ground truth: ((xval.length) == (yval.length)) == false
+Prediction: xval.length != yval.length
+
+Item: 62
+Id:217
+Ground truth: fraction==(org.apache.commons.math3.fraction.BigFraction.ZERO)
+Prediction: fraction.equals(BigFraction.ZERO)
+
+Item: 63
+Id:221
+Ground truth: maxSize<0 || maxSize==0
+Prediction: maxSize<=0
+
+Item: 64
+Id:224
+Ground truth: (minimalIterationCount>0)==false
+Prediction: minimalIterationCount<=0
+
+Item: 65
+Id:225
+Ground truth: lower>=upper 
+Prediction: lower>=upper
+
+Item: 66
+Id:228 nao
+Ground truth: v1.getNorm()==null || v2.getNorm()==null
+Prediction: v1.getNorm() == 0 || v2.getNorm() == 0
+
+Item: 67
+Id:229
+Ground truth: initialCapacity<0
+Prediction: initialCapacity < 0
+
+Item: 68
+Id:230 nao
+Ground truth: a==null || c==null
+Prediction: a==null || c==null || z==null
+
+Item: 69
+Id:233
+Ground truth: lower>=upper
+Prediction: lower >= upper
+
+Item: 70
+Id:251
+Ground truth: expectedOldCount<0 || newCount<0
+Prediction: expectedOldCount < 0 || newCount < 0
+
+Item: 71
+Id:267
+Ground truth: end<start
+Prediction: end < start
+
+Item: 72
+Id:268
+Ground truth: b==0
+Prediction: b == 0
+
+Item: 73
+Id:270
+Ground truth: maximalIterationCount<=minimalIterationCount
+Prediction: maximalIterationCount <= minimalIterationCount
+
+Item: 74
+Id:291
+Ground truth: ((a.lenght - c.length)==1) == false
+Prediction: a.length - c.length != 1
+
+Item: 75
+Id:294
+Ground truth: collection==null || collection.contains(null)
+Prediction: collection==null || java.util.Arrays.stream(collection.toArray()).anyMatch(e -> e==null)
+
+Item: 76
+Id:295
+Ground truth: xval.length==0 || yval.length==0
+Prediction: xval.length == 0 || yval.length == 0
+
+Item: 77
+Id:297
+Ground truth: xval.length==0 || yval.length==0 || fval.length==0
+Prediction: xval.length == 0 || yval.length == 0 || fval.length == 0
+
+Item: 78
+Id:298
+Ground truth: x.length<2
+Prediction: x.length < 2
+
+Item: 79
+Id:302
+Ground truth: (minimalIterationCount>0)==false
+Prediction: minimalIterationCount<=0
+
+Item: 80
+Id:304
+Ground truth: java.util.Arrays.stream(predicates).anyMatch(e->e==null)
+Prediction: java.util.Arrays.stream(predicates).anyMatch(e -> e==null)
+
+Item: 81
+Id:311
+Ground truth: collection.isEmpty() || collection.size()>1
+Prediction: collection.isEmpty() || collection.size() > 1
+
+Item: 82
+Id:314
+Ground truth: nMaxHops<0 || nMaxHops==0
+Prediction: nMaxHops<=0
+
+Item: 83
+Id:342
+Ground truth: ((xval.length) == (yval.length)) == false
+Prediction: xval.length != yval.length
+
+Item: 84
+Id:345
+Ground truth: vector.getNorm()==0
+Prediction: vector.getNorm() == 0
+
+Item: 85
+Id:349 nao
+Ground truth: (m.length != 3) || (m[0].length != 3) || (m[1].length != 3) || (m[2].length != 3)
+Prediction: m.length != 3 || m[0].length != 3 || m[1].length != 3 || m[2].length != 3 || !MatrixUtils.isOrthogonal(m, threshold) || MatrixUtils.determinant(m) < 0
+
+Item: 86
+Id:352
+Ground truth: index<0
+Prediction: index < 0
+
+Item: 87
+Id:358 nao
+Ground truth: y.getDimension() != receiverObjectID.getDimension()
+Prediction: v.getDimension() != receiverObjectID.getDimension()
+
+Item: 88
+Id:360
+Ground truth: maxSize<0 || maxSize==0
+Prediction: maxSize<=0
+
+Item: 89
+Id:363
+Ground truth: end<start
+Prediction: end < start
+
+Item: 90
+Id:364
+Ground truth: lower>=initial || initial>=upper
+Prediction: lower >= initial || initial >= upper
+
+Item: 91
+Id:366 nao
+Ground truth: axis.getNorm().getReal()==0
+Prediction: axis.getNorm().getReal() <= 0.0
+
+Item: 92
+Id:367
+Ground truth: initialCapacity<0
+Prediction: initialCapacity < 0
+
+Item: 93
+Id:375
+Ground truth: l==0
+Prediction: l == 0
+
+Item: 94
+Id:381
+Ground truth: dimension<1 || dimension>40
+Prediction: dimension < 1 || dimension > 40
+
+Item: 95
+Id:385
+Ground truth: map.isEmpty()
+Prediction: map.isEmpty() == true
+
+Item: 96
+Id:387
+Ground truth: maxSize<1
+Prediction: maxSize < 1
+
+Item: 97
+Id:388 nao
+Ground truth: receiverObjectID.isEmpty()
+Prediction: stack.isEmpty()
+
+Item: 98
+Id:389
+Ground truth: initialCapacity<0
+Prediction: initialCapacity < 0
+
+Item: 99
+Id:392
+Ground truth: (v.length==3)==false
+Prediction: v.length != 3
+
+Item: 100
+Id:399 nao
+Ground truth: receiverObjectID.getGraph()==null
+Prediction: receiverObjectID==null
+
+Item: 101
+Id:400 nao
+Ground truth: receiverObjectID.getNorm()==0 || v.getNorm()==0
+Prediction: v==null || receiverObjectID.getVector().isZero()
+
+Item: 102
+Id:402 nao
+Ground truth: position<0 || position>receiverObjectID.size()
+Prediction: position < 0 || position >= size
+
+Item: 103
+Id:403 nao
+Ground truth: receiverObjectID.isEmpty()
+Prediction: stack.isEmpty()
+
+Item: 104
+Id:406
+Ground truth: x.length<2
+Prediction: x.length < 2
+
+Item: 105
+Id:407
+Ground truth: receiverObjectID.getDimension() != v.getDimension()
+Prediction: v.getDimension() != receiverObjectID.getDimension()
+
+Item: 106
+Id:409 nao
+Ground truth: bases==null
+Prediction: bases == null || weights == null
+
+Item: 107
+Id:413
+Ground truth: outputCollection==null && (inputIterator==null) == false && (transformer==null) == false
+Prediction: outputCollection==null && inputIterator!=null && transformer!=null
+
+Item: 108
+Id:418
+Ground truth: (first.getLength() == second.getLength()) == false
+Prediction: first.getLength() != second.getLength()
+
+Item: 109
+Id:420 nao
+Ground truth: mean<=0
+Prediction: len <= 0
+
+Item: 110
+Id:431
+Ground truth: (receiverObjectID.containsVertex(vertex))==false
+Prediction: receiverObjectID.containsVertex(vertex)==false
+
+Item: 111
+Id:435
+Ground truth: a.length==0 || c.length==0
+Prediction: a.length == 0 || c.length == 0
+
+Item: 112
+Id:437
+Ground truth: index>=parameters
+Prediction: index >= parameters
+
+Item: 113
+Id:440 nao
+Ground truth: obj==null || ! (obj instanceof boolean[] || obj instanceof double[] || obj instanceof int[] || obj instanceof long[] || obj instanceof Object[])
+Prediction: obj==null || (!(obj instanceof java.lang.String) && !(obj instanceof java.lang.Number) && !(obj instanceof java.lang.Boolean) && !(obj instanceof java.lang.Character))
+
+Item: 114
+Id:442 nao
+Ground truth: min<=max
+Prediction: min >= max
+
+Item: 115
+Id:444 nao
+Ground truth: (receiverObjectID.canCarryTreasure()) == false
+Prediction: receiverObjectID.isTreasureCarrying()==false
+
+Item: 116
+Id:446
+Ground truth: (countMap.isEmpty()) == false
+Prediction: countMap.isEmpty() == false
+
+Item: 117
+Id:449
+Ground truth: n<=0 || minimalIterationCount<=0
+Prediction: minimalIterationCount<=0 || n<=0
+
+Item: 118
+Id:451
+Ground truth: start<0 || start>=bytes.length
+Prediction: start < 0 || start >= bytes.length
+
+Item: 119
+Id:452
+Ground truth: maximalIterationCount>receiverObjectID.SIMPSON_MAX_ITERATIONS_COUNT
+Prediction: maximalIterationCount > SIMPSON_MAX_ITERATIONS_COUNT
+
+Item: 120
+Id:456 nao
+Ground truth: receiverObjectID.isLocked()
+Prediction: receiverObjectID.hasPerformedComparison() == true
+
+Item: 121
+Id:457
+Ground truth: x.length==0 || y.length==0
+Prediction: x.length == 0 || y.length == 0
+
+Item: 122
+Id:462
+Ground truth: length==0 || length<0
+Prediction: length <= 0
+
+Item: 123
+Id:463
+Ground truth: xval.length==0 || yval.length==0
+Prediction: xval.length == 0 || yval.length == 0
+
+Item: 124
+Id:464
+Ground truth: array.length==0
+Prediction: array.length == 0
+
+Item: 125
+Id:466 nao
+Ground truth: min(a)<0 || max(a)>=arange
+Prediction: a[i] < 0 || a[i] > arange
+
+Item: 126
+Id:467
+Ground truth: !(g instanceof org.jgrapht.DirectedGraph) && !(g instanceof org.jgrapht.UndirectedGraph)
+Prediction: g instanceof DirectedGraph == false && g instanceof UndirectedGraph == false
+
+Total para validar: 126
+
+Total: 472
+
+Predicoes corretas exatas: 309
+Acuracia das predicoes exatas: 0.65
+Numero de incorretas: 37
+
+Numero de verificacoes negativas: 29
+Numero de semanticamente corretas: 406
+Acuracia: 0.86

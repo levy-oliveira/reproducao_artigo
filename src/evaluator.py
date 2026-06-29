@@ -8,7 +8,7 @@ import sys
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 
-FILE_NAME = "predictions_returnTag_60_SR"
+FILE_NAME = "predictions_throwsTag_40_SR"
 
 OUTPUT_DIR = ROOT_DIR / "outputs" / "qwen3-8b"
 PATH = (
