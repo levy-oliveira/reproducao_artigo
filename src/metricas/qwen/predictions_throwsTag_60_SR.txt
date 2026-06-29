@@ -1,0 +1,288 @@
+
+
+Item: 1
+Id:13
+Ground truth: len<0 || len>(bytes.length - start)
+Prediction: len<0 || len>bytes.length - start
+
+Item: 2
+Id:16
+Ground truth: (original instanceof BinaryChromosome) == false
+Prediction: original instanceof BinaryChromosome == false
+
+Item: 3
+Id:21
+Ground truth: endInclusive<startInclusive
+Prediction: endInclusive < startInclusive
+
+Item: 4
+Id:38
+Ground truth: (receiverObjectID.canCarryTreasure())==false
+Prediction: receiverObjectID.canCarryTreasure() == false
+
+Item: 5
+Id:45
+Ground truth: java.util.Arrays.stream(predicates).anyMatch(e->e==null)
+Prediction: java.util.Arrays.stream(predicates).anyMatch(e -> e==null)
+
+Item: 6
+Id:56 nao
+Ground truth: receiverObjectID.isCompatible(that)==false
+Prediction: isCompatible(that) == false
+
+Item: 7
+Id:59
+Ground truth: (first.getLength() == second.getLength()) == false
+Prediction: first.getLength() != second.getLength()
+
+Item: 8
+Id:72
+Ground truth: ((a.length - c.length) == 1) == false
+Prediction: (a.length - c.length) != 1
+
+Item: 9
+Id:76
+Ground truth: (first instanceof AbstractListChromosome) == false || (second instanceof AbstractListChromosome) == false
+Prediction: Condition: (first instanceof AbstractListChromosome) == false || (second instanceof AbstractListChromosome) == false
+
+Item: 10
+Id:81 nao
+Ground truth: receiverObjectID.getNorm()==null
+Prediction: receiverObjectID.getNorm()==0
+
+Item: 11
+Id:83
+Ground truth: ((a.length - c.length)==1) == false
+Prediction: (a.length - c.length) != 1
+
+Item: 12
+Id:109 nao
+Ground truth: (plume.RegexUtil.isRegex(s, groups)) == false
+Prediction: plume.RegexUtil.isRegex(s)==false
+
+Item: 13
+Id:113 nao
+Ground truth: player==null || player==receiverObjectID
+Prediction: player==null || this==null
+
+Item: 14
+Id:123
+Ground truth: bytes.length<2
+Prediction: bytes.length < 2
+
+Item: 15
+Id:127
+Ground truth: den==0
+Prediction: denominator==0
+
+Item: 16
+Id:135 nao
+Ground truth: weights!=null && bases.length!=weights.length
+Prediction: weights.length != bases.length
+
+Item: 17
+Id:149 nao
+Ground truth: receiverObjectID.getNorm()==0
+Prediction: vector.getNorm()==0
+
+Item: 18
+Id:151
+Ground truth: ((x.length) == (y.length)) == false
+Prediction: x.length != y.length
+
+Item: 19
+Id:173
+Ground truth: size<0
+Prediction: size < 0
+
+Item: 20
+Id:184
+Ground truth: java.util.Arrays.stream(predicates).anyMatch(e->e==null)
+Prediction: java.util.Arrays.stream(predicates).anyMatch(e -> e==null)
+
+Item: 21
+Id:191 nao
+Ground truth: u.getNorm().getReal()==0 || v.getNorm().getReal()==0
+Prediction: u.getNorm().isZero() || v.getNorm().isZero()
+
+Item: 22
+Id:203
+Ground truth: fraction==(org.apache.commons.math3.fraction.Fraction.ZERO)
+Prediction: fraction.equals(org.apache.commons.math3.fraction.Fraction.ZERO)
+
+Item: 23
+Id:204
+Ground truth: ((x.length) == (y.length)) == false
+Prediction: x.length != y.length
+
+Item: 24
+Id:213
+Ground truth: ((xval.length) == (yval.length)) == false
+Prediction: xval.length != yval.length
+
+Item: 25
+Id:220
+Ground truth: predicates.contains(null)
+Prediction: predicates.stream().anyMatch(e -> e==null)
+
+Item: 26
+Id:225
+Ground truth: lower>=upper 
+Prediction: lower >= upper
+
+Item: 27
+Id:228 nao
+Ground truth: v1.getNorm()==null || v2.getNorm()==null
+Prediction: v1.getNorm() == 0 || v2.getNorm() == 0
+
+Item: 28
+Id:229
+Ground truth: initialCapacity<0
+Prediction: initialCapacity < 0
+
+Item: 29
+Id:236
+Ground truth: java.util.Arrays.stream(predicates).anyMatch(e -> e==null)
+Prediction: java.util.Arrays.stream(predicates).anyMatch(e->e==null)
+
+Item: 30
+Id:251
+Ground truth: expectedOldCount<0 || newCount<0
+Prediction: expectedOldCount < 0 || newCount < 0
+
+Item: 31
+Id:275
+Ground truth: originalData.size() != permutedData.size()
+Prediction: originalData.size()!=permutedData.size()
+
+Item: 32
+Id:288 nao
+Ground truth: vertices.contains(null) || vertices==null
+Prediction: vertices==null || vertices.contains(null) == true
+
+Item: 33
+Id:291
+Ground truth: ((a.lenght - c.length)==1) == false
+Prediction: ((a.length - c.length)==1) == false
+
+Item: 34
+Id:297
+Ground truth: xval.length==0 || yval.length==0 || fval.length==0
+Prediction: xval.length == 0 || yval.length == 0 || fval.length == 0
+
+Item: 35
+Id:299
+Ground truth: Arrays.asList(others).contains(null)
+Prediction: java.util.Arrays.stream(others).anyMatch(e -> e==null)
+
+Item: 36
+Id:301 nao
+Ground truth: java.util.Arrays.stream(predicates).anyMatch(e -> e==null) || java.util.Arrays.stream(closures).anyMatch(e -> e==null)
+Prediction: java.util.Arrays.stream(predicates).anyMatch(e -> e==null) || java.util.Arrays.stream(closures).anyMatch(e -> e==null) || defaultClosure==null
+
+Item: 37
+Id:302
+Ground truth: (minimalIterationCount>0)==false
+Prediction: minimalIterationCount<=0
+
+Item: 38
+Id:309 nao
+Ground truth: (plume.RegexUtil.isRegex(s)) == false
+Prediction: plume.RegexUtil.isRegex(s, groups) == false
+
+Item: 39
+Id:345
+Ground truth: vector.getNorm()==0
+Prediction: vector.getNorm() == 0
+
+Item: 40
+Id:349 nao
+Ground truth: (m.length != 3) || (m[0].length != 3) || (m[1].length != 3) || (m[2].length != 3)
+Prediction: m.length != 3 || m[0].length != 3 || m[1].length != 3 || m[2].length != 3 || !MathArrays.isOrthogonal(m, threshold) || MathArrays.determinant(m) < 0
+
+Item: 41
+Id:352
+Ground truth: index<0
+Prediction: index < 0
+
+Item: 42
+Id:353 nao
+Ground truth: y.getDimension() != receiverObjectID.getDimension()
+Prediction: v.getDimension() != receiverObjectID.getDimension()
+
+Item: 43
+Id:363
+Ground truth: end<start
+Prediction: end < start
+
+Item: 44
+Id:364
+Ground truth: lower>=initial || initial>=upper
+Prediction: lower >= initial || initial >= upper
+
+Item: 45
+Id:392
+Ground truth: (v.length==3)==false
+Prediction: v.length != 3
+
+Item: 46
+Id:402 nao
+Ground truth: position<0 || position>receiverObjectID.size()
+Prediction: position < 0 || position >= size
+
+Item: 47
+Id:407
+Ground truth: receiverObjectID.getDimension() != v.getDimension()
+Prediction: v.getDimension() != receiverObjectID.getDimension()
+
+Item: 48
+Id:418
+Ground truth: (first.getLength() == second.getLength()) == false
+Prediction: first.getLength() != second.getLength()
+
+Item: 49
+Id:420 nao
+Ground truth: mean<=0
+Prediction: len<=0
+
+Item: 50
+Id:431 nao
+Ground truth: (receiverObjectID.containsVertex(vertex))==false
+Prediction: receiverObjectID.containsVertex(v)==false
+
+Item: 51
+Id:446
+Ground truth: (countMap.isEmpty()) == false
+Prediction: countMap.isEmpty() == false
+
+Item: 52
+Id:449
+Ground truth: n<=0 || minimalIterationCount<=0
+Prediction: minimalIterationCount<=0 || n<=0
+
+Item: 53
+Id:462
+Ground truth: length==0 || length<0
+Prediction: length<=0
+
+Item: 54
+Id:466
+Ground truth: min(a)<0 || max(a)>=arange
+Prediction: a[i] < 0 || a[i] >= arange
+
+Item: 55
+Id:467
+Ground truth: !(g instanceof org.jgrapht.DirectedGraph) && !(g instanceof org.jgrapht.UndirectedGraph)
+Prediction: graph instanceof DirectedGraph == false && graph instanceof UndirectedGraph == false
+
+Total para validar: 55
+
+Total: 472
+
+Predicoes corretas exatas: 399
+Acuracia das predicoes exatas: 0.85
+Numero de incorretas: 18
+
+Numero de verificacoes negativas: 16
+Numero de semanticamente corretas: 438
+Acuracia: 0.93
