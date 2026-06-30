@@ -1,0 +1,378 @@
+
+
+Item: 1
+Id:9 nao
+Ground truth: (b==null) == false
+Prediction: (a==null) == false
+
+Item: 2
+Id:11
+Ground truth: maxStep>0
+Prediction: maxStep > 0
+
+Item: 3
+Id:12
+Ground truth: e>0||e==0
+Prediction: (e>0||e==0)
+
+Item: 4
+Id:13 nao
+Ground truth: (bytes==null) == false
+Prediction: (bytes!=null) && (start>=0) && (len>0)
+
+Item: 5
+Id:19
+Ground truth: (elements==null) == false
+Prediction: (elements!=null)
+
+Item: 6
+Id:22
+Ground truth: (filename==null)==false
+Prediction: (filename!=null) == true
+
+Item: 7
+Id:25
+Ground truth: throwable!=null
+Prediction: (throwable==null) == false
+
+Item: 8
+Id:34 nao
+Ground truth: (predicate==null) == false
+Prediction: (predicate1!=null)&&(predicate2!=null)
+
+Item: 9
+Id:35
+Ground truth: (predicate2==null) == false
+Prediction: (predicate2!=null)
+
+Item: 10
+Id:38 nao
+Ground truth: (predicate==null) == false
+Prediction: (p==null) == false
+
+Item: 11
+Id:39
+Ground truth: (predicate2==null) == false
+Prediction: (predicate2!=null)
+
+Item: 12
+Id:42 nao
+Ground truth: (b==null) == false
+Prediction: (a==null) == false
+
+Item: 13
+Id:48
+Ground truth: (predicate1==null) == false
+Prediction: (predicate1!=null)
+
+Item: 14
+Id:51
+Ground truth: (x==null) == false
+Prediction: (x!=null)
+
+Item: 15
+Id:58
+Ground truth: expectedInsertions>0
+Prediction: expectedInsertions>0 && fpp>=0 && fpp<1.0
+
+Item: 16
+Id:59
+Ground truth: e>0||e==0
+Prediction: (e>0||e==0)
+
+Item: 17
+Id:62
+Ground truth: (x==null) == false
+Prediction: (x!=null)
+
+Item: 18
+Id:63
+Ground truth: p!=null
+Prediction: (p!=null)
+
+Item: 19
+Id:66
+Ground truth: isLast==true
+Prediction: isLast
+
+Item: 20
+Id:72
+Ground truth: (array.length==0)==false
+Prediction: (array.length==0) == false
+
+Item: 21
+Id:73
+Ground truth: (y==null) == false
+Prediction: (y!=null)
+
+Item: 22
+Id:79
+Ground truth: (y==null) == false
+Prediction: (y!=null)
+
+Item: 23
+Id:80 nao
+Ground truth: (inputCollection==null) == false && (predicate==null) == false || (outputCollection==null) == false
+Prediction: (inputCollection==null) == false && (predicate==null) == false || (outputCollection==null) == false && (rejectedCollection==null) == false
+
+Item: 24
+Id:85 nao
+Ground truth: nums>0
+Prediction: nums.length>0
+
+Item: 25
+Id:90
+Ground truth: filename!=null
+Prediction: (filename==null)==false
+
+Item: 26
+Id:96 nao
+Ground truth: (supplier==null)==false
+Prediction: (function==null)==false
+
+Item: 27
+Id:100
+Ground truth: (a==null) == false
+Prediction: (a!=null) == true
+
+Item: 28
+Id:103
+Ground truth: (a==null) == false
+Prediction: (a!=null)
+
+Item: 29
+Id:104
+Ground truth: (lock==null) == false
+Prediction: (lock!=null) == true
+
+Item: 30
+Id:108 nao
+Ground truth: (inputCollection==null) == false && (transformer==null) == false || (outputCollection==null) == false
+Prediction: (inputIterator==null) == false && (transformer==null) == false || (outputCollection==null) == false
+
+Item: 31
+Id:111
+Ground truth: nums>0
+Prediction: nums.length>0
+
+Item: 32
+Id:114
+Ground truth: (key==null) == false
+Prediction: (key!=null)
+
+Item: 33
+Id:120
+Ground truth: e>0||e==0
+Prediction: (e>0||e==0)
+
+Item: 34
+Id:123
+Ground truth: maximalStep>0
+Prediction: (maximalStep>0)
+
+Item: 35
+Id:130
+Ground truth: (predicate==null) == false
+Prediction: (predicate!=null)
+
+Item: 36
+Id:134 nao
+Ground truth: (transformer==null) == false
+Prediction: (fraction==null) == false
+
+Item: 37
+Id:138
+Ground truth: lower<=upper
+Prediction: (lower<=upper)
+
+Item: 38
+Id:139 nao
+Ground truth: (methodName==null) == false
+Prediction: (sequence>start.length()) == false
+
+Item: 39
+Id:140
+Ground truth: bytes!=null
+Prediction: (bytes!=null)
+
+Item: 40
+Id:142 nao
+Ground truth: (enumeration==null) == false
+Prediction: (bytes==null) == false
+
+Item: 41
+Id:145
+Ground truth: (function==null)==false
+Prediction: (function==null) == false
+
+Item: 42
+Id:150
+Ground truth: (array.length==0)==false
+Prediction: (array.length==0) == false
+
+Item: 43
+Id:155
+Ground truth: string!=null
+Prediction: (string!=null)
+
+Item: 44
+Id:158
+Ground truth: (y==null) == false
+Prediction: (y!=null)
+
+Item: 45
+Id:160 nao
+Ground truth: expectedInsertions>0
+Prediction: expectedInsertions>0 && fpp>=0 && fpp<1.0
+
+Item: 46
+Id:163
+Ground truth: e>0||e==0
+Prediction: (e>0||e==0)
+
+Item: 47
+Id:177
+Ground truth: key!=null
+Prediction: (key!=null)
+
+Item: 48
+Id:180 nao
+Ground truth: (b==null) == false
+Prediction: (p!=null)
+
+Item: 49
+Id:184 nao
+Ground truth: (closures==null) == false
+Prediction: (predicates==null) == false
+
+Item: 50
+Id:185 nao
+Ground truth: (a==null) == false
+Prediction: (a==null) == false || (b==null) == false
+
+Item: 51
+Id:186 nao
+Ground truth: (bag==null) == false
+Prediction: (bg!=null)
+
+Item: 52
+Id:193
+Ground truth: expectedInsertions>0
+Prediction: (expectedInsertions > 0)
+
+Item: 53
+Id:194 nao
+Ground truth: (bag==null) == false
+Prediction: (bg!=null)
+
+Item: 54
+Id:196 nao
+Ground truth: (inputCollection==null) == false || (predicate==null) == false || (rejectedCollection==null) == false
+Prediction: (inputCollection==null) == false && (predicate==null) == false || (outputCollection==null) == false
+
+Item: 55
+Id:201 nao
+Ground truth: (predicate2==null) == false
+Prediction: (predicate1==null) == false && (predicate2==null) == false
+
+Item: 56
+Id:202 nao
+Ground truth: (collection==null) == false
+Prediction: (collection==null) == false || (permutations==null) == false
+
+Item: 57
+Id:206
+Ground truth: (inputCollection==null) == false
+Prediction: (inputCollection==null) == false || (predicate==null) == false
+
+Item: 58
+Id:209 nao
+Ground truth: (type==null) == false
+Prediction: (key==null) == false
+
+Item: 59
+Id:210
+Ground truth: (inputCollection==null) == false
+Prediction: (inputCollection==null) == false || (predicate==null) == false
+
+Item: 60
+Id:213
+Ground truth: (y==null) == false
+Prediction: (y!=null)
+
+Item: 61
+Id:218 nao
+Ground truth: (b==null) == false
+Prediction: (a==null) == false || (b==null) == false
+
+Item: 62
+Id:219
+Ground truth: (array.length==0) == false
+Prediction: (array.length>0)
+
+Item: 63
+Id:220
+Ground truth: (count<0) == false
+Prediction: (count>=0)
+
+Item: 64
+Id:221 nao
+Ground truth: (coll2==null) == false
+Prediction: (collection==null) == false
+
+Item: 65
+Id:222 nao
+Ground truth: (fraction==null) == false
+Prediction: (array.length==0)==false
+
+Item: 66
+Id:223 nao
+Ground truth: (bases==null) == false
+Prediction: (bytes==null) == false
+
+Item: 67
+Id:227 nao
+Ground truth: (num==null) == false
+Prediction: (fraction==null)==false
+
+Item: 68
+Id:230
+Ground truth: (a==null) == false
+Prediction: (a==null) == false || (b==null) == false
+
+Item: 69
+Id:233
+Ground truth: (predicate==null) == false
+Prediction: (predicate!=null)
+
+Item: 70
+Id:234 nao
+Ground truth: (b==null) == false
+Prediction: (a==null) == false
+
+Item: 71
+Id:236
+Ground truth: (a==null) == false
+Prediction: (a==null) == false || (b==null) == false
+
+Item: 72
+Id:240
+Ground truth: (a==null) == false
+Prediction: (a==null) == false || (b==null) == false
+
+Item: 73
+Id:242 nao
+Ground truth: (predicate1==null) == false
+Prediction: (predicate==null) == false
+
+Total para validar: 73
+
+Total: 243
+
+Predicoes corretas exatas: 129
+Acuracia das predicoes exatas: 0.53
+Numero de incorretas: 41
+
+Numero de verificacoes negativas: 29
+Numero de semanticamente corretas: 173
+Acuracia: 0.71
