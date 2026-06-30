@@ -8,9 +8,9 @@ import sys
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 
-FILE_NAME = "predictions_paramTag_60_SR"
+FILE_NAME = "predictions_throwsTag_10_noSR"
 
-OUTPUT_DIR = ROOT_DIR / "outputs" / "llama"
+OUTPUT_DIR = ROOT_DIR / "outputs" / "llama3.1-8b"
 PATH = (
     OUTPUT_DIR
     / f"{FILE_NAME}.json"

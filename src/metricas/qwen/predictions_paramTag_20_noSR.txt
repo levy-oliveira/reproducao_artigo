@@ -1,0 +1,313 @@
+
+
+Item: 1
+Id:7
+Ground truth: (den==null) == false
+Prediction: den != null
+
+Item: 2
+Id:13
+Ground truth: (bytes==null) == false
+Prediction: (bytes == null) == false
+
+Item: 3
+Id:18
+Ground truth: (array.length==0) == false
+Prediction: array.length>0
+
+Item: 4
+Id:20 nao
+Ground truth: (separator==null) == false
+Prediction: separator.length() > 0
+
+Item: 5
+Id:22
+Ground truth: (filename==null)==false
+Prediction: (filename==null) == false
+
+Item: 6
+Id:24 nao
+Ground truth: (collection==null) == false
+Prediction: (bag==null) == false
+
+Item: 7
+Id:25
+Ground truth: throwable!=null
+Prediction: (throwable==null) == false
+
+Item: 8
+Id:29 nao
+Ground truth: (coll1==null) == false
+Prediction: (bag==null) == false
+
+Item: 9
+Id:33
+Ground truth: upper>=lower
+Prediction: upper >= lower
+
+Item: 10
+Id:43 nao
+Ground truth: (predicates==null) == false
+Prediction: (collection==null) == false
+
+Item: 11
+Id:49
+Ground truth: n>=2
+Prediction: n >= 2
+
+Item: 12
+Id:51
+Ground truth: (x==null) == false
+Prediction: (x == null) == false
+
+Item: 13
+Id:53
+Ground truth: (b==null) == false
+Prediction: (b == null) == false
+
+Item: 14
+Id:60
+Ground truth: (x==null) == false
+Prediction: (x == null) == false
+
+Item: 15
+Id:66
+Ground truth: isLast==true
+Prediction: isLast == true
+
+Item: 16
+Id:72
+Ground truth: (array.length==0)==false
+Prediction: array.length>0
+
+Item: 17
+Id:73
+Ground truth: (y==null) == false
+Prediction: (y == null) == false
+
+Item: 18
+Id:79
+Ground truth: (y==null) == false
+Prediction: (y == null) == false
+
+Item: 19
+Id:80 nao
+Ground truth: (inputCollection==null) == false && (predicate==null) == false || (outputCollection==null) == false
+Prediction: (inputCollection==null) == false || (predicate==null) == false || (outputCollection==null) == false
+
+Item: 20
+Id:81 nao
+Ground truth: (queue==null) == false
+Prediction: (bag==null) == false
+
+Item: 21
+Id:85 nao
+Ground truth: nums>0
+Prediction: nums.length>0
+
+Item: 22
+Id:86 
+Ground truth: (array.length==0) == false
+Prediction: array.length>0
+
+Item: 23
+Id:87
+Ground truth: (others==null) == false
+Prediction: others==null == false
+
+Item: 24
+Id:90
+Ground truth: filename!=null
+Prediction: (filename==null) == false
+
+Item: 25
+Id:95
+Ground truth: (start==null) == false
+Prediction: (start == null) == false
+
+Item: 26
+Id:96 
+Ground truth: (supplier==null)==false
+Prediction: supplier.get()!=null
+
+Item: 27
+Id:108 nao
+Ground truth: (inputCollection==null) == false && (transformer==null) == false || (outputCollection==null) == false
+Prediction: (inputCollection==null) == false || (transformer==null) == false || (outputCollection==null) == false
+
+Item: 28
+Id:111
+Ground truth: nums>0
+Prediction: nums.length>0
+
+Item: 29
+Id:113 nao
+Ground truth: (collection==null) == false
+Prediction: (bag==null) == false
+
+Item: 30
+Id:115
+Ground truth: filename!=null
+Prediction: (filename == null) == false
+
+Item: 31
+Id:121 nao
+Ground truth: maximalIterationCount<=receiverObjectID.SIMPSON_MAX_ITERATIONS_COUNT
+Prediction: maximalIterationCount <= SIMPSON_MAX_ITERATIONS_COUNT
+
+Item: 32
+Id:124
+Ground truth: (b==null) == false
+Prediction: (b == null) == false
+
+Item: 33
+Id:132 nao
+Ground truth: maximalIterationCount<=receiverObjectID.SIMPSON_MAX_ITERATIONS_COUNT
+Prediction: maximalIterationCount<=SIMPSON_MAX_ITERATIONS_COUNT
+
+Item: 34
+Id:138
+Ground truth: lower<=upper
+Prediction: lower <= upper
+
+Item: 35
+Id:140
+Ground truth: bytes!=null
+Prediction: (bytes==null) == false
+
+Item: 36
+Id:145
+Ground truth: (function==null)==false
+Prediction: function != null
+
+Item: 37
+Id:150
+Ground truth: (array.length==0)==false
+Prediction: array.length>0
+
+Item: 38
+Id:151
+Ground truth: key!=null
+Prediction: (key==null) == false
+
+Item: 39
+Id:154 nao
+Ground truth: (iterable==null) == false
+Prediction: (collection==null) == false
+
+Item: 40
+Id:155
+Ground truth: string!=null
+Prediction: (string==null) == false
+
+Item: 41
+Id:156
+Ground truth: (x==null) == false
+Prediction: (x == null) == false
+
+Item: 42
+Id:158
+Ground truth: (y==null) == false
+Prediction: (y == null) == false
+
+Item: 43
+Id:165 nao
+Ground truth: strictChecking==false
+Prediction: autoCreate == false || strictChecking == true
+
+Item: 44
+Id:174 nao
+Ground truth: (inputIterator==null) == false && (transformer==null) == false || (outputCollection==null) == false
+Prediction: (inputIterator==null) == false || (transformer==null) == false || (outputCollection==null) == false
+
+Item: 45
+Id:177
+Ground truth: key!=null
+Prediction: (key==null) == false
+
+Item: 46
+Id:182
+Ground truth: (array.length==0) == false
+Prediction: array.length>0
+
+Item: 47
+Id:192
+Ground truth: e>0||e==0
+Prediction: e >= 0
+
+Item: 48
+Id:196
+Ground truth: (inputCollection==null) == false || (predicate==null) == false || (rejectedCollection==null) == false
+Prediction: (rejectedCollection==null) == false
+
+Item: 49
+Id:198
+Ground truth: countMap.isEmpty()
+Prediction: countMap.isEmpty() == true
+
+Item: 50
+Id:203
+Ground truth: maximalStep>0
+Prediction: (maximalStep>0)
+
+Item: 51
+Id:204
+Ground truth: oldValue!=null
+Prediction: (oldValue==null) == false
+
+Item: 52
+Id:205 nao
+Ground truth: strictChecking==false
+Prediction: (autoCreate == true && strictChecking == false) == true
+
+Item: 53
+Id:212
+Ground truth: lower<=upper
+Prediction: lower <= upper
+
+Item: 54
+Id:214 nao
+Ground truth: (sequence<0) == false && (sequence>start.length()) == false
+Prediction: (start < 0) == false && (start > sequence.length()) == false
+
+Item: 55
+Id:216
+Ground truth: e>0||e==0
+Prediction: e >= 0
+
+Item: 56
+Id:219
+Ground truth: (array.length==0) == false
+Prediction: array.length > 0
+
+Item: 57
+Id:224
+Ground truth: upper>=lower
+Prediction: upper >= lower
+
+Item: 58
+Id:227 nao
+Ground truth: (num==null) == false
+Prediction: (den==null) == false
+
+Item: 59
+Id:241 nao
+Ground truth: (other==null) == false
+Prediction: (predicate==null) == false
+
+Item: 60
+Id:243
+Ground truth: e>0||e==0
+Prediction: e>=0
+
+Total para validar: 60
+
+Total: 243
+
+Predicoes corretas exatas: 176
+Acuracia das predicoes exatas: 0.72
+Numero de incorretas: 7
+
+Numero de verificacoes negativas: 18
+Numero de semanticamente corretas: 218
+Acuracia: 0.90

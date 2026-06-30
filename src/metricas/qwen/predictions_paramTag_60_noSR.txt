@@ -1,0 +1,168 @@
+
+
+Item: 1
+Id:22
+Ground truth: (filename==null)==false
+Prediction: (filename==null) == false
+
+Item: 2
+Id:37 nao
+Ground truth: (bg==null) == false
+Prediction: (bag==null) == false
+
+Item: 3
+Id:50
+Ground truth: (fraction==null) == false
+Prediction: fraction!=null
+
+Item: 4
+Id:56 nao
+Ground truth: (coll2==null) == false
+Prediction: (b==null) == false
+
+Item: 5
+Id:66
+Ground truth: isLast==true
+Prediction: isLast == true
+
+Item: 6
+Id:69 nao
+Ground truth: (map==null) == false
+Prediction: (predicate==null) == false
+
+Item: 7
+Id:72
+Ground truth: (array.length==0)==false
+Prediction: (array.length==0) == false
+
+Item: 8
+Id:80 nao
+Ground truth: (inputCollection==null) == false && (predicate==null) == false || (outputCollection==null) == false
+Prediction: (outputCollection==null) == false || (inputCollection==null) == false || (predicate==null) == false
+
+Item: 9
+Id:87 nao
+Ground truth: (others==null) == false
+Prediction: (predicate==null) == false
+
+Item: 10
+Id:89 nao
+Ground truth: (closure==null) == false
+Prediction: (predicate==null) == false
+
+Item: 11
+Id:90
+Ground truth: filename!=null
+Prediction: (filename==null) == false
+
+Item: 12
+Id:96
+Ground truth: (supplier==null)==false
+Prediction: supplier!=null
+
+Item: 13
+Id:104 nao
+Ground truth: (lock==null) == false
+Prediction: (bag==null) == false
+
+Item: 14
+Id:105 nao
+Ground truth: (trueClosure==null) == false
+Prediction: (predicate==null) == false
+
+Item: 15
+Id:108 nao
+Ground truth: (inputCollection==null) == false && (transformer==null) == false || (outputCollection==null) == false
+Prediction: (inputCollection==null) == false || (transformer==null) == false || (outputCollection==null) == false
+
+Item: 16
+Id:115
+Ground truth: filename!=null
+Prediction: (filename==null) == false
+
+Item: 17
+Id:121 nao
+Ground truth: maximalIterationCount<=receiverObjectID.SIMPSON_MAX_ITERATIONS_COUNT
+Prediction: maximalIterationCount<=SIMPSON_MAX_ITERATIONS_COUNT
+
+Item: 18
+Id:132 nao
+Ground truth: maximalIterationCount<=receiverObjectID.SIMPSON_MAX_ITERATIONS_COUNT
+Prediction: maximalIterationCount<=SIMPSON_MAX_ITERATIONS_COUNT
+
+Item: 19
+Id:140
+Ground truth: bytes!=null
+Prediction: (bytes==null) == false
+
+Item: 20
+Id:141 nao
+Ground truth: (falseClosure==null) == false
+Prediction: (predicate==null) == false
+
+Item: 21
+Id:142 nao
+Ground truth: (enumeration==null) == false
+Prediction: (enum==null) == false
+
+Item: 22
+Id:145
+Ground truth: (function==null)==false
+Prediction: function != null
+
+Item: 23
+Id:150
+Ground truth: (array.length==0)==false
+Prediction: array.length>0
+
+Item: 24
+Id:153 nao
+Ground truth: (map==null) == false
+Prediction: (factory==null) == false
+
+Item: 25
+Id:155
+Ground truth: string!=null
+Prediction: (string==null) == false
+
+Item: 26
+Id:174 nao
+Ground truth: (inputIterator==null) == false && (transformer==null) == false || (outputCollection==null) == false
+Prediction: (inputIterator==null) == false || (transformer==null) == false || (outputCollection==null) == false
+
+Item: 27
+Id:196 nao
+Ground truth: (inputCollection==null) == false || (predicate==null) == false || (rejectedCollection==null) == false
+Prediction: (inputCollection==null) == false && (predicate==null) == false || (outputCollection==null) == false || (rejectedCollection==null) == false
+
+Item: 28
+Id:198
+Ground truth: countMap.isEmpty()
+Prediction: countMap.isEmpty() == true
+
+Item: 29
+Id:199
+Ground truth: fpp>0 && fpp<1.0
+Prediction: fpp>0&&fpp<1.0
+
+Item: 30
+Id:215
+Ground truth: (object==null) == false
+Prediction: object!=null
+
+Item: 31
+Id:219
+Ground truth: (array.length==0) == false
+Prediction: (array.length==0)==false
+
+Total para validar: 31
+
+Total: 243
+
+Predicoes corretas exatas: 202
+Acuracia das predicoes exatas: 0.83
+Numero de incorretas: 10
+
+Numero de verificacoes negativas: 16
+Numero de semanticamente corretas: 217
+Acuracia: 0.89

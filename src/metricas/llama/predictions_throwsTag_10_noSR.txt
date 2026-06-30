@@ -1,0 +1,1045 @@
+
+
+Item: 1
+Id:5
+Ground truth: maximalOrder<2
+Prediction: maximalOrder < 2
+
+Item: 2
+Id:6 nao
+Ground truth: collection==null
+Prediction: collection==null || predicate==null
+
+Item: 3
+Id:8
+Ground truth: expression==false
+Prediction: !expression
+
+Item: 4
+Id:10
+Ground truth: a.length==0
+Prediction: a.length == 0
+
+Item: 5
+Id:12
+Ground truth: pathElement==null
+Prediction: pathElement == null
+
+Item: 6
+Id:13
+Ground truth: len<0 || len>(bytes.length - start)
+Prediction: len < 0 || len > bytes.length - start
+
+Item: 7
+Id:16 nao
+Ground truth: (original instanceof BinaryChromosome) == false
+Prediction: original instanceof BinaryChromosome
+
+Item: 8
+Id:19 nao
+Ground truth: collection==null
+Prediction: object==null || collection==null
+
+Item: 9
+Id:20
+Ground truth: array.length==0
+Prediction: array.length == 0
+
+Item: 10
+Id:21
+Ground truth: endInclusive<startInclusive
+Prediction: endInclusive < startInclusive
+
+Item: 11
+Id:22
+Ground truth: a.length==0
+Prediction: a.length == 0
+
+Item: 12
+Id:23
+Ground truth: nPaths<0 || nPaths==0
+Prediction: nPaths <= 0
+
+Item: 13
+Id:25
+Ground truth: p<0||p>1
+Prediction: p<0 || p>1
+
+Item: 14
+Id:27
+Ground truth: initialSize<0 || initialSize>maxSize
+Prediction: initialSize < 0 || initialSize > maxSize
+
+Item: 15
+Id:28
+Ground truth: maxSize<1
+Prediction: maxSize < 1
+
+Item: 16
+Id:30
+Ground truth: initialSize<0 || initialSize>maxSize
+Prediction: initialSize < 0 || initialSize > maxSize
+
+Item: 17
+Id:35
+Ground truth: array.length==0
+Prediction: array.length == 0
+
+Item: 18
+Id:37
+Ground truth: xval.length==0 || yval.length==0
+Prediction: xval.length == 0 || yval.length == 0
+
+Item: 19
+Id:39 nao
+Ground truth: predicates.stream().anyMatch(e -> e==null)
+Prediction: predicates==null || (predicates.stream().anyMatch(p -> p == null))
+
+Item: 20
+Id:40
+Ground truth: axis.getNorm().getReal()==0
+Prediction: axis.getNorm() == 0.0
+
+Item: 21 
+Id:44 nao
+Ground truth: receiverObjectID.isLocked()
+Prediction: comparator.isLocked()
+
+Item: 22
+Id:48
+Ground truth: expectedKeys<0 || expectedValuesPerKey<0
+Prediction: expectedKeys < 0 || expectedValuesPerKey < 0
+
+Item: 23
+Id:49
+Ground truth: position<0
+Prediction: position < 0
+
+Item: 24
+Id:50
+Ground truth: array.length==0
+Prediction: array.length == 0
+
+Item: 25
+Id:51
+Ground truth: bandwidth<0 || bandwidth>1
+Prediction: bandwidth < 0 || bandwidth > 1
+
+Item: 26
+Id:56 nao
+Ground truth: receiverObjectID.isCompatible(that)==false
+Prediction: isCompatible(that)==false
+
+Item: 27
+Id:57
+Ground truth: predicate==null
+Prediction: predicate == null
+
+Item: 28
+Id:59 nao
+Ground truth: (first.getLength() == second.getLength()) == false
+Prediction: (first.getGenes().size() == second.getGenes().size()) == false
+
+Item: 29
+Id:60 nao
+Ground truth: x.length<2
+Prediction: x.length < 2 || y.length < 2
+
+Item: 30
+Id:61
+Ground truth: f.length != receiverObjectID.getOrder() + 1
+Prediction: f.length != (getOrder()+1)
+
+Item: 31
+Id:64
+Ground truth: fraction==null
+Prediction: fraction == null
+
+Item: 32
+Id:66 nao
+Ground truth: inputCollection==null
+Prediction: inputCollection==null || predicate==null
+
+Item: 33
+Id:69
+Ground truth: predicates==null
+Prediction: predicates == null
+
+Item: 34
+Id:70 nao
+Ground truth: objectsAndClosures.values().stream().anyMatch(e -> e==null)
+Prediction: (objectsAndClosures==null) || (objectsAndClosures.values().stream().anyMatch(closure -> closure == null))
+
+Item: 35
+Id:71
+Ground truth: a.length==0
+Prediction: a.length == 0
+
+Item: 36
+Id:72
+Ground truth: ((a.length - c.length) == 1) == false
+Prediction: a.length - c.length != 1
+
+Item: 37
+Id:73
+Ground truth: entry==null
+Prediction: entry == null
+
+Item: 38
+Id:77
+Ground truth: ((xval.length) == (yval.length)) == false
+Prediction: xval.length != yval.length
+
+Item: 39
+Id:79
+Ground truth: closures.stream().anyMatch(e -> e==null)
+Prediction: closures.stream().anyMatch(c -> c==null)
+
+Item: 40
+Id:83
+Ground truth: ((a.length - c.length)==1) == false
+Prediction: (a.length - c.length) != 1
+
+Item: 41
+Id:87
+Ground truth: factor==null
+Prediction: factor == null
+
+Item: 42
+Id:90 nao
+Ground truth: predicatesAndClosures.values().stream().anyMatch(e -> e==null)
+Prediction: predicatesAndClosures==null || !predicatesAndClosures.values().stream().allMatch(Objects::nonNull)
+
+Item: 43
+Id:91 nao
+Ground truth: predicates.length != closures.length
+Prediction: predicates.length != closures.length || (defaultClosure == null) == (predicates.length == 1)
+
+Item: 44
+Id:92 nao
+Ground truth: sourceVertex==null || targetVertex==null
+Prediction: sourceVertex == null || targetVertex == null || e == null
+
+Item: 45
+Id:93
+Ground truth: maxSize<1
+Prediction: maxSize < 1
+
+Item: 46
+Id:94
+Ground truth: size<0
+Prediction: size < 0
+
+Item: 47
+Id:95 nao
+Ground truth: (minimalIterationCount>0)==false
+Prediction: minimalIterationCount <= 0 || maximalIterationCount <= 0
+
+Item: 48
+Id:97
+Ground truth: elementsToSkip<0
+Prediction: elementsToSkip < 0
+
+Item: 49
+Id:98 nao
+Ground truth: p1.equals(p2)
+Prediction: (p1.equals(p2)) == false
+
+Item: 50
+Id:101
+Ground truth: maxSize<1
+Prediction: maxSize < 1
+
+Item: 51
+Id:102
+Ground truth: expression==false
+Prediction: expression == false
+
+Item: 52
+Id:106 nao
+Ground truth: java.util.Arrays.stream(predicates).anyMatch(e->e==null)
+Prediction: (predicates==null) || (predicates!=null && Arrays.stream(predicates).anyMatch(p -> p == null))
+
+Item: 53
+Id:107
+Ground truth: value>Short.MAX_VALUE || value<Short.MIN_VALUE
+Prediction: value<Short.MIN_VALUE || value>Short.MAX_VALUE
+
+Item: 54
+Id:110
+Ground truth: initialCapacity<0 || loadFactor<=0
+Prediction: initialCapacity < 0 || loadFactor <= 0
+
+Item: 55
+Id:113 nao
+Ground truth: player==null || player==receiverObjectID
+Prediction: player == null || this == null
+
+Item: 56
+Id:115
+Ground truth: count<0
+Prediction: count < 0
+
+Item: 57
+Id:117
+Ground truth: loadFactor<0
+Prediction: loadFactor < 0
+
+Item: 58
+Id:118
+Ground truth: a==null || m==null || b==null
+Prediction: a == null || m == null || b == null
+
+Item: 59
+Id:120
+Ground truth: function==null
+Prediction: function == null
+
+Item: 60
+Id:123
+Ground truth: bytes.length<2
+Prediction: bytes.length < 2
+
+Item: 61
+Id:130
+Ground truth: a.length==0
+Prediction: a.length == 0
+
+Item: 62
+Id:131
+Ground truth: inputCollection==null
+Prediction: inputCollection == null
+
+Item: 63
+Id:132
+Ground truth: loadFactor<0
+Prediction: loadFactor < 0
+
+Item: 64
+Id:134
+Ground truth: methodName==null
+Prediction: methodName == null
+
+Item: 65
+Id:135 nao
+Ground truth: weights!=null && bases.length!=weights.length
+Prediction: (weights == null) || (bases.length != weights.length)
+
+Item: 66
+Id:138
+Ground truth: pivotingStrategy==null
+Prediction: pivotingStrategy == null
+
+Item: 67
+Id:139
+Ground truth: initialSize<0
+Prediction: initialSize < 0
+
+Item: 68
+Id:140
+Ground truth: original==null
+Prediction: original == null
+
+Item: 69
+Id:143
+Ground truth: initialCapacity<0 || loadFactor<=0
+Prediction: initialCapacity < 0 || loadFactor <= 0
+
+Item: 70
+Id:150 nao
+Ground truth: collection==null || collection.contains(null)
+Prediction: collection==null || (collection.iterator()==null) == false
+
+Item: 71
+Id:151
+Ground truth: ((x.length) == (y.length)) == false
+Prediction: x.length != y.length
+
+Item: 72
+Id:152
+Ground truth: predicate==null
+Prediction: predicate == null
+
+Item: 73
+Id:154
+Ground truth: n<0
+Prediction: n<=0
+
+Item: 74
+Id:155 nao
+Ground truth: collection==null || collection.contains(null)
+Prediction: collection==null || (collection.iterator() == null) == false
+
+Item: 75
+Id:162
+Ground truth: predicate==null
+Prediction: predicate == null
+
+Item: 76
+Id:172
+Ground truth: a.length==0
+Prediction: a.length == 0
+
+Item: 77
+Id:173
+Ground truth: size<0
+Prediction: size < 0
+
+Item: 78
+Id:178
+Ground truth: predicate1==null || predicate2==null
+Prediction: (predicate1 == null) || (predicate2 == null)
+
+Item: 79
+Id:180
+Ground truth: maxSize<0 || maxSize==0
+Prediction: maxSize <= 0
+
+Item: 80
+Id:186
+Ground truth: equator==null
+Prediction: a==null || b==null || equator==null
+
+Item: 81
+Id:188 nao
+Ground truth: p1.equals(p2)
+Prediction: p1.equals(p2) == false
+
+Item: 82
+Id:190
+Ground truth: a.length==0
+Prediction: a.length == 0
+
+Item: 83
+Id:191 nao
+Ground truth: u.getNorm().getReal()==0 || v.getNorm().getReal()==0
+Prediction: u.getNorm() == 0 || v.getNorm() == 0
+
+Item: 84
+Id:192
+Ground truth: subtrahend==null
+Prediction: subtrahend == null
+
+Item: 85
+Id:194 nao
+Ground truth: v.getDimension() != receiverObjectID.getDimension()
+Prediction: v.getSize() != this.getSize()
+
+Item: 86
+Id:196
+Ground truth: maxSize<1
+Prediction: maxSize < 1
+
+Item: 87
+Id:204
+Ground truth: ((x.length) == (y.length)) == false
+Prediction: x.length != y.length
+
+Item: 88
+Id:207
+Ground truth: array.length==0
+Prediction: array.length == 0
+
+Item: 89
+Id:209
+Ground truth: array==null
+Prediction: array == null
+
+Item: 90
+Id:210
+Ground truth: maxSize<1
+Prediction: maxSize < 1
+
+Item: 91
+Id:213
+Ground truth: ((xval.length) == (yval.length)) == false
+Prediction: xval.length != yval.length
+
+Item: 92
+Id:218
+Ground truth: bag==null
+Prediction: bag == null
+
+Item: 93
+Id:220 nao
+Ground truth: predicates.contains(null)
+Prediction: !predicates.stream().anyMatch(p -> p == null)
+
+Item: 94
+Id:221
+Ground truth: maxSize<0 || maxSize==0
+Prediction: maxSize <= 0
+
+Item: 95
+Id:223 
+Ground truth: predicate1==null || predicate2==null
+Prediction: (predicate1==null) == false && (predicate2==null) == false
+
+Item: 96
+Id:224
+Ground truth: (minimalIterationCount>0)==false
+Prediction: minimalIterationCount <= 0 || maximalIterationCount <= 0
+
+Item: 97
+Id:225
+Ground truth: lower>=upper 
+Prediction: lower>=upper
+
+Item: 98
+Id:226 nao
+Ground truth: predicate1==null || predicate2==null
+Prediction: (predicate1==null) == false && (predicate2==null) == false
+
+Item: 99
+Id:227
+Ground truth: function==null
+Prediction: function == null
+
+Item: 100
+Id:228 nao
+Ground truth: v1.getNorm()==null || v2.getNorm()==null
+Prediction: v1.getNorm() == 0 || v2.getNorm() == 0
+
+Item: 101
+Id:229
+Ground truth: initialCapacity<0
+Prediction: initialCapacity < 0
+
+Item: 102
+Id:230 nao
+Ground truth: a==null || c==null
+Prediction: a==null || b==null || c==null
+
+Item: 103
+Id:231
+Ground truth: maximalIterationCount>receiverObjectID.SIMPSON_MAX_ITERATIONS_COUNT
+Prediction: maximalIterationCount > SIMPSON_MAX_ITERATIONS_COUNT
+
+Item: 104
+Id:232
+Ground truth: outputCollection==null && (inputCollection==null) == false && (transformer==null) == false
+Prediction: inputCollection==null && (transformer==null) == false && (outputCollection==null) == false
+
+Item: 105
+Id:234
+Ground truth: limitSize<0
+Prediction: limitSize < 0
+
+Item: 106
+Id:235 nao
+Ground truth: coll==null
+Prediction: obj==null || coll==null
+
+Item: 107
+Id:237
+Ground truth: array.length==0
+Prediction: array.length == 0
+
+Item: 108
+Id:239
+Ground truth: predicate==null
+Prediction: predicate == null
+
+Item: 109
+Id:242
+Ground truth: a.length==0
+Prediction: a.length == 0
+
+Item: 110
+Id:243
+Ground truth: loadFactor<0
+Prediction: loadFactor < 0
+
+Item: 111
+Id:248
+Ground truth: initialCapacity<0
+Prediction: initialCapacity < 0 
+
+###
+
+Item: 112
+Id:249
+Ground truth: loadFactor<0
+Prediction: loadFactor < 0
+
+Item: 113
+Id:251
+Ground truth: expectedOldCount<0 || newCount<0
+Prediction: expectedOldCount < 0 || newCount < 0
+
+Item: 114
+Id:257
+Ground truth: size<0
+Prediction: size < 0
+
+Item: 115
+Id:258
+Ground truth: a.length==0
+Prediction: a.length == 0
+
+Item: 116
+Id:261 nao
+Ground truth: start.equals(end)
+Prediction: (start.equals(end)) == false
+
+Item: 117
+Id:262
+Ground truth: maximalOrder<2
+Prediction: maximalOrder < 2
+
+Item: 118
+Id:265
+Ground truth: bg==null
+Prediction: bg == null
+
+Item: 119
+Id:266
+Ground truth: bg==null
+Prediction: bg == null
+
+Item: 120
+Id:276
+Ground truth: source==null || dest==null
+Prediction: (source==null) || (dest==null)
+
+Item: 121
+Id:278 nao
+Ground truth: other==null
+Prediction: other==null || comparator==null
+
+Item: 122
+Id:285
+Ground truth: manager==null
+Prediction: manager == null
+
+Item: 123
+Id:286 nao
+Ground truth: predicates.contains(null)
+Prediction: predicates==null
+
+Item: 124
+Id:290 nao
+Ground truth: start.equals(end)
+Prediction: (start.equals(end)) == false
+
+Item: 125
+Id:291
+Ground truth: ((a.lenght - c.length)==1) == false
+Prediction: (a.length - c.length) != 1
+
+Item: 126
+Id:294 nao
+Ground truth: collection==null || collection.contains(null)
+Prediction: collection==null || (collection.iterator().hasNext() && collection.iterator().next()==null)
+
+Item: 127
+Id:295
+Ground truth: xval.length==0 || yval.length==0
+Prediction: xval.length == 0 || yval.length == 0
+
+Item: 128
+Id:297 nao
+Ground truth: xval.length==0 || yval.length==0 || fval.length==0
+Prediction: (xval.length == 0) || (yval.length == 0) || (fval.length == 0) || (fval[0].length == 0)
+
+Item: 129
+Id:298 nao
+Ground truth: x.length<2
+Prediction: x.length < 2 || y.length < 2
+
+Item: 130
+Id:302
+Ground truth: (minimalIterationCount>0)==false
+Prediction: minimalIterationCount <= 0 || maximalIterationCount <= 0
+
+Item: 131
+Id:308
+Ground truth: predicate1==null || predicate2==null
+Prediction: (predicate1==null) || (predicate2==null)
+
+Item: 132
+Id:310
+Ground truth: count<0
+Prediction: count < 0
+
+Item: 133
+Id:311 nao
+Ground truth: collection.isEmpty() || collection.size()>1
+Prediction: collection.size() == 1 || collection.size() > 1
+
+Item: 134
+Id:312
+Ground truth: closure==null || predicate==null
+Prediction: closure == null || predicate == null
+
+Item: 135
+Id:314
+Ground truth: nMaxHops<0 || nMaxHops==0
+Prediction: nMaxHops<=0
+
+Item: 136
+Id:317
+Ground truth: loadFactor<0
+Prediction: loadFactor < 0
+
+Item: 137
+Id:318
+Ground truth: a.length==0
+Prediction: a.length == 0
+
+Item: 138
+Id:320
+Ground truth: reference==null
+Prediction: reference == null
+
+Item: 139
+Id:321 nao
+Ground truth: java.util.Arrays.stream(predicates).anyMatch(e -> e==null)
+Prediction: predicates==null || Arrays.stream(predicates).anyMatch(p -> p == null)
+
+Item: 140
+Id:325 nao
+Ground truth: elementList==null || edge==null
+Prediction: graph==null || elementList==null || edge==null
+
+Item: 141
+Id:326 nao
+Ground truth: u1.getNorm().getReal()==0 || u2.getNorm().getReal()==0 || v1.getNorm().getReal()==0
+Prediction: (u1.getNorm() == 0) || (u2.getNorm() == 0) || (v1.getNorm() == 0) || (v2.getNorm() == 0) || (u1.isCollinearWith(u2)) || (v1.isCollinearWith(v2))
+
+Item: 142
+Id:327
+Ground truth: graph==null
+Prediction: graph == null
+
+Item: 143
+Id:328 nao
+Ground truth: v.getDimension() != receiverObjectID.getDimension()
+Prediction: v.getSize() != getSize()
+
+Item: 144
+Id:331
+Ground truth: function==null
+Prediction: function == null
+
+Item: 145
+Id:332
+Ground truth: string==null
+Prediction: string == null
+
+Item: 146
+Id:340
+Ground truth: classToInstantiate==null
+Prediction: classToInstantiate == null
+
+Item: 147
+Id:341 nao
+Ground truth: v.getDimension() != receiverObjectID.getDimension()
+Prediction: v.getDimension() != getDimension()
+
+Item: 148
+Id:342
+Ground truth: ((xval.length) == (yval.length)) == false
+Prediction: xval.length != yval.length
+
+Item: 149
+Id:343
+Ground truth: a.length==0
+Prediction: a.length == 0
+
+Item: 150
+Id:345 
+Ground truth: vector.getNorm()==0
+Prediction: vector.getNorm() == 0.0
+
+Item: 151
+Id:347
+Ground truth: maxSize<1
+Prediction: maxSize < 1
+
+Item: 152
+Id:348
+Ground truth: size<=0
+Prediction: size <= 0
+
+Item: 153
+Id:352
+Ground truth: index<0
+Prediction: index < 0
+
+Item: 154
+Id:354
+Ground truth: reference==null
+Prediction: reference == null
+
+Item: 155
+Id:358 nao
+Ground truth: y.getDimension() != receiverObjectID.getDimension()
+Prediction: y.getDimension() != getDimension()
+
+Item: 156
+Id:360
+Ground truth: maxSize<0 || maxSize==0
+Prediction: maxSize <= 0
+
+Item: 157
+Id:366 nao
+Ground truth: axis.getNorm().getReal()==0
+Prediction: axis.getNorm() == 0.0
+
+Item: 158
+Id:367
+Ground truth: initialCapacity<0
+Prediction: initialCapacity < 0
+
+Item: 159
+Id:369 nao
+Ground truth: v.getDimension() != receiverObjectID.getDimension()
+Prediction: v.getDimension() != this.getDimension()
+
+Item: 160
+Id:370 nao
+Ground truth: robustnessIters<0
+Prediction: robustnessIters < 0
+
+Item: 161
+Id:371 
+Ground truth: a.length==0
+Prediction: a.length == 0
+
+Item: 162
+Id:373
+Ground truth: maxSize<0
+Prediction: maxSize < 0
+
+Item: 163
+Id:378
+Ground truth: a.length==0 || c.length==0
+Prediction: a.length == 0 || c.length == 0
+
+Item: 164
+Id:382 nao
+Ground truth: v.getDimension() != receiverObjectID.getDimension()
+Prediction: v.getDimension() != this.getDimension()
+
+Item: 165
+Id:387
+Ground truth: maxSize<1
+Prediction: maxSize < 1
+
+Item: 166
+Id:388 nao
+Ground truth: receiverObjectID.isEmpty()
+Prediction: stack.isEmpty()
+
+Item: 167
+Id:389
+Ground truth: initialCapacity<0
+Prediction: initialCapacity < 0
+
+Item: 168
+Id:392
+Ground truth: (v.length==3)==false
+Prediction: v.length != 3
+
+Item: 169
+Id:393
+Ground truth: first==null && second==null
+Prediction: (first == null) && (second == null)
+
+Item: 170
+Id:395
+Ground truth: x==null
+Prediction: x == null
+
+Item: 171
+Id:402 nao
+Ground truth: position<0 || position>receiverObjectID.size()
+Prediction: (position < 0) == false || (position >= size)
+
+Item: 172
+Id:403 nao
+Ground truth: receiverObjectID.isEmpty()
+Prediction: items.isEmpty()
+
+Item: 173
+Id:404
+Ground truth: start<0 || start>sequence.length()
+Prediction: start < 0 || start >= sequence.length()
+
+Item: 174
+Id:406
+Ground truth: x.length<2
+Prediction: x.length < 2
+
+Item: 175
+Id:407 nao
+Ground truth: receiverObjectID.getDimension() != v.getDimension()
+Prediction: v.getDimension() != getDimension()
+
+Item: 176
+Id:411
+Ground truth: fraction==null
+Prediction: fraction == null
+
+Item: 177
+Id:413 nao
+Ground truth: outputCollection==null && (inputIterator==null) == false && (transformer==null) == false
+Prediction: (inputIterator != null && transformer != null) && (outputCollection == null)
+
+Item: 178
+Id:416
+Ground truth: sigma<=0
+Prediction: sigma <= 0
+
+Item: 179
+Id:417
+Ground truth: a==null || b==null || c==null
+Prediction: a == null || b == null || c == null
+
+Item: 180
+Id:418 nao
+Ground truth: (first.getLength() == second.getLength()) == false
+Prediction: first.getGenotype().getLength() != second.getGenotype().getLength()
+
+Item: 181
+Id:419
+Ground truth: collection==null || enumeration==null
+Prediction: collection == null || enumeration == null
+
+Item: 182
+Id:421
+Ground truth: numberOfSuccesses>populationSize || sampleSize>populationSize
+Prediction: numberOfSuccesses > populationSize || sampleSize > populationSize
+
+Item: 183
+Id:424
+Ground truth: items==null
+Prediction: items == null
+
+Item: 184
+Id:425
+Ground truth: size<=0
+Prediction: size <= 0
+
+Item: 185
+Id:429
+Ground truth: a==null || b==null
+Prediction: a == null || b == null
+
+Item: 186
+Id:430
+Ground truth: maximalOrder<2
+Prediction: maximalOrder < 2
+
+Item: 187
+Id:431 nao
+Ground truth: (receiverObjectID.containsVertex(vertex))==false
+Prediction: vertex==null || !graph.containsVertex(vertex)
+
+Item: 188
+Id:435 nao
+Ground truth: a.length==0 || c.length==0
+Prediction: a.length == 0 || c.length == 0 || z.length == 0
+
+Item: 189
+Id:437
+Ground truth: index>=parameters
+Prediction: index >= parameters
+
+Item: 190
+Id:438
+Ground truth: a.length==0 || c.length==0
+Prediction: a.length == 0 || c.length == 0
+
+Item: 191
+Id:439
+Ground truth: fraction==null
+Prediction: fraction == null
+
+Item: 192
+Id:440 nao
+Ground truth: obj==null || ! (obj instanceof boolean[] || obj instanceof double[] || obj instanceof int[] || obj instanceof long[] || obj instanceof Object[])
+Prediction: obj==null || !(obj instanceof java.util.Collection) && !(obj instanceof java.util.Map) && !(obj instanceof org.apache.commons.math3.linear.RealMatrix)
+
+Item: 193
+Id:442 nao
+Ground truth: min<=max
+Prediction: min >= max
+
+Item: 194
+Id:446
+Ground truth: (countMap.isEmpty()) == false
+Prediction: !countMap.isEmpty()
+
+Item: 195
+Id:449 nao
+Ground truth: n<=0 || minimalIterationCount<=0
+Prediction: n<=0 || minimalIterationCount<=0 || maximalIterationCount<=0
+
+Item: 196
+Id:452
+Ground truth: maximalIterationCount>receiverObjectID.SIMPSON_MAX_ITERATIONS_COUNT
+Prediction: maximalIterationCount > SIMPSON_MAX_ITERATIONS_COUNT
+
+Item: 197
+Id:454 nao
+Ground truth: receiverObjectID.contains(sourceVertex)==false || receiverObjectID.contains(targetVertex)==false
+Prediction: sourceVertex==null || targetVertex==null || !graph.containsVertex(sourceVertex) || !graph.containsVertex(targetVertex)
+
+Item: 198
+Id:455
+Ground truth: collection==null
+Prediction: collection == null
+
+Item: 199
+Id:457
+Ground truth: x.length==0 || y.length==0
+Prediction: x.length == 0 || y.length == 0
+
+Item: 200
+Id:458
+Ground truth: classToInstantiate==null
+Prediction: classToInstantiate == null
+
+Item: 201
+Id:462
+Ground truth: length==0 || length<0
+Prediction: length<=0
+
+Item: 202
+Id:463
+Ground truth: xval.length==0 || yval.length==0
+Prediction: xval.length == 0 || yval.length == 0
+
+Item: 203
+Id:464
+Ground truth: array.length==0
+Prediction: array.length == 0
+
+Item: 204
+Id:467 nao
+Ground truth: !(g instanceof org.jgrapht.DirectedGraph) && !(g instanceof org.jgrapht.UndirectedGraph)
+Prediction: g instanceof org.jgrapht.graph.DirectedGraph || g instanceof org.jgrapht.graph.UndirectedGraph == false
+
+Item: 205
+Id:471 nao
+Ground truth: i==0
+Prediction: f[i] == 0
+
+Item: 206
+Id:472 nao
+Ground truth: predicates.stream().anyMatch(e -> e==null)
+Prediction: java.util.Arrays.stream(predicates).anyMatch(e -> e==null)
+
+Total para validar: 206
+
+Total: 472
+
+Predicoes corretas exatas: 207
+Acuracia das predicoes exatas: 0.44
+Numero de incorretas: 59
+
+Numero de verificacoes negativas: 61
+Numero de semanticamente corretas: 352
+Acuracia: 0.75
