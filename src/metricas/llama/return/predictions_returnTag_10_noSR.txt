@@ -1,0 +1,448 @@
+
+
+Item: 1
+Id:3
+Ground truth: true ? methodResultID==a-b
+Prediction: a-b == methodResultID
+
+Item: 2
+Id:4
+Ground truth: string==null || string.isEmpty() ? methodResultID==true
+Prediction: string == null || string.equals("")
+
+Item: 3
+Id:5 nao
+Ground truth: true?methodResultID.equals(s)
+Prediction: s!=null ? methodResultID.equals(s) : methodResultID.equals("")
+
+Item: 4
+Id:7 nao
+Ground truth: true ? (methodResultID==null)==false
+Prediction: key!=null ? methodResultID==null : methodResultID==null
+
+Item: 5
+Id:12
+Ground truth: true?methodResultID==x<<y
+Prediction: x<<y == methodResultID
+
+Item: 6
+Id:13 nao
+Ground truth: receiverObjectID.contains(object) ? methodResultID==receiverObjectID.indexOf(object)+1 : methodResultID==-1
+Prediction: object!=null ? methodResultID>=0 : methodResultID==-1
+
+Item: 7
+Id:14
+Ground truth: count==0 ? methodResultID.equals("")
+Prediction: count>0 ? methodResultID.equals(string.repeat(count)) : methodResultID.equals("")
+
+Item: 8
+Id:15 nao
+Ground truth: true ? methodResultID==false
+Prediction: false ? methodResultID == false
+
+Item: 9
+Id:17
+Ground truth: true?methodResultID==x*y
+Prediction: x*y == methodResultID
+
+Item: 10
+Id:19
+Ground truth: true?(methodResultID==key||methodResultID==null)
+Prediction: set.contains(key) ? methodResultID == key : methodResultID == null
+
+Item: 11
+Id:20
+Ground truth: true ? methodResultID==true
+Prediction: true ? methodResultID==true : methodResultID==false
+
+Item: 12
+Id:22
+Ground truth: (coll==null)==false && (coll.isEmpty())==false ? true
+Prediction: coll!=null && !coll.isEmpty() ? methodResultID==true : methodResultID==false
+
+Item: 13
+Id:24
+Ground truth:  true ? (methodResultID==0 || methodResultID==1)
+Prediction: x|y ? methodResultID==1 : methodResultID==0
+
+Item: 14
+Id:25
+Ground truth: true?methodResultID==x<<y
+Prediction: x<<y == methodResultID
+
+Item: 15
+Id:26 nao
+Ground truth: true ? methodResultID==true
+Prediction: true ? methodResultID==object : true
+
+Item: 16
+Id:27 nao
+Ground truth: iterator==null || closure==null ? methodResultID==null
+Prediction: iterator.hasNext() ? (methodResultID == null) == false : methodResultID == iterator.next()
+
+Item: 17
+Id:28 nao
+Ground truth: true?methodResultID.equals(s)
+Prediction: s.matches(".*".repeat(groups)) ? methodResultID.equals(s) : methodResultID == null
+
+Item: 18
+Id:30
+Ground truth: receiverObjectID.containsEdge(e) ? methodResultID==true : methodResultID==false
+Prediction: graph.contains(e) ? methodResultID==true : methodResultID==false
+
+Item: 19
+Id:31 nao
+Ground truth: a<=b ? methodResultID==b : methodResultID==a
+Prediction: a<=b ? methodResultID==a : methodResultID==b
+
+Item: 20
+Id:32
+Ground truth: string==null || string.isEmpty() ? methodResultID==null : methodResultID.equals(string)
+Prediction: string!=null && string.length()>0 ? methodResultID.equals(string) : methodResultID==null
+
+Item: 21
+Id:33
+Ground truth:  true ? (methodResultID==0 || methodResultID==1)
+Prediction: x | y ? methodResultID==1 : methodResultID==0
+
+Item: 22
+Id:34
+Ground truth: true ? methodResultID==x+y
+Prediction: x + y == methodResultID
+
+Item: 23
+Id:35
+Ground truth: receiverObjectID.getEurope()==null ? methodResultID==null
+Prediction: europe!=null ? methodResultID.equals(europe.getNameKey()) : methodResultID==null
+
+Item: 24
+Id:37
+Ground truth: receiverObjectID.containsKey(key)==false ? methodResultID==null
+Prediction: map.containsKey(key) ? methodResultID == map.get(key) : methodResultID == null
+
+Item: 25
+Id:38
+Ground truth: first != null ? methodResultID == first ; first == null && second != null ? methodResultID == second
+Prediction: first!=null ? methodResultID.equals(first) : second!=null ? methodResultID.equals(second) : methodResultID==null
+
+Item: 26
+Id:39 nao
+Ground truth: a.stream().allMatch(e -> e==null) ? methodResultID==true : methodResultID==false
+Prediction: a.isEmpty() ? methodResultID==true : a.stream().allMatch(Objects::isNull) == true
+
+Item: 27
+Id:40
+Ground truth: true?methodResultID==x/y
+Prediction: x/y == methodResultID
+
+Item: 28
+Id:43
+Ground truth: true ? methodResultID==x-y
+Prediction: x-y == methodResultID
+
+Item: 29
+Id:44
+Ground truth: object==null ? methodResultID == 0
+Prediction: object==null ? methodResultID==0 : methodResultID==object.size()
+
+Item: 30
+Id:46
+Ground truth: coll.isEmpty() || coll==null ? methodResultID==true
+Prediction: coll == null || coll.isEmpty() ? methodResultID == true : methodResultID == false
+
+Item: 31
+Id:47 nao
+Ground truth: true ? methodResultID==false
+Prediction: false ? methodResultID == false
+
+Item: 32
+Id:51
+Ground truth: true ? methodResultID==a+b
+Prediction: a+b == methodResultID
+
+Item: 33
+Id:52
+Ground truth: true?(methodResultID==null)==false
+Prediction: true ? (methodResultID == null) == false
+
+Item: 34
+Id:53
+Ground truth: true?methodResultID==x>>>y
+Prediction: x>>>y==methodResultID
+
+Item: 35
+Id:54
+Ground truth: !receiverObjectID.isOnCarrier() ? methodResultID==null
+Prediction: carrier!=null ? methodResultID==carrier : methodResultID==null
+
+Item: 36
+Id:55
+Ground truth: receiverObjectID.getCargoSpaceTaken() > 0 ? methodResultID == true : methodResultID == false
+Prediction: hasCargo() ? methodResultID==true : methodResultID==false
+
+Item: 37
+Id:56
+Ground truth: true ? methodResultID.equals(receiverObjectID.peek())
+Prediction: stack.isEmpty() ? methodResultID==null : methodResultID==stack.peek()
+
+Item: 38
+Id:58
+Ground truth: true?methodResultID==(x&y)
+Prediction: x&y == methodResultID
+
+Item: 39
+Id:59
+Ground truth: (receiverObjectID.containsVertex(v))==false ? methodResultID==true:methodResultID==false
+Prediction: graph.contains(v) ? methodResultID==false : methodResultID==true
+
+Item: 40
+Id:60 nao
+Ground truth: turn==null ? methodResultID == true : methodResultID==false
+Prediction: turn == null || turn.isOutsideValidTimeLimit() ? methodResultID == true : methodResultID == false
+
+Item: 41
+Id:61
+Ground truth: true?methodResultID==(x^y)
+Prediction: x^y == methodResultID
+
+Item: 42
+Id:62
+Ground truth: (receiverObjectID.canCarryGoods() || receiverObjectID.canCarryUnits()) ? methodResultID==true:methodResultID==false
+Prediction: this.canCarry() ? methodResultID==true : methodResultID==false
+
+Item: 43
+Id:64 nao
+Ground truth: (collection==null || closure==null) ? methodResultID==null : collection.get(collection.size() - 1)
+Prediction: collection != null && closure != null ? methodResultID == collection.iterator().next() : methodResultID == null
+
+Item: 44
+Id:65
+Ground truth: methodResultID.equals(receiverObjectID)
+Prediction: methodResultID.equals(this)
+
+Item: 45
+Id:66 nao
+Ground truth: unit.couldMove() ? methodResultID == true : methodResultID == false
+Prediction: unit.canMove() ? methodResultID==true : methodResultID==false
+
+Item: 46
+Id:68
+Ground truth: true ? methodResultID.equals(receiverObjectID.size)
+Prediction: methodResultID==size
+
+Item: 47
+Id:70
+Ground truth: receiverObjectID.containsVertex(v) ? methodResultID==true : methodResultID==false
+Prediction: graph.contains(v) ? methodResultID==true : methodResultID==false
+
+Item: 48
+Id:71
+Ground truth: d1>d2 ? methodResultID==true:methodResultID==false
+Prediction: d1>d2 ? methodResultID==true : methodResultID==false
+
+Item: 49
+Id:74 nao
+Ground truth:  true ? (methodResultID==0 || methodResultID==1)
+Prediction: x&y == 0 || methodResultID == 1
+
+Item: 50
+Id:75
+Ground truth: true ? (methodResultID==null)==false
+Prediction: true ? methodResultID!=null : methodResultID==null
+
+Item: 51
+Id:76
+Ground truth: d1<d2 ? methodResultID==true:methodResultID==false
+Prediction: d1<d2 ? methodResultID==true : methodResultID==false
+
+Item: 52
+Id:77 nao
+Ground truth: receiverObjectID.getGoodsSpaceTaken() > 0 ? methodResultID == true : methodResultID == false
+Prediction: goodsCargo!=null ? methodResultID==true : methodResultID==false
+
+Item: 53
+Id:78
+Ground truth: true?methodResultID==(x^y)
+Prediction: x^y == methodResultID
+
+Item: 54
+Id:81
+Ground truth: true?methodResultID==x%y
+Prediction: x%y == methodResultID
+
+Item: 55
+Id:82
+Ground truth: receiverObjectID.intersectionCardinality(a,b,c)>=i ? methodResultID==true
+Prediction: a.intersect(b).intersect(c).size() >= i ? methodResultID==true : methodResultID==false
+
+Item: 56
+Id:83 nao
+Ground truth: true ? (methodResultID==null)==false
+Prediction: b!=null ? methodResultID!=null
+
+Item: 57
+Id:85
+Ground truth: tile.isExplored() ? methodResultID==true:methodResultID==false
+Prediction: tile.getExplorationStatus() == net.sf.freecol.common.model.Tile.ExplorationStatus.EXPLORED ? methodResultID==true : methodResultID==false
+
+Item: 58
+Id:86
+Ground truth: string!=null ? methodResultID.equals(string) : methodResultID.equals("") 
+Prediction: string == null ? methodResultID.equals("") : methodResultID == string
+
+Item: 59
+Id:88
+Ground truth: true ? methodResultID==a*b
+Prediction: true ? methodResultID == a * b
+
+Item: 60
+Id:89 nao
+Ground truth: methodResultID.equals(Location.INSIDE) || methodResultID.equals(Location.OUTSIDE) || methodResultID.equals(Location.BOUNDARY)
+Prediction: point >= tolerance && point <= 1 - tolerance ? methodResultID == Location#BOUNDARY : (point < tolerance || point > 1 - tolerance) ? methodResultID == Location#OUTSIDE : methodResultID == Location#INSIDE
+
+Item: 61
+Id:90 nao
+Ground truth: true ? methodResultID.equals(receiverObjectID.EMPTY_SORTED_BAG)
+Prediction: receiverObjectID == receiverObjectID.EMPTY_SORTED_BAG
+
+Item: 62
+Id:94
+Ground truth: true?methodResultID==x*y
+Prediction: x*y == methodResultID
+
+Item: 63
+Id:95 nao
+Ground truth: d1>d2 ? methodResultID==true:methodResultID==false
+Prediction: d1>=d2 ? methodResultID==true : methodResultID==false
+
+Item: 64
+Id:96
+Ground truth: d1!=d2 ? methodResultID==true:methodResultID==false
+Prediction: d1!=d2 ? methodResultID==true : methodResultID==false
+
+Item: 65
+Id:97 nao
+Ground truth: true ? methodResultID.isEmpty()==true
+Prediction: d1>d2 ? methodResultID==true : methodResultID==false
+
+Item: 66
+Id:98
+Ground truth: a<=b ? methodResultID==b : methodResultID==a
+Prediction: a <= b ? methodResultID == b : methodResultID == a
+
+Item: 67
+Id:99 nao
+Ground truth: true? methodResultID==true
+Prediction: true ? receiverObjectID.add(element) == true
+
+Item: 68
+Id:101
+Ground truth: true?methodResultID==(x|y)
+Prediction: true ? (methodResultID == x | y)
+
+Item: 69
+Id:104 nao
+Ground truth: receiverObjectID.isEmpty() ? methodResultID==true:methodResultID==false
+Prediction: true ? methodResultID == true : methodResultID == false
+
+Item: 70
+Id:105 nao
+Ground truth: true ? (methodResultID==null)==false
+Prediction: !receiverObjectID.isEmpty() ? methodResultID!=null
+
+Item: 71
+Id:109 nao
+Ground truth: receiverObjectID.intersectionCardinality(a,b)>=i ? methodResultID==true
+Prediction: a.intersects(b) && a.cardinality() >= i ? methodResultID==true : methodResultID==false
+
+Item: 72
+Id:110 nao
+Ground truth: true ? methodResultID==Integer.MAX_VALUE
+Prediction: Integer.MAX_VALUE
+
+Item: 73
+Id:111 nao
+Ground truth: methodResultID.equals(Side.PLUS) || methodResultID.equals(Side.MINUS) || methodResultID.equals(Side.BOTH) || methodResultID.equals(Side.HYPER)
+Prediction: true ? (methodResultID==Side.PLUS || methodResultID==Side.MINUS)
+
+Item: 74
+Id:115 nao
+Ground truth: java.util.Arrays.contains(null) ? methodResultID == true : methodResultID == false
+Prediction: a.length == 0 ? methodResultID == false : methodResultID == true
+
+Item: 75
+Id:116
+Ground truth: a<=b ? methodResultID==b : methodResultID==a
+Prediction: a <= b ? methodResultID == b : methodResultID == a
+
+Item: 76
+Id:117 nao
+Ground truth: a==null ? methodResultID==null : methodResultID!=null
+Prediction: a == null ? methodResultID == null
+
+Item: 77
+Id:118
+Ground truth: java.util.Arrays.asList(a).stream().allMatch(e -> e==null)?methodResultID==true : methodResultID==false
+Prediction: a.length == 0 ? methodResultID==true : methodResultID==(java.util.Arrays.stream(a).allMatch(x -> x == null))
+
+Item: 78
+Id:119 nao
+Ground truth: receiverObjectID.getDead()?methodResultID==true:methodResultID==false
+Prediction: true ? receiverObjectID.isDead() == true : methodResultID == false
+
+Item: 79
+Id:122 nao
+Ground truth:  true ? (methodResultID==0 || methodResultID==1)
+Prediction: d1!=d2 ? methodResultID==1 : methodResultID==0
+
+Item: 80
+Id:123
+Ground truth: d1<=d2 ? methodResultID==true:methodResultID==false
+Prediction: d1<=d2 ? methodResultID==true : methodResultID==false
+
+Item: 81
+Id:124 nao
+Ground truth: (receiverObjectID.isEuropean())==false?methodResultID==null
+Prediction: receiverObjectID.isEuropean() || receiverObjectID.isIndependent() ? methodResultID == receiverObjectID.EUROPE : methodResultID == null
+
+Item: 82
+Id:127 nao
+Ground truth: receiverObjectID.getSpaceLeft() > 0 ? methodResultID == true : methodResultID == false
+Prediction: true ? methodResultID==true : methodResultID==false
+
+Item: 83
+Id:129 nao
+Ground truth: true?methodResultID.equals(closure)
+Prediction: iterator == null || closure == null ? methodResultID == closure
+
+Item: 84
+Id:130
+Ground truth: receiverObjectID.isDead()?methodResultID==true:methodResultID==false
+Prediction: receiverObjectID.isDead() ? methodResultID==true : methodResultID==false
+
+Item: 85
+Id:131
+Ground truth: true?methodResultID==x>>>y
+Prediction: x>>>y == (int)methodResultID
+
+Item: 86
+Id:133
+Ground truth: (targetGraph.containsEdge(edge))==false?methodResultID==true:methodResultID==false
+Prediction: targetGraph.containsEdge(edge) ? methodResultID==false : methodResultID==true
+
+Item: 87
+Id:139
+Ground truth: true?methodResultID==(x|y)
+Prediction: true ? methodResultID == x | y
+
+Total para validar: 87
+
+Total: 139
+
+Predicoes corretas exatas: 10
+Acuracia das predicoes exatas: 0.07
+Numero de incorretas: 42
+
+Numero de verificacoes negativas: 33
+Numero de semanticamente corretas: 64
+Acuracia: 0.46
