@@ -8,9 +8,9 @@ import sys
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 
-FILE_NAME = "predictions_returnTag_20_SR"
+FILE_NAME = "predictions_throwsTag_20_noSR"
 
-OUTPUT_DIR = ROOT_DIR / "outputs" /  "llama3.1-8b" / "return"
+OUTPUT_DIR = ROOT_DIR / "outputs" / "llama3.1-8b" / "throws"
 PATH = (
     OUTPUT_DIR
     / f"{FILE_NAME}.json"
@@ -50,7 +50,7 @@ print("incorretas: ",incorrect , f", Length {len(incorrect)}")
 #print("\ncorretas para validar: ",correct_to_validate , f", Length {len(correct_to_validate)}")
 
 
-output_file = (ROOT_DIR / f"src/metricas/llama/{FILE_NAME}.txt")
+output_file = (ROOT_DIR / f"src/metricas/llama/throws/{FILE_NAME}.txt")
 count = 0
 try:
     arg = sys.argv[1] 

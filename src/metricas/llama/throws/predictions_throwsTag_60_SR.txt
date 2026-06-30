@@ -1,0 +1,578 @@
+
+
+Item: 1
+Id:3  nao
+Ground truth: predicates==null || closures==null
+Prediction: predicates==null || closures==null || defaultClosure==null
+
+Item: 2
+Id:6 nao
+Ground truth: collection==null
+Prediction: collection==null || predicate==null
+
+Item: 3
+Id:9 nao
+Ground truth: bag==null
+Prediction: array==null
+
+Item: 4
+Id:12 nao
+Ground truth: pathElement==null
+Prediction: receiverObjectID==null || pathElement==null
+
+Item: 5
+Id:13
+Ground truth: len<0 || len>(bytes.length - start)
+Prediction: len<0 || len>bytes.length-start
+
+Item: 6
+Id:19 nao
+Ground truth: collection==null
+Prediction: collection==null || object==null
+
+Item: 7
+Id:25 nao
+Ground truth: p<0||p>1
+Prediction: p>1
+
+Item: 8
+Id:29 nao
+Ground truth: java.util.Arrays.stream(closures).anyMatch(e -> e==null)
+Prediction: java.util.Arrays.stream(predicates).anyMatch(e -> e==null) || java.util.Arrays.stream(closures).anyMatch(e -> e==null)
+
+Item: 9
+Id:33 nao
+Ground truth: a==null || b==null
+Prediction: coll==null || a==null || b==null
+
+Item: 10
+Id:36 nao
+Ground truth: iterable==null
+Prediction: of(iterable)==null
+
+Item: 11
+Id:39 nao
+Ground truth: predicates.stream().anyMatch(e -> e==null)
+Prediction: java.util.Arrays.stream(predicates).anyMatch(e -> e==null) || java.util.Arrays.stream(closures).anyMatch(e -> e==null)
+
+Item: 12
+Id:45 nao
+Ground truth: java.util.Arrays.stream(predicates).anyMatch(e->e==null)
+Prediction: java.util.Arrays.stream(predicates).anyMatch(e -> e==null) || java.util.Arrays.stream(closures).anyMatch(e -> e==null)
+
+Item: 13
+Id:54 
+Ground truth: minLength<0 || padding<0
+Prediction: array.length<minLength || padding<0
+
+Item: 14
+Id:56 
+Ground truth: receiverObjectID.isCompatible(that)==false
+Prediction: isCompatible(that)==false
+
+Item: 15
+Id:59
+Ground truth: (first.getLength() == second.getLength()) == false
+Prediction: first.getLength() != second.getLength()
+
+Item: 16
+Id:61
+Ground truth: f.length != receiverObjectID.getOrder() + 1
+Prediction: f.length != (getOrder()+1)
+
+Item: 17
+Id:64 nao
+Ground truth: fraction==null
+Prediction: entry==null
+
+Item: 18
+Id:70 nao
+Ground truth: objectsAndClosures.values().stream().anyMatch(e -> e==null)
+Prediction: java.util.Arrays.stream(objectsAndClosures.values()).anyMatch(e -> e==null)
+
+Item: 19
+Id:72
+Ground truth: ((a.length - c.length) == 1) == false
+Prediction: ((a.length - c.length) != 1)
+
+Item: 20
+Id:77 nao
+Ground truth: ((xval.length) == (yval.length)) == false
+Prediction: ((x.length) == (y.length)) == false
+
+Item: 21
+Id:79
+Ground truth: closures.stream().anyMatch(e -> e==null)
+Prediction: java.util.Arrays.stream(closures).anyMatch(e -> e==null)
+
+Item: 22
+Id:81 nao
+Ground truth: receiverObjectID.getNorm()==null
+Prediction: receiverObjectID.getNorm()==0
+
+Item: 23
+Id:82
+Ground truth: minLength<0 || padding<0
+Prediction: array.length<minLength || padding<0
+
+Item: 24
+Id:83
+Ground truth: ((a.length - c.length)==1) == false
+Prediction: ((a.length - c.length) != 1)
+
+Item: 25
+Id:88 nao
+Ground truth: bag==null
+Prediction: array==null
+
+Item: 26
+Id:90 nao
+Ground truth: predicatesAndClosures.values().stream().anyMatch(e -> e==null)
+Prediction: java.util.Arrays.stream(predicates).anyMatch(e -> e==null) || java.util.Arrays.stream(closures).anyMatch(e -> e==null)
+
+Item: 27
+Id:91 nao
+Ground truth: predicates.length != closures.length
+Prediction: predicates.length != closures.length || closures.length != defaultClosure.length
+
+Item: 28
+Id:95 
+Ground truth: (minimalIterationCount>0)==false
+Prediction: minimalIterationCount<=0
+
+Item: 29
+Id:105
+Ground truth: bag==null
+Prediction: SynchronizedBag(bag)==null
+
+Item: 30
+Id:106 nao
+Ground truth: java.util.Arrays.stream(predicates).anyMatch(e->e==null)
+Prediction: java.util.Arrays.stream(predicates).anyMatch(e -> e==null) || java.util.Arrays.stream(closures).anyMatch(e -> e==null)
+
+Item: 31
+Id:107
+Ground truth: value>Short.MAX_VALUE || value<Short.MIN_VALUE
+Prediction: value<Short.MIN_VALUE || value>Short.MAX_VALUE
+
+Item: 32 
+Id:111 nao
+Ground truth: vertex==null
+Prediction: edgesOf(vertex)==null
+
+Item: 33
+Id:113 nao
+Ground truth: player==null || player==receiverObjectID
+Prediction: player==null || this==null
+
+Item: 34
+Id:124 nao
+Ground truth: receiverObjectID.isLocked()
+Prediction: obj==receiverObjectID
+
+Item: 35
+Id:125 nao
+Ground truth: fraction==null
+Prediction: entry==null
+
+Item: 36
+Id:127
+Ground truth: den==0
+Prediction: denominator==0
+
+Item: 37
+Id:134 nao
+Ground truth: methodName==null
+Prediction: map==null
+
+Item: 38
+Id:139 nao
+Ground truth: initialSize<0
+Prediction: arraySize<0
+
+Item: 39
+Id:140 nao
+Ground truth: original==null
+Prediction: countMap!=null
+
+Item: 40
+Id:151
+Ground truth: ((x.length) == (y.length)) == false
+Prediction: x.length != y.length
+
+Item: 41
+Id:154 nao
+Ground truth: n<0
+Prediction: n<=0
+
+Item: 42
+Id:159 
+Ground truth: eps<0.0 || minPts<0
+Prediction: eps<0 || minPts<0
+
+Item: 43
+Id:164 nao
+Ground truth: function==null
+Prediction: function(x) { return x == null; }
+
+Item: 44
+Id:175 nao
+Ground truth: collection==null
+Prediction: map==null || factory==null
+
+Item: 45
+Id:182
+Ground truth: type==null
+Prediction: java.lang.Class type==null
+
+Item: 46
+Id:183 nao
+Ground truth: predicates==null
+Prediction: predicates!=null
+
+Item: 47
+Id:184 nao
+Ground truth: java.util.Arrays.stream(predicates).anyMatch(e->e==null)
+Prediction: java.util.Arrays.stream(predicates).anyMatch(e -> e==null) || java.util.Arrays.stream(closures).anyMatch(e -> e==null)
+
+Item: 48
+Id:186 
+Ground truth: equator==null
+Prediction: a==null || b==null || equator==null
+
+Item: 49
+Id:191 nao
+Ground truth: u.getNorm().getReal()==0 || v.getNorm().getReal()==0
+Prediction: u.getNorm()==0 || v.getNorm()==0
+
+Item: 50
+Id:193 nao
+Ground truth: predicates==null
+Prediction: predicates!=null
+
+Item: 51
+Id:194
+Ground truth: v.getDimension() != receiverObjectID.getDimension()
+Prediction: receiverObjectID.getDimension() != v.getDimension()
+
+Item: 52
+Id:197 nao
+Ground truth: s==null
+Prediction: string==null
+
+Item: 53
+Id:204
+Ground truth: ((x.length) == (y.length)) == false
+Prediction: x.length != y.length
+
+Item: 54
+Id:213 nao
+Ground truth: ((xval.length) == (yval.length)) == false
+Prediction: ((x.length) == (y.length)) == false
+
+Item: 55
+Id:214 
+Ground truth: minLength<0 || padding<0
+Prediction: array.length<minLength || padding<0
+
+Item: 56
+Id:215 nao
+Ground truth: collection==null || remove==null
+Prediction: remove==null
+
+Item: 57
+Id:224
+Ground truth: (minimalIterationCount>0)==false
+Prediction: minimalIterationCount<=0
+
+Item: 58
+Id:225
+Ground truth: lower>=upper 
+Prediction: lower>=upper
+
+Item: 59
+Id:228 nao
+Ground truth: v1.getNorm()==null || v2.getNorm()==null
+Prediction: num==null || den==null
+
+Item: 60
+Id:229 nao
+Ground truth: initialCapacity<0
+Prediction: loadFactor<0 || initialCapacity<0
+
+Item: 61
+Id:236 nao
+Ground truth: java.util.Arrays.stream(predicates).anyMatch(e -> e==null)
+Prediction: java.util.Arrays.stream(predicates).anyMatch(e -> e==null) || java.util.Arrays.stream(closures).anyMatch(e -> e==null)
+
+Item: 62
+Id:248
+Ground truth: initialCapacity<0
+Prediction: initialCapacity<0 
+
+###
+
+Item: 63 
+Id:256 nao
+Ground truth: fraction==null
+Prediction: entry==null
+
+Item: 64
+Id:259
+Ground truth: collection==null
+Prediction: java.util.Collection collection==null
+
+Item: 65
+Id:260 nao
+Ground truth: a.length==0
+Prediction: xval.length==0 || yval.length==0
+
+Item: 66
+Id:274 nao
+Ground truth: predicates==null
+Prediction: predicates.length==0
+
+Item: 67
+Id:276 nao
+Ground truth: source==null || dest==null
+Prediction: dest==null
+
+Item: 68
+Id:288 nao
+Ground truth: vertices.contains(null) || vertices==null
+Prediction: (vertices==null) == false && (vertices.contains(null)) == true
+
+Item: 69
+Id:291
+Ground truth: ((a.lenght - c.length)==1) == false
+Prediction: (a.length - c.length)!=1
+
+Item: 70
+Id:293 nao
+Ground truth: fraction==null
+Prediction: divide(fraction)==null
+
+Item: 71
+Id:297 nao
+Ground truth: xval.length==0 || yval.length==0 || fval.length==0
+Prediction: xval.length == 0 || yval.length == 0 || fval.length == 0 || fval[0].length == 0
+
+Item: 72
+Id:299
+Ground truth: Arrays.asList(others).contains(null)
+Prediction: java.util.Arrays.stream(others).anyMatch(e -> e==null)
+
+Item: 73
+Id:300 nao
+Ground truth: receiverObjectID.isLocked()
+Prediction: existingObj==receiverObjectID 
+
+###
+
+Item: 74
+Id:301 nao
+Ground truth: java.util.Arrays.stream(predicates).anyMatch(e -> e==null) || java.util.Arrays.stream(closures).anyMatch(e -> e==null)
+Prediction: java.util.Arrays.stream(predicates).anyMatch(e -> e==null) || java.util.Arrays.stream(closures).anyMatch(e -> e==null) || defaultClosure == null
+
+Item: 75
+Id:302 nao
+Ground truth: (minimalIterationCount>0)==false
+Prediction: n<=0 || minimalIterationCount<=0
+
+Item: 76
+Id:304 nao
+Ground truth: java.util.Arrays.stream(predicates).anyMatch(e->e==null)
+Prediction: java.util.Arrays.stream(predicates).anyMatch(e -> e==null) || java.util.Arrays.stream(closures).anyMatch(e -> e==null)
+
+Item: 77
+Id:305 nao
+Ground truth: transformer==null
+Prediction: asPredicate==null
+
+Item: 78
+Id:307 nao
+Ground truth: predicates==null
+Prediction: predicates!=null
+
+Item: 79
+Id:309 nao
+Ground truth: (plume.RegexUtil.isRegex(s)) == false
+Prediction: plume.RegexUtil.isRegex(s, groups) == false
+
+Item: 80
+Id:311  nao
+Ground truth: collection.isEmpty() || collection.size()>1
+Prediction: collection.size()!=1
+
+Item: 81
+Id:312
+Ground truth: closure==null || predicate==null
+Prediction: predicate==null || closure==null
+
+Item: 82
+Id:321 nao
+Ground truth: java.util.Arrays.stream(predicates).anyMatch(e -> e==null)
+Prediction: java.util.Arrays.stream(predicates).anyMatch(e -> e==null) || java.util.Arrays.stream(closures).anyMatch(e -> e==null)
+
+Item: 83
+Id:325 nao
+Ground truth: elementList==null || edge==null
+Prediction: receiverObjectID.contains(prevPathElementList)==false || edge==null
+
+Item: 84
+Id:330 nao
+Ground truth: a==null || b==null
+Prediction: a==null || m==null || b==null
+
+Item: 85
+Id:346 nao
+Ground truth: a==null || m==null || b==null
+Prediction: a==null || m==null || b==null || x0==null
+
+Item: 86
+Id:352
+Ground truth: index<0
+Prediction: index < 0
+
+Item: 87
+Id:369
+Ground truth: v.getDimension() != receiverObjectID.getDimension()
+Prediction: receiverObjectID.getDimension() != v.getDimension()
+
+Item: 88
+Id:375
+Ground truth: l==0
+Prediction: l==0L
+
+Item: 89
+Id:382
+Ground truth: v.getDimension() != receiverObjectID.getDimension()
+Prediction: receiverObjectID.getDimension() != v.getDimension()
+
+Item: 90
+Id:394
+Ground truth: collection==null || retain==null
+Prediction: retain==null || collection==null
+
+Item: 91
+Id:402 nao
+Ground truth: position<0 || position>receiverObjectID.size()
+Prediction: position<0 || position>=size()
+
+Item: 92
+Id:404 nao
+Ground truth: start<0 || start>sequence.length()
+Prediction: start>=sequence.length()
+
+Item: 93
+Id:409 nao
+Ground truth: bases==null
+Prediction: array==null
+
+Item: 94
+Id:413 nao
+Ground truth: outputCollection==null && (inputIterator==null) == false && (transformer==null) == false
+Prediction: inputIterator==null || transformer==null && outputCollection==null
+
+Item: 95
+Id:418
+Ground truth: (first.getLength() == second.getLength()) == false
+Prediction: (first.getLength() != second.getLength())
+
+Item: 96
+Id:419
+Ground truth: collection==null || enumeration==null
+Prediction: enumeration==null || collection==null
+
+Item: 97
+Id:420 nao
+Ground truth: mean<=0
+Prediction: len<=0
+
+Item: 98
+Id:421
+Ground truth: numberOfSuccesses>populationSize || sampleSize>populationSize
+Prediction: populationSize<=numberOfSuccesses || populationSize<=sampleSize
+
+Item: 99
+Id:423 nao
+Ground truth: other==null
+Prediction: collection==null || other==null
+
+Item: 100
+Id:424 nao
+Ground truth: items==null
+Prediction: collection==null || items==null
+
+Item: 101
+Id:431 nao
+Ground truth: (receiverObjectID.containsVertex(vertex))==false
+Prediction: receiverObjectID.contains(vertex)==false
+
+Item: 102
+Id:439 nao
+Ground truth: fraction==null
+Prediction: bg==null
+
+Item: 103 
+Id:442 nao
+Ground truth: min<=max
+Prediction: min>=max
+
+Item: 104
+Id:444
+Ground truth: (receiverObjectID.canCarryTreasure()) == false
+Prediction: receiverObjectID.canCarryTreasure() == false
+
+Item: 105
+Id:446 nao
+Ground truth: (countMap.isEmpty()) == false
+Prediction: countMap.isEmpty()
+
+Item: 106
+Id:449 nao
+Ground truth: n<=0 || minimalIterationCount<=0
+Prediction: (minimalIterationCount>0) && (n>0)
+
+Item: 107
+Id:458 nao
+Ground truth: classToInstantiate==null
+Prediction: element==null || type==null || classToInstantiate==null
+
+Item: 108
+Id:459 nao
+Ground truth: n<0
+Prediction: (n<=0)
+
+Item: 109
+Id:462
+Ground truth: length==0 || length<0
+Prediction: length<=0
+
+Item: 110
+Id:466 nao
+Ground truth: min(a)<0 || max(a)>=arange
+Prediction: a[i]<arange[0] || a[i]>arange[1]
+
+Item: 111
+Id:467
+Ground truth: !(g instanceof org.jgrapht.DirectedGraph) && !(g instanceof org.jgrapht.UndirectedGraph)
+Prediction: graph instanceof (DirectedGraph || UndirectedGraph) == false
+
+Item: 112
+Id:470 nao
+Ground truth: bg==null
+Prediction: x==null
+
+Total para validar: 112
+
+Total: 472
+
+Predicoes corretas exatas: 237
+Acuracia das predicoes exatas: 0.50
+Numero de incorretas: 123
+
+Numero de verificacoes negativas: 74
+Numero de semanticamente corretas: 275
+Acuracia: 0.58
+Total: 472
